@@ -1,0 +1,23 @@
+# IDE
+.idea/
+*.iml
+.vscode/
+
+# macOS
+.DS_Store
+
+# Maven
+service-b/target/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+
+# Generated benchmark artifacts (created at runtime)
+vp.json
+public_key.txt
+results/
+*.csv
