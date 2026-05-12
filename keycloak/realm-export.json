@@ -1,0 +1,40 @@
+{
+  "realm": "zt-benchmark",
+  "enabled": true,
+  "accessTokenLifespan": 300,
+  "clients": [
+    {
+      "clientId": "service-a",
+      "enabled": true,
+      "clientAuthenticatorType": "client-secret",
+      "secret": "service-a-secret",
+      "serviceAccountsEnabled": true,
+      "standardFlowEnabled": false,
+      "directAccessGrantsEnabled": true,
+      "protocol": "openid-connect"
+    },
+    {
+      "clientId": "service-b",
+      "enabled": true,
+      "clientAuthenticatorType": "client-secret",
+      "secret": "service-b-secret",
+      "serviceAccountsEnabled": false,
+      "standardFlowEnabled": false,
+      "bearerOnly": true,
+      "protocol": "openid-connect"
+    }
+  ],
+  "users": [
+    {
+      "username": "dev",
+      "enabled": true,
+      "credentials": [
+        {
+          "type": "password",
+          "value": "dev",
+          "temporary": false
+        }
+      ]
+    }
+  ]
+}
