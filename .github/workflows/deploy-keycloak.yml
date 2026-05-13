@@ -70,4 +70,5 @@ jobs:
               -p 8080:8080 \
               -e KEYCLOAK_ADMIN=${{ secrets.KEYCLOAK_ADMIN }} \
               -e KEYCLOAK_ADMIN_PASSWORD=${{ secrets.KEYCLOAK_ADMIN_PASSWORD }} \
+              -e KC_HOSTNAME=${{ secrets.ORACLE_VM1_HOST }} \
               ${{ env.IMAGE }}:latest
