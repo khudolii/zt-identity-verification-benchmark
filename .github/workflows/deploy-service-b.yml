@@ -59,9 +59,9 @@ jobs:
       - name: Deploy via SSH
         uses: appleboy/ssh-action@v1
         with:
-          host: ${{ secrets.ORACLE_VM2_HOST }}
-          username: ${{ secrets.ORACLE_VM2_USER }}
-          key: ${{ secrets.ORACLE_VM2_SSH_KEY }}
+          host: ${{ secrets.GCP_HOST }}
+          username: ${{ secrets.GCP_USER }}
+          key: ${{ secrets.GCP_SSH_KEY }}
           script: |
             echo ${{ secrets.GITHUB_TOKEN }} | docker login ghcr.io -u ${{ github.actor }} --password-stdin
             docker pull ${{ env.IMAGE }}:latest
@@ -71,7 +71,7 @@ jobs:
               --name service-b \
               --restart unless-stopped \
               -p 8081:8081 \
-              -e KEYCLOAK_URL=${{ secrets.KEYCLOAK_URL }} \
+              -e KEYCLOAK_URL=http://${{ secrets.HETZNER_HOST }}:8080 \
               -e KEYCLOAK_REALM=${{ secrets.KEYCLOAK_REALM }} \
               -e KEYCLOAK_CLIENT_ID=${{ secrets.KEYCLOAK_CLIENT_ID }} \
               -e KEYCLOAK_CLIENT_SECRET=${{ secrets.KEYCLOAK_CLIENT_SECRET }} \
