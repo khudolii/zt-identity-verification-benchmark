@@ -12,6 +12,7 @@ import org.springframework.stereotype.Service;
 import java.net.URL;
 import java.time.Instant;
 import java.util.Date;
+import java.util.Map;
 
 /**
  * Scenario 2: Short-lived JWT with local signature verification.
@@ -30,17 +31,22 @@ public class JwtVerificationService {
     @Value("${jwks.uri}")
     private String jwksUri;
 
-    private JWSVerifier verifier;
+    // kid → verifier, loaded once at startup
+    private Map<String, JWSVerifier> verifiers;
 
     /**
-     * Load public key from Keycloak JWKS once at startup.
+     * Load ALL public keys from Keycloak JWKS once at startup, indexed by kid.
      * After this point, Keycloak is not needed for JWT verification.
      */
     @PostConstruct
     public void init() throws Exception {
         JWKSet jwkSet = JWKSet.load(new URL(jwksUri));
-        RSAKey rsaKey = (RSAKey) jwkSet.getKeys().get(0);
-        this.verifier = new RSASSAVerifier(rsaKey.toRSAPublicKey());
+        verifiers = new java.util.HashMap<>();
+        for (com.nimbusds.jose.jwk.JWK jwk : jwkSet.getKeys()) {
+            if (jwk instanceof RSAKey rsaKey) {
+                verifiers.put(jwk.getKeyID(), new RSASSAVerifier(rsaKey.toRSAPublicKey()));
+            }
+        }
     }
 
     /**
@@ -50,6 +56,13 @@ public class JwtVerificationService {
     public boolean verify(String token) {
         try {
             SignedJWT jwt = SignedJWT.parse(token);
+
+            // Look up verifier by kid to handle key rotation
+            String kid = jwt.getHeader().getKeyID();
+            JWSVerifier verifier = verifiers.get(kid);
+            if (verifier == null) {
+                return false;
+            }
 
             // Local signature verification using cached public key
             if (!jwt.verify(verifier)) {
