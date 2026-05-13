@@ -6,6 +6,7 @@ COPY --chmod=755 init-users.sh /opt/keycloak/init-users.sh
 ENV KC_HTTP_ENABLED=true
 ENV KC_HOSTNAME_STRICT=false
 ENV KC_HOSTNAME_STRICT_HTTPS=false
+ENV KC_PROXY_HEADERS=xforwarded
 # Default to localhost for local dev; override with -e KC_HOSTNAME=<vm-ip> in production
 ENV KC_HOSTNAME=localhost
 

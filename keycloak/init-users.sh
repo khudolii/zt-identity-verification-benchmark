@@ -14,6 +14,11 @@ until $KCADM config credentials \
 done
 echo "[init] Keycloak ready."
 
+# Disable HTTPS requirement on both realms so the admin console
+# is accessible over plain HTTP (benchmark environment, not production)
+$KCADM update realms/master       -s sslRequired=none
+$KCADM update realms/zt-benchmark -s sslRequired=none
+
 # Disable VERIFY_PROFILE — Keycloak 24 enables it by default and blocks
 # password grant for users without a complete profile (irrelevant for benchmark)
 $KCADM update authentication/required-actions/VERIFY_PROFILE \
