@@ -42,14 +42,18 @@ TOKEN=$(curl -sf -X POST \
 echo "Token acquired."
 echo ""
 
+TS=$(date +%Y%m%d_%H%M%S)
+
 if [ -n "$SCENARIO" ]; then
   echo "Starting failover test — scenario: $SCENARIO"
   SCENARIO_FLAG="--scenario $SCENARIO"
-  OUTPUT="results/failover-${SCENARIO}.json"
+  OUTPUT="results/failover-${SCENARIO}_${TS}.json"
+  SUMMARY="results/failover-${SCENARIO}_summary_${TS}.json"
 else
   echo "Starting failover test — all scenarios"
   SCENARIO_FLAG=""
-  OUTPUT="results/failover.json"
+  OUTPUT="results/failover_${TS}.json"
+  SUMMARY="results/failover_summary_${TS}.json"
 fi
 
 echo "Stop Keycloak on Hetzner VM 1 after ~60s to observe SPOF behavior."
@@ -58,9 +62,12 @@ echo ""
 mkdir -p results
 k6 run $SCENARIO_FLAG \
   --out json=${OUTPUT} \
+  --summary-export ${SUMMARY} \
   -e SERVICE_B_IP="${SERVICE_B_IP}" \
   -e TOKEN="${TOKEN}" \
   k6/failover-test.js
 
 echo ""
-echo "Results saved to ${OUTPUT}"
+echo "Results saved to:"
+echo "  ${OUTPUT}   (raw metrics)"
+echo "  ${SUMMARY}  (summary stats)"

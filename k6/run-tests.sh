@@ -25,4 +25,5 @@ sleep 120
 echo "==> Scenario 3"; bash k6/run-scenario-3.sh
 
 echo ""
-echo "All done. Results in results/"
+echo "All done. Timestamped results in results/:"
+ls -1t results/ | head -20

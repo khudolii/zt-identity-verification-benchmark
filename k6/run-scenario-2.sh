@@ -21,7 +21,16 @@ TOKEN=$(curl -sf -X POST \
 echo "Token acquired. Starting scenario 2..."
 
 mkdir -p results
-k6 run --out json=results/jwt.json \
+TS=$(date +%Y%m%d_%H%M%S)
+
+k6 run \
+  --out json=results/jwt_${TS}.json \
+  --summary-export results/jwt_summary_${TS}.json \
   -e SERVICE_B_IP="${SERVICE_B_IP}" \
   -e TOKEN="${TOKEN}" \
   k6/scenario-2-jwt.js
+
+echo ""
+echo "Results saved to:"
+echo "  results/jwt_${TS}.json         (raw metrics)"
+echo "  results/jwt_summary_${TS}.json  (summary stats)"

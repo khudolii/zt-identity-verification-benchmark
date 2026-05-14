@@ -21,7 +21,16 @@ TOKEN=$(curl -sf -X POST \
 echo "Token acquired. Starting scenario 1..."
 
 mkdir -p results
-k6 run --out json=results/introspection.json \
+TS=$(date +%Y%m%d_%H%M%S)
+
+k6 run \
+  --out json=results/introspection_${TS}.json \
+  --summary-export results/introspection_summary_${TS}.json \
   -e SERVICE_B_IP="${SERVICE_B_IP}" \
   -e TOKEN="${TOKEN}" \
   k6/scenario-1-introspection.js
+
+echo ""
+echo "Results saved to:"
+echo "  results/introspection_${TS}.json         (raw metrics)"
+echo "  results/introspection_summary_${TS}.json  (summary stats)"
