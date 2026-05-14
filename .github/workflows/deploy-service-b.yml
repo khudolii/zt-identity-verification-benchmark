@@ -72,7 +72,7 @@ jobs:
               --name service-b \
               --restart unless-stopped \
               -p 8081:8081 \
-              -e KEYCLOAK_URL=http://${{ secrets.HETZNER_HOST }}:8080 \
+              -e KEYCLOAK_URL=http://${{ secrets.HETZNER_HOST }} \
               -e KEYCLOAK_REALM=${{ secrets.KEYCLOAK_REALM }} \
               -e KEYCLOAK_CLIENT_ID=${{ secrets.KEYCLOAK_CLIENT_ID }} \
               -e KEYCLOAK_CLIENT_SECRET=${{ secrets.KEYCLOAK_CLIENT_SECRET }} \
