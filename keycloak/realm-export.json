@@ -2,7 +2,7 @@
   "realm": "zt-benchmark",
   "enabled": true,
   "sslRequired": "none",
-  "accessTokenLifespan": 300,
+  "accessTokenLifespan": 30,
   "clients": [
     {
       "clientId": "service-a",
