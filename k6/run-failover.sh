@@ -1,10 +1,14 @@
 #!/bin/bash
-# Failover test: measures behavior of all three scenarios when Keycloak goes down.
+# Failover test: measures behavior when Keycloak goes down mid-test.
 #
 # Usage:
-#   Terminal 1: bash k6/run-failover.sh
-#   Terminal 2: stop Keycloak mid-test (on Hetzner VM 1):
-#               ssh root@<HETZNER_VM1_IP> "docker stop keycloak"
+#   bash k6/run-failover.sh                  # all three scenarios
+#   bash k6/run-failover.sh introspection    # introspection only
+#   bash k6/run-failover.sh jwt              # jwt only
+#   bash k6/run-failover.sh vc              # vc only
+#
+# In a second terminal, stop Keycloak after ~60s:
+#   ssh root@<HETZNER_VM1_IP> "docker stop keycloak"
 
 set -e
 cd "$(dirname "$0")/.."
@@ -20,6 +24,14 @@ if [ ! -f vp.json ]; then
   exit 1
 fi
 
+SCENARIO=${1:-""}
+
+# Validate scenario argument
+if [ -n "$SCENARIO" ] && [[ ! "$SCENARIO" =~ ^(introspection|jwt|vc)$ ]]; then
+  echo "ERROR: Unknown scenario '$SCENARIO'. Use: introspection, jwt, or vc"
+  exit 1
+fi
+
 echo "Fetching token..."
 TOKEN=$(curl -sf -X POST \
   "http://${KEYCLOAK_IP}/realms/${KC_REALM}/protocol/openid-connect/token" \
@@ -29,12 +41,26 @@ TOKEN=$(curl -sf -X POST \
 [ -z "$TOKEN" ] && echo "ERROR: Failed to fetch token." && exit 1
 echo "Token acquired."
 echo ""
-echo "Starting failover test..."
+
+if [ -n "$SCENARIO" ]; then
+  echo "Starting failover test — scenario: $SCENARIO"
+  SCENARIO_FLAG="--scenario $SCENARIO"
+  OUTPUT="results/failover-${SCENARIO}.json"
+else
+  echo "Starting failover test — all scenarios"
+  SCENARIO_FLAG=""
+  OUTPUT="results/failover.json"
+fi
+
 echo "Stop Keycloak on Hetzner VM 1 after ~60s to observe SPOF behavior."
 echo ""
 
 mkdir -p results
-k6 run --out json=results/failover.json \
+k6 run $SCENARIO_FLAG \
+  --out json=${OUTPUT} \
   -e SERVICE_B_IP="${SERVICE_B_IP}" \
   -e TOKEN="${TOKEN}" \
   k6/failover-test.js
+
+echo ""
+echo "Results saved to ${OUTPUT}"
