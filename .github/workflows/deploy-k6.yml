@@ -1,0 +1,50 @@
+name: Deploy k6 scripts
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [master]
+    paths:
+      - 'k6/**'
+      - 'scripts/**'
+      - '.github/workflows/deploy-k6.yml'
+
+jobs:
+  deploy:
+    name: Deploy to Hetzner VM 2
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Copy k6 scripts to VM
+        uses: appleboy/scp-action@v0.1.7
+        with:
+          host: ${{ secrets.HETZNER_VM2_HOST }}
+          username: ${{ secrets.HETZNER_VM2_USER }}
+          key: ${{ secrets.HETZNER_VM2_SSH_KEY }}
+          source: "k6/,scripts/"
+          target: "~/zt-benchmark/"
+          strip_components: 0
+
+      - name: Install k6 if not present
+        uses: appleboy/ssh-action@v1
+        with:
+          host: ${{ secrets.HETZNER_VM2_HOST }}
+          username: ${{ secrets.HETZNER_VM2_USER }}
+          key: ${{ secrets.HETZNER_VM2_SSH_KEY }}
+          script: |
+            if ! command -v k6 &> /dev/null; then
+              echo "Installing k6..."
+              gpg --no-default-keyring \
+                --keyring /usr/share/keyrings/k6-archive-keyring.gpg \
+                --keyserver hkp://keyserver.ubuntu.com:80 \
+                --recv-keys C5AD17C747E3415A3642D57D77C6C491D6AC1D69
+              echo "deb [signed-by=/usr/share/keyrings/k6-archive-keyring.gpg] https://dl.k6.io/deb stable main" \
+                | tee /etc/apt/sources.list.d/k6.list
+              apt-get update && apt-get install -y k6
+              echo "k6 installed: $(k6 version)"
+            else
+              echo "k6 already installed: $(k6 version)"
+            fi
