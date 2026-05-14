@@ -1,6 +1,7 @@
 name: Deploy Service B
 
 on:
+  workflow_dispatch:
   push:
     branches: [master]
     paths:
