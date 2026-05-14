@@ -24,12 +24,9 @@ mkdir -p results
 TS=$(date +%Y%m%d_%H%M%S)
 
 k6 run \
-  --out json=results/vc_${TS}.json \
   --summary-export results/vc_summary_${TS}.json \
   -e SERVICE_B_IP="${SERVICE_B_IP}" \
   k6/scenario-3-vc.js
 
 echo ""
-echo "Results saved to:"
-echo "  results/vc_${TS}.json         (raw metrics)"
-echo "  results/vc_summary_${TS}.json  (summary stats)"
+echo "Results saved to: results/vc_summary_${TS}.json"
