@@ -18,6 +18,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      # ── Copy k6 scripts and helper scripts to k6 server ───────────────────
       - name: Copy k6 scripts to VM
         uses: appleboy/scp-action@v0.1.7
         with:
@@ -28,6 +29,7 @@ jobs:
           target: "~/zt-benchmark/"
           strip_components: 0
 
+      # ── Write .env and install k6 ─────────────────────────────────────────
       - name: Write .env and install k6
         uses: appleboy/ssh-action@v1
         env:
@@ -69,3 +71,4 @@ jobs:
             else
               echo "k6 already installed: $(k6 version)"
             fi
+
