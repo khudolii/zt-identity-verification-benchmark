@@ -21,3 +21,6 @@ vp.json
 public_key.txt
 results/
 *.csv
+
+# Claude Code
+.claude/
