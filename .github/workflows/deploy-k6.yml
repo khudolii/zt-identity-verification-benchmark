@@ -9,6 +9,9 @@ on:
       - 'scripts/**'
       - '.github/workflows/deploy-k6.yml'
 
+env:
+  IMAGE: ghcr.io/${{ github.repository_owner }}/service-b
+
 jobs:
   deploy:
     name: Deploy to Hetzner VM 2
@@ -18,16 +21,27 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Copy k6 scripts to VM
+      # ── Generate VP keypair in the runner ──────────────────────────────────
+      # Runs generate_vp.py here so both outputs (vp.json + public key)
+      # can be distributed to k6 server and Service B in the same workflow.
+      - name: Generate VP keypair
+        run: |
+          pip3 install cryptography -q
+          python3 scripts/generate_vp.py
+          echo "TRUSTED_KEY=$(cat public_key.txt)" >> $GITHUB_ENV
+
+      # ── Copy scripts and fresh vp.json to k6 server ───────────────────────
+      - name: Copy k6 scripts and vp.json to VM
         uses: appleboy/scp-action@v0.1.7
         with:
           host: ${{ secrets.HETZNER_VM2_HOST }}
           username: ${{ secrets.HETZNER_VM2_USER }}
           key: ${{ secrets.HETZNER_VM2_SSH_KEY }}
-          source: "k6/,scripts/"
+          source: "k6/,scripts/,vp.json"
           target: "~/zt-benchmark/"
           strip_components: 0
 
+      # ── Write .env and install k6 ─────────────────────────────────────────
       - name: Write .env and install k6
         uses: appleboy/ssh-action@v1
         env:
@@ -69,3 +83,38 @@ jobs:
             else
               echo "k6 already installed: $(k6 version)"
             fi
+
+      # ── Restart Service B on GCP with the new public key ──────────────────
+      # Every deploy-k6 run generates a fresh keypair, so Service B must be
+      # restarted with the matching TRUSTED_ISSUER_PUBLIC_KEY.
+      - name: Update Service B public key
+        uses: appleboy/ssh-action@v1
+        env:
+          TRUSTED_KEY: ${{ env.TRUSTED_KEY }}
+          KEYCLOAK_URL: http://${{ secrets.HETZNER_HOST }}
+          KC_REALM: ${{ secrets.KEYCLOAK_REALM }}
+          KC_CLIENT_ID: ${{ secrets.KEYCLOAK_CLIENT_ID }}
+          KC_CLIENT_SECRET: ${{ secrets.KEYCLOAK_CLIENT_SECRET }}
+          IMAGE: ${{ env.IMAGE }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_ACTOR: ${{ github.actor }}
+        with:
+          host: ${{ secrets.GCP_HOST }}
+          username: ${{ secrets.GCP_USER }}
+          key: ${{ secrets.GCP_SSH_KEY }}
+          envs: TRUSTED_KEY,KEYCLOAK_URL,KC_REALM,KC_CLIENT_ID,KC_CLIENT_SECRET,IMAGE,GITHUB_TOKEN,GITHUB_ACTOR
+          script: |
+            echo "${GITHUB_TOKEN}" | docker login ghcr.io -u "${GITHUB_ACTOR}" --password-stdin
+            docker stop service-b || true
+            docker rm   service-b || true
+            docker run -d \
+              --name service-b \
+              --restart unless-stopped \
+              -p 8081:8081 \
+              -e KEYCLOAK_URL="${KEYCLOAK_URL}" \
+              -e KEYCLOAK_REALM="${KC_REALM}" \
+              -e KEYCLOAK_CLIENT_ID="${KC_CLIENT_ID}" \
+              -e KEYCLOAK_CLIENT_SECRET="${KC_CLIENT_SECRET}" \
+              -e TRUSTED_ISSUER_PUBLIC_KEY="${TRUSTED_KEY}" \
+              "${IMAGE}:latest"
+            echo "Service B restarted with updated public key."
