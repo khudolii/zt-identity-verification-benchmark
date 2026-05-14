@@ -5,6 +5,11 @@
 set -e
 cd "$(dirname "$0")/.."
 
+if [ ! -f .env ]; then
+  echo "ERROR: .env not found. Run the deploy-k6 workflow first."
+  exit 1
+fi
+
 # Warmup
 echo "==> Warmup (results discarded)..."
 source .env
