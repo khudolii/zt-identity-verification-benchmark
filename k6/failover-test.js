@@ -1,8 +1,8 @@
 /**
  * Failover test — demonstrates three distinct failure modes under IdP outage.
  *
- * All three scenarios run concurrently for 120 seconds.
- * Stop Keycloak at the ~60s mark to observe failover behavior.
+ * All three scenarios run concurrently for 180 seconds.
+ * Stop Keycloak at the ~90s mark to observe failover behavior.
  *
  * Expected results after Keycloak stops:
  *   Introspection → error rate jumps to 100% immediately (every request hits Keycloak)
@@ -16,7 +16,7 @@
  *   # Terminal 1: start test
  *   bash k6/run-failover.sh
  *
- *   # Terminal 2: stop Keycloak after ~60 seconds
+ *   # Terminal 2: stop Keycloak after ~90 seconds
  *   ssh root@<hetzner-ip> "docker stop keycloak"
  *
  * Required env vars:
@@ -46,7 +46,7 @@ export const options = {
             executor: 'constant-arrival-rate',
             rate: 50,
             timeUnit: '1s',
-            duration: '120s',
+            duration: '180s',
             preAllocatedVUs: 20,
             maxVUs: 50,
             env: { SCENARIO: 'introspection' },
@@ -55,7 +55,7 @@ export const options = {
             executor: 'constant-arrival-rate',
             rate: 50,
             timeUnit: '1s',
-            duration: '120s',
+            duration: '180s',
             preAllocatedVUs: 20,
             maxVUs: 50,
             env: { SCENARIO: 'jwt' },
@@ -64,7 +64,7 @@ export const options = {
             executor: 'constant-arrival-rate',
             rate: 50,
             timeUnit: '1s',
-            duration: '120s',
+            duration: '180s',
             preAllocatedVUs: 20,
             maxVUs: 50,
             env: { SCENARIO: 'vc' },

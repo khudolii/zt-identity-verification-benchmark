@@ -40,39 +40,40 @@ const refreshCounter      = new Counter('token_refresh_count');
 
 export const options = {
     scenarios: {
-        // Phase 1: steady baseline — 200 req/s for 30s
+        // Phase 1: steady baseline — 60s to observe multiple refresh cycles (TTL=30s)
         steady: {
             executor: 'constant-arrival-rate',
             rate: 200,
             timeUnit: '1s',
-            duration: '30s',
+            duration: '60s',
             preAllocatedVUs: 50,
             maxVUs: 100,
             startTime: '0s',
         },
-        // Phase 2: ramp up — exposes thundering herd on token refresh
+        // Phase 2: ramp — 4 stages × 30s to expose thundering herd at sustained peak
         ramp: {
             executor: 'ramping-arrival-rate',
             startRate: 200,
             timeUnit: '1s',
             stages: [
-                { duration: '20s', target: 400  },
-                { duration: '20s', target: 700  },
-                { duration: '20s', target: 1000 },
+                { duration: '30s', target: 400  },
+                { duration: '30s', target: 700  },
+                { duration: '30s', target: 1000 },
+                { duration: '30s', target: 1000 }, // sustain peak — thundering herd compounds here
             ],
             preAllocatedVUs: 200,
             maxVUs: 500,
-            startTime: '35s',
+            startTime: '65s',
         },
-        // Phase 3: cooldown — verify recovery after load drops
+        // Phase 3: cooldown — 60s to observe full recovery after thundering herd
         cooldown: {
             executor: 'constant-arrival-rate',
             rate: 200,
             timeUnit: '1s',
-            duration: '30s',
+            duration: '60s',
             preAllocatedVUs: 50,
             maxVUs: 100,
-            startTime: '100s',
+            startTime: '190s',
         },
     },
     thresholds: {

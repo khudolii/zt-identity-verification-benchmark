@@ -56,7 +56,7 @@ else
   SUMMARY="results/failover_summary_${TS}.json"
 fi
 
-echo "Stop Keycloak on Hetzner VM 1 after ~60s to observe SPOF behavior."
+echo "Stop Keycloak on Hetzner VM 1 after ~90s to observe SPOF behavior."
 echo ""
 
 mkdir -p results

@@ -5,9 +5,9 @@
  * Models centralized IdP dependency — the SPOF problem.
  *
  * Three phases:
- *   Phase 1 (0-30s):   200 req/s steady — warm baseline
- *   Phase 2 (30-90s):  ramp 200→1000 req/s — stress test
- *   Phase 3 (90-120s): 200 req/s cooldown — recovery check
+ *   Phase 1 (0-40s):    200 req/s steady — warm baseline
+ *   Phase 2 (45-125s):  ramp 200→1000 req/s — stress test (3 × 27s stages)
+ *   Phase 3 (130-170s): 200 req/s cooldown — recovery check
  *
  * Usage:
  *   k6 run -e SERVICE_B_IP=<ip> -e TOKEN=$TOKEN k6/scenario-1-introspection.js
@@ -28,7 +28,7 @@ export const options = {
             executor: 'constant-arrival-rate',
             rate: 200,
             timeUnit: '1s',
-            duration: '30s',
+            duration: '40s',
             preAllocatedVUs: 50,
             maxVUs: 100,
             startTime: '0s',
@@ -39,23 +39,23 @@ export const options = {
             startRate: 200,
             timeUnit: '1s',
             stages: [
-                { duration: '20s', target: 400  },
-                { duration: '20s', target: 700  },
-                { duration: '20s', target: 1000 },
+                { duration: '27s', target: 400  },
+                { duration: '27s', target: 700  },
+                { duration: '26s', target: 1000 },
             ],
             preAllocatedVUs: 200,
             maxVUs: 500,
-            startTime: '35s',
+            startTime: '45s',
         },
         // Phase 3: cooldown — check recovery
         cooldown: {
             executor: 'constant-arrival-rate',
             rate: 200,
             timeUnit: '1s',
-            duration: '30s',
+            duration: '40s',
             preAllocatedVUs: 50,
             maxVUs: 100,
-            startTime: '100s',
+            startTime: '130s',
         },
     },
     thresholds: {
