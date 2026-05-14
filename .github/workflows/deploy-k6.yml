@@ -28,13 +28,34 @@ jobs:
           target: "~/zt-benchmark/"
           strip_components: 0
 
-      - name: Install k6 if not present
+      - name: Write .env and install k6
         uses: appleboy/ssh-action@v1
+        env:
+          KEYCLOAK_IP: ${{ secrets.HETZNER_HOST }}
+          SERVICE_B_IP: ${{ secrets.GCP_HOST }}
+          KC_CLIENT_ID: ${{ secrets.KEYCLOAK_CLIENT_ID }}
+          KC_CLIENT_SECRET: ${{ secrets.KEYCLOAK_CLIENT_SECRET }}
+          KC_REALM: ${{ secrets.KEYCLOAK_REALM }}
         with:
           host: ${{ secrets.HETZNER_VM2_HOST }}
           username: ${{ secrets.HETZNER_VM2_USER }}
           key: ${{ secrets.HETZNER_VM2_SSH_KEY }}
+          envs: KEYCLOAK_IP,SERVICE_B_IP,KC_CLIENT_ID,KC_CLIENT_SECRET,KC_REALM
           script: |
+            mkdir -p ~/zt-benchmark
+
+            # Write .env with all connection details
+            cat > ~/zt-benchmark/.env << EOF
+            KEYCLOAK_IP=${KEYCLOAK_IP}
+            SERVICE_B_IP=${SERVICE_B_IP}
+            KC_CLIENT_ID=${KC_CLIENT_ID}
+            KC_CLIENT_SECRET=${KC_CLIENT_SECRET}
+            KC_REALM=${KC_REALM}
+            EOF
+            chmod 600 ~/zt-benchmark/.env
+            echo ".env written."
+
+            # Install k6 if not present
             if ! command -v k6 &> /dev/null; then
               echo "Installing k6..."
               gpg --no-default-keyring \
