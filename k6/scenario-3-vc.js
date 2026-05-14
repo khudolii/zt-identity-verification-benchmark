@@ -20,7 +20,6 @@
 import http from 'k6/http';
 import { check } from 'k6';
 import { Trend, Rate, Counter } from 'k6/metrics';
-import { open } from 'k6/experimental/fs';
 
 const latency    = new Trend('verification_latency', true);
 const errorRate  = new Rate('error_rate');

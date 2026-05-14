@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(jq)",
+      "Bash(curl -s -X POST http://localhost:8081/api/resource/vc -H 'Content-Type: application/json' -d '@/Users/khudolii.yevhenii/Desktop/PhD/Публікації/Конференція КПІ 2025/zt-benchmark/scripts/vp.json')",
+      "Bash(docker build *)"
+    ]
+  }
+}

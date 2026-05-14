@@ -23,7 +23,6 @@
 import http from 'k6/http';
 import { check } from 'k6';
 import { Rate, Trend } from 'k6/metrics';
-import { open } from 'k6/experimental/fs';
 
 // Separate metrics per scenario for clear result separation
 const latency_introspection = new Trend('latency_introspection', true);
