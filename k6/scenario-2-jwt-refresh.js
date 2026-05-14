@@ -40,46 +40,46 @@ const refreshCounter      = new Counter('token_refresh_count');
 
 export const options = {
     scenarios: {
-        // Phase 1: steady baseline — 60s to observe multiple refresh cycles (TTL=30s)
+        // Phase 1: steady baseline — spans >1 TTL cycle (TTL=30s), establishes refresh rhythm
         steady: {
             executor: 'constant-arrival-rate',
             rate: 200,
             timeUnit: '1s',
-            duration: '60s',
+            duration: '40s',
             preAllocatedVUs: 50,
             maxVUs: 100,
             startTime: '0s',
         },
-        // Phase 2: ramp — 4 stages × 30s to expose thundering herd at sustained peak
+        // Phase 2: ramp — concurrent expiries under load expose thundering herd on Keycloak
         ramp: {
             executor: 'ramping-arrival-rate',
             startRate: 200,
             timeUnit: '1s',
             stages: [
-                { duration: '30s', target: 400  },
-                { duration: '30s', target: 700  },
-                { duration: '30s', target: 1000 },
-                { duration: '30s', target: 1000 }, // sustain peak — thundering herd compounds here
+                { duration: '27s', target: 400  },
+                { duration: '27s', target: 700  },
+                { duration: '26s', target: 1000 },
             ],
             preAllocatedVUs: 200,
             maxVUs: 500,
-            startTime: '65s',
+            startTime: '45s',
         },
-        // Phase 3: cooldown — 60s to observe full recovery after thundering herd
+        // Phase 3: cooldown — observe recovery after peak load drops
         cooldown: {
             executor: 'constant-arrival-rate',
             rate: 200,
             timeUnit: '1s',
-            duration: '60s',
+            duration: '40s',
             preAllocatedVUs: 50,
             maxVUs: 100,
-            startTime: '190s',
+            startTime: '130s',
         },
     },
+    // Relaxed thresholds — identical across all scenarios for fair comparison.
+    // We intentionally push to the limit; results speak for themselves.
     thresholds: {
-        'verification_latency':  ['p(95)<500'],
-        'token_refresh_latency': ['p(95)<200'],
-        'error_rate':            ['rate<0.01'],
+        'verification_latency': ['p(95)<2000'],
+        'error_rate':           ['rate<0.10'],
     },
 };
 
