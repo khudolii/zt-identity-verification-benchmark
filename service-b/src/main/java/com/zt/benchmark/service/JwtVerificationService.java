@@ -6,6 +6,7 @@ import com.nimbusds.jose.jwk.JWKSet;
 import com.nimbusds.jose.jwk.RSAKey;
 import com.nimbusds.jwt.SignedJWT;
 import jakarta.annotation.PostConstruct;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
@@ -26,6 +27,7 @@ import java.util.Map;
  * Latency = local RSA signature verification only.
  */
 @Service
+@Slf4j
 public class JwtVerificationService {
 
     @Value("${jwks.uri}")
@@ -40,13 +42,19 @@ public class JwtVerificationService {
      */
     @PostConstruct
     public void init() throws Exception {
+        log.info("Loading JWKS from: {}", jwksUri);
         JWKSet jwkSet = JWKSet.load(new URL(jwksUri));
+        log.info("JWKS loaded, total keys: {}", jwkSet.getKeys().size());
         verifiers = new java.util.HashMap<>();
         for (com.nimbusds.jose.jwk.JWK jwk : jwkSet.getKeys()) {
+            log.info("Key: kid={}, type={}, use={}",
+                    jwk.getKeyID(), jwk.getKeyType(), jwk.getKeyUse());
             if (jwk instanceof RSAKey rsaKey) {
                 verifiers.put(jwk.getKeyID(), new RSASSAVerifier(rsaKey.toRSAPublicKey()));
+                log.info("Loaded RSA verifier for kid={}", jwk.getKeyID());
             }
         }
+        log.info("Total verifiers loaded: {}", verifiers.size());
     }
 
     /**
