@@ -108,9 +108,15 @@ function getValidToken() {
         refreshLatency.add(res.timings.duration);
         refreshCounter.add(1);
 
-        const body = JSON.parse(res.body);
-        cachedToken    = body.access_token;
-        tokenExpiresAt = now + (body.expires_in * 1000);
+        try {
+            const body = JSON.parse(res.body);
+            cachedToken    = body.access_token;
+            tokenExpiresAt = now + (body.expires_in * 1000);
+        } catch (_) {
+            // Keycloak is down — IdP returned non-JSON (HTML error page).
+            // Keep the existing cached token; Service B will reject it and
+            // the failure surfaces as a check failure, not an unhandled exception.
+        }
     }
     return cachedToken;
 }
