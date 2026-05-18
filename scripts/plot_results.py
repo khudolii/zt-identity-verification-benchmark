@@ -55,17 +55,18 @@ def load_summary(path: str) -> dict:
     return data.get('metrics', {})
 
 
-def load_failover_ndjson(path: str) -> dict[str, list[tuple[float, float]]]:
+def load_failover_ndjson(path: str) -> dict:
     """
     Parse k6 raw NDJSON (--out json) for the failover test.
-    Returns per-scenario list of (elapsed_seconds, error_flag) tuples.
+    Returns:
+      data['errors'][scenario]  — list of (elapsed_s, 0|1) per request
+      data['latency'][scenario] — list of (elapsed_s, ms) per request
     """
-    events: dict[str, list] = {
-        'introspection': [],
-        'jwt':           [],
-        'vc':            [],
+    scenarios = ['introspection', 'jwt', 'vc']
+    data = {
+        'errors':  {s: [] for s in scenarios},
+        'latency': {s: [] for s in scenarios},
     }
-
     t0 = None
 
     with open(path) as f:
@@ -85,23 +86,22 @@ def load_failover_ndjson(path: str) -> dict[str, list[tuple[float, float]]]:
             ts_str = obj['data'].get('time', '')
             val    = obj['data'].get('value', 0)
 
-            # Parse ISO timestamp
             try:
-                # Python 3.11+: datetime.fromisoformat handles Z
                 ts = datetime.fromisoformat(ts_str.replace('Z', '+00:00'))
             except (ValueError, AttributeError):
                 continue
 
             if t0 is None:
                 t0 = ts
-
             elapsed = (ts - t0).total_seconds()
 
-            for scenario in events:
-                if metric == f'error_rate_{scenario}':
-                    events[scenario].append((elapsed, val))
+            for s in scenarios:
+                if metric == f'error_rate_{s}':
+                    data['errors'][s].append((elapsed, val))
+                elif metric == f'latency_{s}':
+                    data['latency'][s].append((elapsed, val))
 
-    return events
+    return data
 
 
 # ── Plots ─────────────────────────────────────────────────────────────────────
@@ -177,10 +177,29 @@ def plot_error_bars(metrics: dict, output_path: str):
     plt.close()
 
 
-def plot_failover_timeline(events: dict, keycloak_stop: float, output_path: str):
+def _bin(pts: list, window: float = 5.0):
+    """Bin (elapsed, value) points into fixed-width windows. Returns (centers, means)."""
+    if not pts:
+        return np.array([]), np.array([])
+    max_t  = max(t for t, _ in pts)
+    bins   = np.arange(0, max_t + window, window)
+    sums   = np.zeros(len(bins) - 1)
+    counts = np.zeros(len(bins) - 1)
+    for t, v in pts:
+        idx = min(int(t / window), len(sums) - 1)
+        sums[idx]   += v
+        counts[idx] += 1
+    centers = (bins[:-1] + bins[1:]) / 2
+    means   = np.where(counts > 0, sums / counts, np.nan)
+    return centers, means
+
+
+def plot_failover_timeline(data: dict, keycloak_stop: float, output_path: str):
     """
-    Fig 3 — Error rate timeline during failover test.
-    Bins raw error_rate_* Point events into 5s windows.
+    Fig 3 — Two-panel failover chart:
+      Top:    error rate over time (binned into 5s windows)
+      Bottom: p50 latency over time (binned into 5s windows)
+    Keycloak-stop event marked with a vertical dashed line on both panels.
     """
     scenario_meta = {
         'introspection': ('Token Introspection', '#e74c3c'),
@@ -188,41 +207,38 @@ def plot_failover_timeline(events: dict, keycloak_stop: float, output_path: str)
         'vc':            ('DID/VC (Ed25519)',     '#2ecc71'),
     }
 
-    fig, ax = plt.subplots(figsize=(7, 3.5))
+    fig, (ax_err, ax_lat) = plt.subplots(
+        2, 1, figsize=(7, 6), sharex=True,
+        gridspec_kw={'hspace': 0.08}
+    )
 
     for scenario, (label, color) in scenario_meta.items():
-        pts = events.get(scenario, [])
-        if not pts:
-            continue
+        # ── Error rate panel ──────────────────────────────────────────────
+        err_pts = data['errors'].get(scenario, [])
+        cx, means = _bin(err_pts)
+        if len(cx):
+            ax_err.plot(cx, means, label=label, color=color, linewidth=1.8)
 
-        # Bin into 5s windows and compute mean error rate per window
-        max_t   = max(t for t, _ in pts)
-        bins    = np.arange(0, max_t + 5, 5)
-        sums    = np.zeros(len(bins) - 1)
-        counts  = np.zeros(len(bins) - 1)
+        # ── Latency panel ─────────────────────────────────────────────────
+        lat_pts = data['latency'].get(scenario, [])
+        cx, means = _bin(lat_pts)
+        if len(cx):
+            ax_lat.plot(cx, means, label=label, color=color, linewidth=1.8)
 
-        for t, v in pts:
-            idx = min(int(t / 5), len(sums) - 1)
-            sums[idx]   += v
-            counts[idx] += 1
+    for ax in (ax_err, ax_lat):
+        ax.axvline(x=keycloak_stop, color='gray', linestyle='--', linewidth=1.2)
+        ax.grid(alpha=0.3)
 
-        bin_centers = (bins[:-1] + bins[1:]) / 2
-        rates = np.where(counts > 0, sums / counts, np.nan)
+    ax_err.text(keycloak_stop + 1, 0.6,
+                'Keycloak\nstopped', fontsize=8, color='gray')
+    ax_err.set_ylabel('Error Rate')
+    ax_err.set_ylim(-0.05, 1.15)
+    ax_err.legend(fontsize=8)
+    ax_err.set_title('Failover Test — Error Rate & Latency Timeline')
 
-        ax.plot(bin_centers, rates,
-                label=label, color=color, linewidth=1.8)
-
-    ax.axvline(x=keycloak_stop, color='gray', linestyle='--',
-               linewidth=1.2, label='Keycloak stopped')
-    ax.text(keycloak_stop + 1, 0.55,
-            'Keycloak\nstopped', fontsize=8, color='gray')
-
-    ax.set_xlabel('Time (s)')
-    ax.set_ylabel('Error Rate')
-    ax.set_ylim(-0.05, 1.15)
-    ax.set_title('Failover Test — Error Rate Timeline')
-    ax.legend(fontsize=8)
-    ax.grid(alpha=0.3)
+    ax_lat.set_xlabel('Time (s)')
+    ax_lat.set_ylabel('Latency p50 (ms)')
+    ax_lat.legend(fontsize=8)
 
     plt.tight_layout()
     plt.savefig(output_path, dpi=300, bbox_inches='tight')
