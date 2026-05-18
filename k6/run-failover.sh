@@ -31,9 +31,11 @@ echo ""
 
 mkdir -p results
 TS=$(date +%Y%m%d_%H%M%S)
+RAW="results/failover_raw_${TS}.json"
 SUMMARY="results/failover_summary_${TS}.json"
 
 k6 run \
+  --out json=${RAW} \
   --summary-export ${SUMMARY} \
   -e SERVICE_B_IP="${SERVICE_B_IP}" \
   -e KEYCLOAK_IP="${KEYCLOAK_IP}" \
@@ -41,4 +43,6 @@ k6 run \
   k6/failover-test.js
 
 echo ""
-echo "Results saved to: ${SUMMARY}"
+echo "Results saved to:"
+echo "  ${RAW}      (raw metrics — for failover timeline plot)"
+echo "  ${SUMMARY}  (summary stats)"
