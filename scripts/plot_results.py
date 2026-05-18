@@ -112,8 +112,8 @@ def plot_latency_bars(metrics: dict, output_path: str):
     Reads pre-computed percentiles from summary JSON.
     """
     scenarios = list(metrics.keys())
-    labels    = ['p50 (med)', 'p90', 'p95']
-    pct_keys  = ['med', 'p(90)', 'p(95)']
+    labels    = ['p50 (med)', 'p90', 'p95', 'p99']
+    pct_keys  = ['med', 'p(90)', 'p(95)', 'p(99)']
     x         = np.arange(len(labels))
     width     = 0.25
 
@@ -232,8 +232,8 @@ def plot_failover_timeline(events: dict, keycloak_stop: float, output_path: str)
 
 def print_summary_table(metrics: dict):
     print()
-    print(f"{'Scenario':<25} {'Avg':>8} {'p50':>8} {'p90':>8} {'p95':>8} {'Error%':>8}")
-    print('-' * 67)
+    print(f"{'Scenario':<25} {'Avg':>8} {'p50':>8} {'p90':>8} {'p95':>8} {'p99':>8} {'Error%':>8}")
+    print('-' * 76)
     for scenario, m in metrics.items():
         vl  = m.get('verification_latency', {})
         err = m.get('error_rate', {}).get('value', 0) * 100
@@ -242,6 +242,7 @@ def print_summary_table(metrics: dict):
               f"{vl.get('med', 0):>8.2f} "
               f"{vl.get('p(90)', 0):>8.2f} "
               f"{vl.get('p(95)', 0):>8.2f} "
+              f"{vl.get('p(99)', 0):>8.2f} "
               f"{err:>7.1f}%")
     print()
 

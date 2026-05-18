@@ -39,6 +39,7 @@ const reqCounter          = new Counter('total_requests');
 const refreshCounter      = new Counter('token_refresh_count');
 
 export const options = {
+    summaryTrendStats: ['avg', 'min', 'med', 'max', 'p(90)', 'p(95)', 'p(99)'],
     scenarios: {
         // Phase 1: steady baseline — spans >1 TTL cycle (TTL=30s), establishes refresh rhythm
         steady: {

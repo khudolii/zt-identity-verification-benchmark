@@ -45,6 +45,7 @@ const refresh_latency       = new Trend('token_refresh_latency', true);
 const refresh_count         = new Counter('token_refresh_count');
 
 export const options = {
+    summaryTrendStats: ['avg', 'min', 'med', 'max', 'p(90)', 'p(95)', 'p(99)'],
     scenarios: {
         introspection: {
             executor: 'constant-arrival-rate',

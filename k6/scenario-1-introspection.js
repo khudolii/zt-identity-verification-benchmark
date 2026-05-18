@@ -22,6 +22,7 @@ const errorRate  = new Rate('error_rate');
 const reqCounter = new Counter('total_requests');
 
 export const options = {
+    summaryTrendStats: ['avg', 'min', 'med', 'max', 'p(90)', 'p(95)', 'p(99)'],
     scenarios: {
         // Phase 1: warm steady state
         steady: {
