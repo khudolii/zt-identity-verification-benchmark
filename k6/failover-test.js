@@ -112,6 +112,7 @@ function getValidToken() {
             cachedToken    = body.access_token;
             tokenExpiresAt = now + (body.expires_in * 1000);
         } catch (_) {
+            console.log(__ENV.SCENARIO + ' - Failed to parse token response');
             // Keycloak is down — IdP returned non-JSON (HTML error page).
             // Keep the existing cached token; Service B will reject it and
             // the failure surfaces as a check failure, not an unhandled exception.
