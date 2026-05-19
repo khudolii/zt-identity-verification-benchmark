@@ -5,12 +5,17 @@
  * Stop Keycloak at the ~90s mark to observe failover behavior.
  *
  * Expected results after Keycloak stops:
- *   Introspection → error rate jumps to 100% immediately (every request hits Keycloak)
- *   JWT           → works until current token expires (~30s), then fails on refresh
- *   VC            → continues working indefinitely (fully local, no IdP dependency)
+ *   Introspection → fails immediately — Service B hits Keycloak on every request AND
+ *                   VUs can no longer refresh their token (double dependency)
+ *   JWT           → keeps working ~30s — Service B verifies locally, token still valid;
+ *                   fails once token expires and VUs can no longer refresh
+ *   VC            → never fails — fully local Ed25519 verification, zero IdP dependency
  *
  * This is the key architectural finding of the paper:
- *   three different resilience profiles from the same IdP failure.
+ *   three distinct resilience profiles from the same IdP failure event.
+ *
+ * All scenarios use per-VU token refresh (TTL=30s) so token expiry is
+ * never the cause of failure — only IdP unavailability is.
  *
  * Usage:
  *   # Terminal 1: start test
@@ -22,8 +27,7 @@
  * Required env vars:
  *   SERVICE_B_IP   — GCP VM running Service B
  *   KEYCLOAK_IP    — Hetzner VM running Keycloak
- *   TOKEN          — pre-fetched token for introspection scenario
- *   CLIENT_SECRET  — service-a secret for JWT per-VU refresh
+ *   CLIENT_SECRET  — service-a secret (both scenarios refresh per-VU)
  */
 
 import http from 'k6/http';
@@ -41,6 +45,7 @@ const refresh_latency       = new Trend('token_refresh_latency', true);
 const refresh_count         = new Counter('token_refresh_count');
 
 export const options = {
+    summaryTrendStats: ['avg', 'min', 'med', 'max', 'p(90)', 'p(95)', 'p(99)'],
     scenarios: {
         introspection: {
             executor: 'constant-arrival-rate',
@@ -74,7 +79,6 @@ export const options = {
 };
 
 const SERVICE_B_IP  = __ENV.SERVICE_B_IP || 'localhost';
-const TOKEN         = __ENV.TOKEN;          // used by introspection only
 const CLIENT_SECRET = __ENV.CLIENT_SECRET || 'service-a-secret';
 const TOKEN_URL     = `http://${__ENV.KEYCLOAK_IP}/realms/zt-benchmark/protocol/openid-connect/token`;
 const VP_JSON       = open('../vp.json');
@@ -104,9 +108,16 @@ function getValidToken() {
         refresh_latency.add(res.timings.duration);
         refresh_count.add(1);
 
-        const body = JSON.parse(res.body);
-        cachedToken    = body.access_token;
-        tokenExpiresAt = now + (body.expires_in * 1000);
+        try {
+            const body = JSON.parse(res.body);
+            cachedToken    = body.access_token;
+            tokenExpiresAt = now + (body.expires_in * 1000);
+        } catch (_) {
+            console.log(__ENV.SCENARIO + ' - Failed to parse token response');
+            // Keycloak is down — IdP returned non-JSON (HTML error page).
+            // Keep the existing cached token; Service B will reject it and
+            // the failure surfaces as a check failure, not an unhandled exception.
+        }
     }
     return cachedToken;
 }
@@ -116,9 +127,11 @@ export default function () {
     let res;
 
     if (scenario === 'introspection') {
-        // Uses long-lived pre-fetched token — Keycloak validates on every request
+        // Per-VU refresh — token is always fresh, so failures are purely due to
+        // Keycloak being unreachable (either for refresh or for introspection)
+        const token = getValidToken();
         res = http.post(URLS.introspection, null, {
-            headers: { 'Authorization': `Bearer ${TOKEN}` },
+            headers: { 'Authorization': `Bearer ${token}` },
             timeout: '3s',
         });
         const ok = check(res, { 'introspection ok': (r) => r.status === 200 });

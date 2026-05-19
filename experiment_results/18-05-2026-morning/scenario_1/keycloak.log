@@ -1,0 +1,2113 @@
+Linux 6.8.0-90-generic (zt-keycloak) 	05/19/2026 	_x86_64_	(4 CPU)
+
+06:57:57 AM     CPU     %user     %nice   %system   %iowait    %steal     %idle
+06:57:58 AM     all     18.18      0.00      7.79      0.00      0.00     74.03
+
+06:57:57 AM kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+06:57:58 AM   3078972   5783828   1757652     22.16     85344   2790820   5437976     68.56   1879572   2660540       332
+
+06:57:57 AM     IFACE   rxpck/s   txpck/s    rxkB/s    txkB/s   rxcmp/s   txcmp/s  rxmcst/s   %ifutil
+06:57:58 AM        lo   2041.00   2041.00    636.27    636.27      0.00      0.00      0.00      0.00
+06:57:58 AM      eth0    304.00    458.00    331.65    227.11      0.00      0.00      0.00      0.00
+06:57:58 AM   docker0   1002.00   1003.00    229.02    399.12      0.00      0.00      0.00      0.00
+06:57:58 AM veth927c207   1002.00   1003.00    242.71    399.12      0.00      0.00      0.00      0.03
+
+06:57:58 AM     CPU     %user     %nice   %system   %iowait    %steal     %idle
+06:57:59 AM     all     16.62      0.00      8.44      0.00      0.00     74.94
+
+06:57:58 AM kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+06:57:59 AM   3078060   5782920   1758404     22.17     85344   2790844   5438040     68.56   1879828   2660544       312
+
+06:57:58 AM     IFACE   rxpck/s   txpck/s    rxkB/s    txkB/s   rxcmp/s   txcmp/s  rxmcst/s   %ifutil
+06:57:59 AM        lo   2020.00   2020.00    631.45    631.45      0.00      0.00      0.00      0.00
+06:57:59 AM      eth0    291.00    444.00    326.22    224.73      0.00      0.00      0.00      0.00
+06:57:59 AM   docker0    998.00    997.00    228.80    395.41      0.00      0.00      0.00      0.00
+06:57:59 AM veth927c207    998.00    997.00    242.44    395.41      0.00      0.00      0.00      0.03
+
+06:57:59 AM     CPU     %user     %nice   %system   %iowait    %steal     %idle
+06:58:00 AM     all     17.14      0.00      8.18      0.00      0.00     74.68
+
+06:57:59 AM kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+06:58:00 AM   3077612   5782512   1758620     22.17     85344   2790884   5438104     68.56   1880196   2660584       412
+
+06:57:59 AM     IFACE   rxpck/s   txpck/s    rxkB/s    txkB/s   rxcmp/s   txcmp/s  rxmcst/s   %ifutil
+06:58:00 AM        lo   2048.00   2048.00    634.94    634.94      0.00      0.00      0.00      0.00
+06:58:00 AM      eth0    274.00    437.00    326.39    223.95      0.00      0.00      0.00      0.00
+06:58:00 AM   docker0   1000.00   1000.00    228.91    397.27      0.00      0.00      0.00      0.00
+06:58:00 AM veth927c207   1000.00   1000.00    242.58    397.27      0.00      0.00      0.00      0.03
+
+06:58:00 AM     CPU     %user     %nice   %system   %iowait    %steal     %idle
+06:58:01 AM     all     16.33      0.00      7.40      0.00      0.00     76.28
+
+06:58:00 AM kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+06:58:01 AM   3073860   5778804   1762204     22.22     85344   2790908   5438232     68.56   1883220   2660628       436
+
+06:58:00 AM     IFACE   rxpck/s   txpck/s    rxkB/s    txkB/s   rxcmp/s   txcmp/s  rxmcst/s   %ifutil
+06:58:01 AM        lo   2029.00   2029.00    633.76    633.76      0.00      0.00      0.00      0.00
+06:58:01 AM      eth0    201.00    401.00    320.38    220.43      0.00      0.00      0.00      0.00
+06:58:01 AM   docker0   1000.00   1000.00    228.91    397.27      0.00      0.00      0.00      0.00
+06:58:01 AM veth927c207   1000.00   1000.00    242.58    397.27      0.00      0.00      0.00      0.03
+
+06:58:01 AM     CPU     %user     %nice   %system   %iowait    %steal     %idle
+06:58:02 AM     all     19.64      0.00      7.14      0.00      0.00     73.21
+
+06:58:01 AM kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+06:58:02 AM   3070108   5775076   1765688     22.26     85344   2790944   5438364     68.57   1885616   2660652       316
+
+06:58:01 AM     IFACE   rxpck/s   txpck/s    rxkB/s    txkB/s   rxcmp/s   txcmp/s  rxmcst/s   %ifutil
+06:58:02 AM        lo   2059.00   2059.00    635.54    635.54      0.00      0.00      0.00      0.00
+06:58:02 AM      eth0    202.00    401.00    320.42    220.37      0.00      0.00      0.00      0.00
+06:58:02 AM   docker0   1000.00   1000.00    228.91    397.27      0.00      0.00      0.00      0.00
+06:58:02 AM veth927c207   1000.00   1000.00    242.58    397.27      0.00      0.00      0.00      0.03
+
+06:58:02 AM     CPU     %user     %nice   %system   %iowait    %steal     %idle
+06:58:03 AM     all     13.62      0.00      7.71      0.00      0.00     78.66
+
+06:58:02 AM kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+06:58:03 AM   3068652   5773660   1767000     22.28     85344   2790976   5441880     68.61   1887560   2660692       404
+
+06:58:02 AM     IFACE   rxpck/s   txpck/s    rxkB/s    txkB/s   rxcmp/s   txcmp/s  rxmcst/s   %ifutil
+06:58:03 AM        lo   2012.00   2012.00    632.78    632.78      0.00      0.00      0.00      0.00
+06:58:03 AM      eth0    212.00    410.00    322.48    222.76      0.00      0.00      0.00      0.00
+06:58:03 AM   docker0   1000.00   1000.00    228.91    397.27      0.00      0.00      0.00      0.00
+06:58:03 AM veth927c207   1000.00   1000.00    242.58    397.27      0.00      0.00      0.00      0.03
+
+06:58:03 AM     CPU     %user     %nice   %system   %iowait    %steal     %idle
+06:58:04 AM     all     13.55      0.00      7.16      0.00      0.00     79.28
+
+06:58:03 AM kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+06:58:04 AM   3067420   5772460   1768004     22.29     85344   2791008   5441880     68.61   1887924   2660724       460
+
+06:58:03 AM     IFACE   rxpck/s   txpck/s    rxkB/s    txkB/s   rxcmp/s   txcmp/s  rxmcst/s   %ifutil
+06:58:04 AM        lo   2039.00   2039.00    634.40    634.40      0.00      0.00      0.00      0.00
+06:58:04 AM      eth0    201.00    401.00    320.38    220.43      0.00      0.00      0.00      0.00
+06:58:04 AM   docker0   1000.00   1000.00    228.91    397.27      0.00      0.00      0.00      0.00
+06:58:04 AM veth927c207   1000.00   1000.00    242.58    397.27      0.00      0.00      0.00      0.03
+
+06:58:04 AM     CPU     %user     %nice   %system   %iowait    %steal     %idle
+06:58:05 AM     all     16.02      0.00      7.49      0.00      0.00     76.49
+
+06:58:04 AM kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+06:58:05 AM   3066972   5772040   1768316     22.29     85344   2791032   5442008     68.61   1888264   2660752       484
+
+06:58:04 AM     IFACE   rxpck/s   txpck/s    rxkB/s    txkB/s   rxcmp/s   txcmp/s  rxmcst/s   %ifutil
+06:58:05 AM        lo   2026.00   2026.00    635.32    635.32      0.00      0.00      0.00      0.00
+06:58:05 AM      eth0    201.00    401.00    321.91    220.38      0.00      0.00      0.00      0.00
+06:58:05 AM   docker0   1001.00   1003.00    228.96    399.12      0.00      0.00      0.00      0.00
+06:58:05 AM veth927c207   1001.00   1003.00    242.65    399.12      0.00      0.00      0.00      0.03
+
+06:58:05 AM     CPU     %user     %nice   %system   %iowait    %steal     %idle
+06:58:06 AM     all     13.20      0.00      7.61      0.00      0.00     79.19
+
+06:58:05 AM kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+06:58:06 AM   3064228   5769324   1770844     22.33     85344   2791072   5437968     68.56   1889548   2660780       540
+
+06:58:05 AM     IFACE   rxpck/s   txpck/s    rxkB/s    txkB/s   rxcmp/s   txcmp/s  rxmcst/s   %ifutil
+06:58:06 AM        lo   2033.00   2033.00    634.08    634.08      0.00      0.00      0.00      0.00
+06:58:06 AM      eth0    200.00    400.00    320.31    220.31      0.00      0.00      0.00      0.00
+06:58:06 AM   docker0   1001.00   1000.00    228.96    397.27      0.00      0.00      0.00      0.00
+06:58:06 AM veth927c207   1001.00   1000.00    242.64    397.27      0.00      0.00      0.00      0.03
+
+06:58:06 AM     CPU     %user     %nice   %system   %iowait    %steal     %idle
+06:58:07 AM     all     14.83      0.00      7.67      0.00      0.00     77.49
+
+06:58:06 AM kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+06:58:07 AM   3065744   5770876   1769184     22.31     85344   2791100   5434580     68.52   1888148   2660816       432
+
+06:58:06 AM     IFACE   rxpck/s   txpck/s    rxkB/s    txkB/s   rxcmp/s   txcmp/s  rxmcst/s   %ifutil
+06:58:07 AM        lo   2043.00   2043.00    632.94    632.94      0.00      0.00      0.00      0.00
+06:58:07 AM      eth0    203.00    403.00    320.51    220.61      0.00      0.00      0.00      0.00
+06:58:07 AM   docker0    998.00    997.00    228.80    395.41      0.00      0.00      0.00      0.00
+06:58:07 AM veth927c207    998.00    997.00    242.44    395.41      0.00      0.00      0.00      0.03
+
+06:58:07 AM     CPU     %user     %nice   %system   %iowait    %steal     %idle
+06:58:08 AM     all     12.98      0.00      8.14      0.00      0.00     78.88
+
+06:58:07 AM kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+06:58:08 AM   3064796   5769940   1769900     22.31     85344   2791136   5434644     68.52   1888424   2660828       468
+
+06:58:07 AM     IFACE   rxpck/s   txpck/s    rxkB/s    txkB/s   rxcmp/s   txcmp/s  rxmcst/s   %ifutil
+06:58:08 AM        lo   2020.00   2020.00    633.21    633.21      0.00      0.00      0.00      0.00
+06:58:08 AM      eth0    199.00    399.00    318.71    220.25      0.00      0.00      0.00      0.00
+06:58:08 AM   docker0   1000.00   1000.00    228.91    397.27      0.00      0.00      0.00      0.00
+06:58:08 AM veth927c207   1000.00   1000.00    242.58    397.27      0.00      0.00      0.00      0.03
+
+06:58:08 AM     CPU     %user     %nice   %system   %iowait    %steal     %idle
+06:58:09 AM     all     11.89      0.00      6.72      0.00      0.00     81.40
+
+06:58:08 AM kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+06:58:09 AM   3064324   5769512   1770164     22.32     85344   2791168   5434644     68.52   1888608   2660872       500
+
+06:58:08 AM     IFACE   rxpck/s   txpck/s    rxkB/s    txkB/s   rxcmp/s   txcmp/s  rxmcst/s   %ifutil
+06:58:09 AM        lo   2021.00   2021.00    633.25    633.25      0.00      0.00      0.00      0.00
+06:58:09 AM      eth0    201.00    400.00    321.91    220.31      0.00      0.00      0.00      0.00
+06:58:09 AM   docker0   1000.00   1001.00    228.91    397.33      0.00      0.00      0.00      0.00
+06:58:09 AM veth927c207   1000.00   1001.00    242.58    397.33      0.00      0.00      0.00      0.03
+
+06:58:09 AM     CPU     %user     %nice   %system   %iowait    %steal     %idle
+06:58:10 AM     all     10.31      0.00      7.99      0.00      0.00     81.70
+
+06:58:09 AM kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+06:58:10 AM   3064100   5769320   1770224     22.32     85344   2791192   5434644     68.52   1888876   2660904       532
+
+06:58:09 AM     IFACE   rxpck/s   txpck/s    rxkB/s    txkB/s   rxcmp/s   txcmp/s  rxmcst/s   %ifutil
+06:58:10 AM        lo   2015.00   2015.00    632.87    632.87      0.00      0.00      0.00      0.00
+06:58:10 AM      eth0    200.00    401.00    318.78    220.43      0.00      0.00      0.00      0.00
+06:58:10 AM   docker0   1000.00   1000.00    228.91    397.27      0.00      0.00      0.00      0.00
+06:58:10 AM veth927c207   1000.00   1000.00    242.58    397.27      0.00      0.00      0.00      0.03
+
+06:58:10 AM     CPU     %user     %nice   %system   %iowait    %steal     %idle
+06:58:11 AM     all     13.59      0.00      7.69      0.26      0.00     78.46
+
+06:58:10 AM kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+06:58:11 AM   3063176   5768432   1770880     22.33     85344   2791228   5434708     68.52   1889268   2660940       564
+
+06:58:10 AM     IFACE   rxpck/s   txpck/s    rxkB/s    txkB/s   rxcmp/s   txcmp/s  rxmcst/s   %ifutil
+06:58:11 AM        lo   2033.00   2033.00    635.73    635.73      0.00      0.00      0.00      0.00
+06:58:11 AM      eth0    201.00    401.00    321.91    220.38      0.00      0.00      0.00      0.00
+06:58:11 AM   docker0   1002.00   1003.00    229.02    399.12      0.00      0.00      0.00      0.00
+06:58:11 AM veth927c207   1002.00   1003.00    242.71    399.12      0.00      0.00      0.00      0.03
+
+06:58:11 AM     CPU     %user     %nice   %system   %iowait    %steal     %idle
+06:58:12 AM     all     11.03      0.00      7.44      0.00      0.00     81.54
+
+06:58:11 AM kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+06:58:12 AM   3062952   5768244   1770884     22.33     85344   2791260   5434708     68.52   1889504   2660976       436
+
+06:58:11 AM     IFACE   rxpck/s   txpck/s    rxkB/s    txkB/s   rxcmp/s   txcmp/s  rxmcst/s   %ifutil
+06:58:12 AM        lo   2037.00   2037.00    634.22    634.22      0.00      0.00      0.00      0.00
+06:58:12 AM      eth0    200.00    400.00    320.31    220.31      0.00      0.00      0.00      0.00
+06:58:12 AM   docker0    998.00    997.00    228.80    395.41      0.00      0.00      0.00      0.00
+06:58:12 AM veth927c207    998.00    997.00    242.44    395.41      0.00      0.00      0.00      0.03
+
+06:58:12 AM     CPU     %user     %nice   %system   %iowait    %steal     %idle
+06:58:13 AM     all     10.54      0.00      7.46      0.00      0.00     82.01
+
+06:58:12 AM kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+06:58:13 AM   3064176   5769484   1769500     22.31     85344   2791284   5431520     68.48   1888292   2660992       472
+
+06:58:12 AM     IFACE   rxpck/s   txpck/s    rxkB/s    txkB/s   rxcmp/s   txcmp/s  rxmcst/s   %ifutil
+06:58:13 AM        lo   2019.00   2019.00    633.13    633.13      0.00      0.00      0.00      0.00
+06:58:13 AM      eth0    203.00    402.00    320.51    220.50      0.00      0.00      0.00      0.00
+06:58:13 AM   docker0   1002.00   1003.00    229.02    399.12      0.00      0.00      0.00      0.00
+06:58:13 AM veth927c207   1002.00   1003.00    242.71    399.12      0.00      0.00      0.00      0.03
+
+06:58:13 AM     CPU     %user     %nice   %system   %iowait    %steal     %idle
+06:58:14 AM     all     14.47      0.00      8.63      0.25      0.00     76.65
+
+06:58:13 AM kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+06:58:14 AM   3059988   5765344   1773424     22.36     85344   2791332   5435040     68.52   1890000   2661040       572
+
+06:58:13 AM     IFACE   rxpck/s   txpck/s    rxkB/s    txkB/s   rxcmp/s   txcmp/s  rxmcst/s   %ifutil
+06:58:14 AM        lo   2040.00   2040.00    634.39    634.39      0.00      0.00      0.00      0.00
+06:58:14 AM      eth0    212.00    409.00    322.64    222.33      0.00      0.00      0.00      0.00
+06:58:14 AM   docker0   1000.00   1000.00    228.91    397.27      0.00      0.00      0.00      0.00
+06:58:14 AM veth927c207   1000.00   1000.00    242.58    397.27      0.00      0.00      0.00      0.03
+
+06:58:14 AM     CPU     %user     %nice   %system   %iowait    %steal     %idle
+06:58:15 AM     all      9.56      0.00      7.24      0.00      0.00     83.20
+
+06:58:14 AM kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+06:58:15 AM   3059512   5764896   1773700     22.36     85344   2791356   5435040     68.52   1890232   2661068       588
+
+06:58:14 AM     IFACE   rxpck/s   txpck/s    rxkB/s    txkB/s   rxcmp/s   txcmp/s  rxmcst/s   %ifutil
+06:58:15 AM        lo   2008.00   2008.00    632.55    632.55      0.00      0.00      0.00      0.00
+06:58:15 AM      eth0    200.00    400.00    320.31    220.31      0.00      0.00      0.00      0.00
+06:58:15 AM   docker0   1000.00   1000.00    228.91    397.27      0.00      0.00      0.00      0.00
+06:58:15 AM veth927c207   1000.00   1000.00    242.58    397.27      0.00      0.00      0.00      0.03
+
+06:58:15 AM     CPU     %user     %nice   %system   %iowait    %steal     %idle
+06:58:16 AM     all     11.00      0.00      7.16      0.00      0.00     81.84
+
+06:58:15 AM kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+06:58:16 AM   3058840   5764264   1774164     22.37     85344   2791396   5435104     68.52   1890360   2661108       656
+
+06:58:15 AM     IFACE   rxpck/s   txpck/s    rxkB/s    txkB/s   rxcmp/s   txcmp/s  rxmcst/s   %ifutil
+06:58:16 AM        lo   2032.00   2032.00    633.99    633.99      0.00      0.00      0.00      0.00
+06:58:16 AM      eth0    201.00    401.00    320.38    220.43      0.00      0.00      0.00      0.00
+06:58:16 AM   docker0   1000.00   1001.00    228.91    397.33      0.00      0.00      0.00      0.00
+06:58:16 AM veth927c207   1000.00   1001.00    242.58    397.33      0.00      0.00      0.00      0.03
+
+06:58:16 AM     CPU     %user     %nice   %system   %iowait    %steal     %idle
+06:58:17 AM     all     10.31      0.00      7.99      0.00      0.00     81.70
+
+06:58:16 AM kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+06:58:17 AM   3057644   5763092   1775172     22.38     85344   2791424   5435104     68.52   1890500   2661132       680
+
+06:58:16 AM     IFACE   rxpck/s   txpck/s    rxkB/s    txkB/s   rxcmp/s   txcmp/s  rxmcst/s   %ifutil
+06:58:17 AM        lo   2021.00   2021.00    633.23    633.23      0.00      0.00      0.00      0.00
+06:58:17 AM      eth0    200.00    400.00    320.31    220.31      0.00      0.00      0.00      0.00
+06:58:17 AM   docker0   1000.00   1000.00    228.91    397.27      0.00      0.00      0.00      0.00
+06:58:17 AM veth927c207   1000.00   1000.00    242.58    397.27      0.00      0.00      0.00      0.03
+
+06:58:17 AM     CPU     %user     %nice   %system   %iowait    %steal     %idle
+06:58:18 AM     all      9.69      0.00      7.91      0.00      0.00     82.40
+
+06:58:17 AM kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+06:58:18 AM   3056944   5762420   1775700     22.39     85344   2791452   5435104     68.52   1890712   2661160       732
+
+06:58:17 AM     IFACE   rxpck/s   txpck/s    rxkB/s    txkB/s   rxcmp/s   txcmp/s  rxmcst/s   %ifutil
+06:58:18 AM        lo   2030.00   2030.00    633.83    633.83      0.00      0.00      0.00      0.00
+06:58:18 AM      eth0    201.00    401.00    320.38    220.43      0.00      0.00      0.00      0.00
+06:58:18 AM   docker0    998.00    998.00    228.80    395.48      0.00      0.00      0.00      0.00
+06:58:18 AM veth927c207    998.00    998.00    242.44    395.48      0.00      0.00      0.00      0.03
+
+06:58:18 AM     CPU     %user     %nice   %system   %iowait    %steal     %idle
+06:58:19 AM     all     11.99      0.00      7.91      0.00      0.00     80.10
+
+06:58:18 AM kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+06:58:19 AM   3056720   5762228   1775764     22.39     85344   2791484   5435104     68.52   1890992   2661192       768
+
+06:58:18 AM     IFACE   rxpck/s   txpck/s    rxkB/s    txkB/s   rxcmp/s   txcmp/s  rxmcst/s   %ifutil
+06:58:19 AM        lo   2032.00   2032.00    633.93    633.93      0.00      0.00      0.00      0.00
+06:58:19 AM      eth0    200.00    400.00    320.31    220.31      0.00      0.00      0.00      0.00
+06:58:19 AM   docker0   1002.00   1002.00    229.02    399.05      0.00      0.00      0.00      0.00
+06:58:19 AM veth927c207   1002.00   1002.00    242.71    399.05      0.00      0.00      0.00      0.03
+
+06:58:19 AM     CPU     %user     %nice   %system   %iowait    %steal     %idle
+06:58:20 AM     all     15.13      0.00      7.69      0.00      0.00     77.18
+
+06:58:19 AM kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+06:58:20 AM   3053280   5758840   1778996     22.43     85344   2791524   5438420     68.57   1892880   2661244       820
+
+06:58:19 AM     IFACE   rxpck/s   txpck/s    rxkB/s    txkB/s   rxcmp/s   txcmp/s  rxmcst/s   %ifutil
+06:58:20 AM        lo   2014.00   2014.00    632.92    632.92      0.00      0.00      0.00      0.00
+06:58:20 AM      eth0    210.00    409.00    322.35    222.70      0.00      0.00      0.00      0.00
+06:58:20 AM   docker0   1000.00   1000.00    228.91    397.27      0.00      0.00      0.00      0.00
+06:58:20 AM veth927c207   1000.00   1000.00    242.58    397.27      0.00      0.00      0.00      0.03
+
+06:58:20 AM     CPU     %user     %nice   %system   %iowait    %steal     %idle
+06:58:21 AM     all     15.35      0.00      6.91      0.00      0.00     77.75
+
+06:58:20 AM kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+06:58:21 AM   3053280   5758864   1778856     22.43     85344   2791552   5438484     68.57   1893260   2661268       852
+
+06:58:20 AM     IFACE   rxpck/s   txpck/s    rxkB/s    txkB/s   rxcmp/s   txcmp/s  rxmcst/s   %ifutil
+06:58:21 AM        lo   2044.00   2044.00    634.66    634.66      0.00      0.00      0.00      0.00
+06:58:21 AM      eth0    201.00    402.00    320.38    220.49      0.00      0.00      0.00      0.00
+06:58:21 AM   docker0   1001.00   1001.00    229.84    397.33      0.00      0.00      0.00      0.00
+06:58:21 AM veth927c207   1001.00   1001.00    243.53    397.33      0.00      0.00      0.00      0.03
+
+06:58:21 AM     CPU     %user     %nice   %system   %iowait    %steal     %idle
+06:58:22 AM     all     17.86      0.00      7.40      0.00      0.00     74.74
+
+06:58:21 AM kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+06:58:22 AM   3052580   5758192   1779344     22.43     85344   2791584   5438612     68.57   1893568   2661296       116
+
+06:58:21 AM     IFACE   rxpck/s   txpck/s    rxkB/s    txkB/s   rxcmp/s   txcmp/s  rxmcst/s   %ifutil
+06:58:22 AM        lo   2037.00   2037.00    634.20    634.20      0.00      0.00      0.00      0.00
+06:58:22 AM      eth0    214.00    413.00    321.24    221.15      0.00      0.00      0.00      0.00
+06:58:22 AM   docker0    999.00    999.00    227.97    397.20      0.00      0.00      0.00      0.00
+06:58:22 AM veth927c207    999.00    999.00    241.63    397.20      0.00      0.00      0.00      0.03
+
+06:58:22 AM     CPU     %user     %nice   %system   %iowait    %steal     %idle
+06:58:23 AM     all      9.67      0.00      8.65      0.00      0.00     81.68
+
+06:58:22 AM kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+06:58:23 AM   3051880   5757520   1779896     22.44     85344   2791620   5438612     68.57   1893840   2661324       296
+
+06:58:22 AM     IFACE   rxpck/s   txpck/s    rxkB/s    txkB/s   rxcmp/s   txcmp/s  rxmcst/s   %ifutil
+06:58:23 AM        lo   2041.00   2041.00    635.41    635.41      0.00      0.00      0.00      0.00
+06:58:23 AM      eth0    201.00    401.00    320.38    220.43      0.00      0.00      0.00      0.00
+06:58:23 AM   docker0   1003.00   1002.00    229.94    397.39      0.00      0.00      0.00      0.00
+06:58:23 AM veth927c207   1003.00   1002.00    243.65    397.39      0.00      0.00      0.00      0.03
+
+06:58:23 AM     CPU     %user     %nice   %system   %iowait    %steal     %idle
+06:58:24 AM     all     11.43      0.00      7.01      0.00      0.00     81.56
+
+06:58:23 AM kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+06:58:24 AM   3060872   5766544   1770732     22.33     85344   2791652   5435424     68.53   1892396   2661356       348
+
+06:58:23 AM     IFACE   rxpck/s   txpck/s    rxkB/s    txkB/s   rxcmp/s   txcmp/s  rxmcst/s   %ifutil
+06:58:24 AM        lo   2020.00   2020.00    632.34    632.34      0.00      0.00      0.00      0.00
+06:58:24 AM      eth0    202.00    402.00    320.44    220.49      0.00      0.00      0.00      0.00
+06:58:24 AM   docker0    997.00    998.00    227.87    397.14      0.00      0.00      0.00      0.00
+06:58:24 AM veth927c207    997.00    998.00    241.50    397.14      0.00      0.00      0.00      0.03
+
+06:58:24 AM     CPU     %user     %nice   %system   %iowait    %steal     %idle
+06:58:25 AM     all     10.51      0.00      7.69      0.00      0.00     81.79
+
+06:58:24 AM kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+06:58:25 AM   3060092   5765788   1771368     22.33     85344   2791684   5435420     68.53   1892672   2661380       484
+
+06:58:24 AM     IFACE   rxpck/s   txpck/s    rxkB/s    txkB/s   rxcmp/s   txcmp/s  rxmcst/s   %ifutil
+06:58:25 AM        lo   2023.00   2023.00    633.38    633.38      0.00      0.00      0.00      0.00
+06:58:25 AM      eth0    217.00    412.00    322.94    222.57      0.00      0.00      0.00      0.00
+06:58:25 AM   docker0   1001.00   1000.00    229.84    397.27      0.00      0.00      0.00      0.00
+06:58:25 AM veth927c207   1001.00   1000.00    243.53    397.27      0.00      0.00      0.00      0.03
+
+06:58:25 AM     CPU     %user     %nice   %system   %iowait    %steal     %idle
+06:58:26 AM     all      9.09      0.00      8.05      0.00      0.00     82.86
+
+06:58:25 AM kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+06:58:26 AM   3059868   5765612   1771412     22.33     85344   2791712   5435420     68.53   1892800   2661428       504
+
+06:58:25 AM     IFACE   rxpck/s   txpck/s    rxkB/s    txkB/s   rxcmp/s   txcmp/s  rxmcst/s   %ifutil
+06:58:26 AM        lo   2012.00   2012.00    633.66    633.66      0.00      0.00      0.00      0.00
+06:58:26 AM      eth0    202.00    402.00    320.43    220.43      0.00      0.00      0.00      0.00
+06:58:26 AM   docker0   1001.00   1001.00    228.96    397.33      0.00      0.00      0.00      0.00
+06:58:26 AM veth927c207   1001.00   1001.00    242.64    397.33      0.00      0.00      0.00      0.03
+
+06:58:26 AM     CPU     %user     %nice   %system   %iowait    %steal     %idle
+06:58:27 AM     all     11.86      0.00      7.99      0.00      0.00     80.15
+
+06:58:26 AM kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+06:58:27 AM   3058132   5763908   1772944     22.35     85344   2791744   5435484     68.53   1892948   2661460       360
+
+06:58:26 AM     IFACE   rxpck/s   txpck/s    rxkB/s    txkB/s   rxcmp/s   txcmp/s  rxmcst/s   %ifutil
+06:58:27 AM        lo   2014.00   2014.00    632.92    632.92      0.00      0.00      0.00      0.00
+06:58:27 AM      eth0    200.00    401.00    320.31    221.35      0.00      0.00      0.00      0.00
+06:58:27 AM   docker0   1001.00   1001.00    228.96    397.33      0.00      0.00      0.00      0.00
+06:58:27 AM veth927c207   1001.00   1001.00    242.64    397.33      0.00      0.00      0.00      0.03
+
+06:58:27 AM     CPU     %user     %nice   %system   %iowait    %steal     %idle
+06:58:28 AM     all     10.46      0.00      7.91      0.00      0.00     81.63
+
+06:58:27 AM kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+06:58:28 AM   3057460   5763252   1773404     22.36     85344   2791772   5435484     68.53   1893336   2661476       424
+
+06:58:27 AM     IFACE   rxpck/s   txpck/s    rxkB/s    txkB/s   rxcmp/s   txcmp/s  rxmcst/s   %ifutil
+06:58:28 AM        lo   2014.00   2014.00    631.98    631.98      0.00      0.00      0.00      0.00
+06:58:28 AM      eth0    201.00    400.00    320.38    219.39      0.00      0.00      0.00      0.00
+06:58:28 AM   docker0    997.00    998.00    227.87    397.14      0.00      0.00      0.00      0.00
+06:58:28 AM veth927c207    997.00    998.00    241.50    397.14      0.00      0.00      0.00      0.03
+
+06:58:28 AM     CPU     %user     %nice   %system   %iowait    %steal     %idle
+06:58:29 AM     all     10.36      0.00      7.51      0.00      0.00     82.12
+
+06:58:28 AM kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+06:58:29 AM   3057236   5763056   1773404     22.36     85344   2791812   5435484     68.53   1893488   2661504       464
+
+06:58:28 AM     IFACE   rxpck/s   txpck/s    rxkB/s    txkB/s   rxcmp/s   txcmp/s  rxmcst/s   %ifutil
+06:58:29 AM        lo   2017.00   2017.00    633.05    633.05      0.00      0.00      0.00      0.00
+06:58:29 AM      eth0    200.00    400.00    320.31    220.31      0.00      0.00      0.00      0.00
+06:58:29 AM   docker0   1000.00   1000.00    228.91    397.27      0.00      0.00      0.00      0.00
+06:58:29 AM veth927c207   1000.00   1000.00    242.58    397.27      0.00      0.00      0.00      0.03
+
+06:58:29 AM     CPU     %user     %nice   %system   %iowait    %steal     %idle
+06:58:30 AM     all      9.54      0.00      7.73      0.00      0.00     82.73
+
+06:58:29 AM kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+06:58:30 AM   3056284   5762148   1774160     22.37     85344   2791844   5435484     68.53   1893804   2661548       436
+
+06:58:29 AM     IFACE   rxpck/s   txpck/s    rxkB/s    txkB/s   rxcmp/s   txcmp/s  rxmcst/s   %ifutil
+06:58:30 AM        lo   2023.00   2023.00    633.32    633.32      0.00      0.00      0.00      0.00
+06:58:30 AM      eth0    201.00    401.00    320.38    220.43      0.00      0.00      0.00      0.00
+06:58:30 AM   docker0   1000.00   1000.00    228.91    397.27      0.00      0.00      0.00      0.00
+06:58:30 AM veth927c207   1000.00   1000.00    242.58    397.27      0.00      0.00      0.00      0.03
+
+06:58:30 AM     CPU     %user     %nice   %system   %iowait    %steal     %idle
+06:58:31 AM     all     10.51      0.00      7.95      0.00      0.00     81.54
+
+06:58:30 AM kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+06:58:31 AM   3055836   5761720   1774448     22.37     85344   2791868   5435484     68.53   1893964   2661568       460
+
+06:58:30 AM     IFACE   rxpck/s   txpck/s    rxkB/s    txkB/s   rxcmp/s   txcmp/s  rxmcst/s   %ifutil
+06:58:31 AM        lo   2003.00   2003.00    632.20    632.20      0.00      0.00      0.00      0.00
+06:58:31 AM      eth0    200.00    400.00    320.31    220.31      0.00      0.00      0.00      0.00
+06:58:31 AM   docker0   1000.00   1000.00    228.91    397.27      0.00      0.00      0.00      0.00
+06:58:31 AM veth927c207   1000.00   1000.00    242.58    397.27      0.00      0.00      0.00      0.03
+
+06:58:31 AM     CPU     %user     %nice   %system   %iowait    %steal     %idle
+06:58:32 AM     all      8.72      0.00      7.95      0.00      0.00     83.33
+
+06:58:31 AM kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+06:58:32 AM   3055372   5761296   1774708     22.38     85344   2791896   5435484     68.53   1894192   2661608       484
+
+06:58:31 AM     IFACE   rxpck/s   txpck/s    rxkB/s    txkB/s   rxcmp/s   txcmp/s  rxmcst/s   %ifutil
+06:58:32 AM        lo   2016.00   2016.00    633.90    633.90      0.00      0.00      0.00      0.00
+06:58:32 AM      eth0    201.00    401.00    320.37    220.37      0.00      0.00      0.00      0.00
+06:58:32 AM   docker0   1003.00   1002.00    229.94    397.39      0.00      0.00      0.00      0.00
+06:58:32 AM veth927c207   1003.00   1002.00    243.65    397.39      0.00      0.00      0.00      0.03
+
+06:58:32 AM     CPU     %user     %nice   %system   %iowait    %steal     %idle
+06:58:33 AM     all      9.77      0.00      7.46      0.00      0.00     82.78
+
+06:58:32 AM kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+06:58:33 AM   3054424   5760384   1775468     22.38     85344   2791936   5435484     68.53   1894264   2661644       520
+
+06:58:32 AM     IFACE   rxpck/s   txpck/s    rxkB/s    txkB/s   rxcmp/s   txcmp/s  rxmcst/s   %ifutil
+06:58:33 AM        lo   2007.00   2007.00    631.54    631.54      0.00      0.00      0.00      0.00
+06:58:33 AM      eth0    200.00    400.00    320.31    220.31      0.00      0.00      0.00      0.00
+06:58:33 AM   docker0    997.00    998.00    227.87    397.14      0.00      0.00      0.00      0.00
+06:58:33 AM veth927c207    997.00    998.00    241.50    397.14      0.00      0.00      0.00      0.03
+
+06:58:33 AM     CPU     %user     %nice   %system   %iowait    %steal     %idle
+06:58:34 AM     all      9.72      0.00      7.67      0.26      0.00     82.35
+
+06:58:33 AM kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+06:58:34 AM   3053724   5759712   1776028     22.39     85344   2791964   5435484     68.53   1894476   2661672       552
+
+06:58:33 AM     IFACE   rxpck/s   txpck/s    rxkB/s    txkB/s   rxcmp/s   txcmp/s  rxmcst/s   %ifutil
+06:58:34 AM        lo   2016.00   2016.00    633.88    633.88      0.00      0.00      0.00      0.00
+06:58:34 AM      eth0    201.00    401.00    320.37    220.37      0.00      0.00      0.00      0.00
+06:58:34 AM   docker0   1002.00   1001.00    229.89    397.33      0.00      0.00      0.00      0.00
+06:58:34 AM veth927c207   1002.00   1001.00    243.59    397.33      0.00      0.00      0.00      0.03
+
+06:58:34 AM     CPU     %user     %nice   %system   %iowait    %steal     %idle
+06:58:35 AM     all     10.28      0.00      7.71      0.00      0.00     82.01
+
+06:58:34 AM kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+06:58:35 AM   3053228   5759252   1776336     22.40     85344   2792004   5435484     68.53   1894612   2661708       640
+
+06:58:34 AM     IFACE   rxpck/s   txpck/s    rxkB/s    txkB/s   rxcmp/s   txcmp/s  rxmcst/s   %ifutil
+06:58:35 AM        lo   2017.00   2017.00    632.15    632.15      0.00      0.00      0.00      0.00
+06:58:35 AM      eth0    201.00    401.00    320.38    220.43      0.00      0.00      0.00      0.00
+06:58:35 AM   docker0    998.00    999.00    227.92    397.20      0.00      0.00      0.00      0.00
+06:58:35 AM veth927c207    998.00    999.00    241.57    397.20      0.00      0.00      0.00      0.03
+
+06:58:35 AM     CPU     %user     %nice   %system   %iowait    %steal     %idle
+06:58:36 AM     all     10.03      0.00      8.48      0.00      0.00     81.49
+
+06:58:35 AM kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+06:58:36 AM   3052308   5758356   1777124     22.41     85344   2792032   5435484     68.53   1894708   2661732       672
+
+06:58:35 AM     IFACE   rxpck/s   txpck/s    rxkB/s    txkB/s   rxcmp/s   txcmp/s  rxmcst/s   %ifutil
+06:58:36 AM        lo   2020.00   2020.00    634.12    634.12      0.00      0.00      0.00      0.00
+06:58:36 AM      eth0    202.00    401.00    320.43    220.37      0.00      0.00      0.00      0.00
+06:58:36 AM   docker0   1002.00   1002.00    229.89    397.39      0.00      0.00      0.00      0.00
+06:58:36 AM veth927c207   1003.00   1002.00    243.65    397.39      0.00      0.00      0.00      0.03
+
+06:58:36 AM     CPU     %user     %nice   %system   %iowait    %steal     %idle
+06:58:37 AM     all      1.51      0.00      1.01      0.00      0.00     97.48
+
+06:58:36 AM kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+06:58:37 AM   3052056   5758112   1777332     22.41     85344   2792044   5435484     68.53   1894764   2661740       408
+
+06:58:36 AM     IFACE   rxpck/s   txpck/s    rxkB/s    txkB/s   rxcmp/s   txcmp/s  rxmcst/s   %ifutil
+06:58:37 AM        lo    282.00    282.00     88.59     88.59      0.00      0.00      0.00      0.00
+06:58:37 AM      eth0     40.00     64.00     45.63     32.39      0.00      0.00      0.00      0.00
+06:58:37 AM   docker0    141.00    140.00     32.10     55.62      0.00      0.00      0.00      0.00
+06:58:37 AM veth927c207    140.00    140.00     33.96     55.62      0.00      0.00      0.00      0.00
+
+06:58:37 AM     CPU     %user     %nice   %system   %iowait    %steal     %idle
+06:58:38 AM     all      0.00      0.00      0.25      0.00      0.00     99.75
+
+06:58:37 AM kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+06:58:38 AM   3052056   5758128   1777332     22.41     85344   2792044   5435484     68.53   1894780   2661756       392
+
+06:58:37 AM     IFACE   rxpck/s   txpck/s    rxkB/s    txkB/s   rxcmp/s   txcmp/s  rxmcst/s   %ifutil
+06:58:38 AM        lo      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+06:58:38 AM      eth0      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+06:58:38 AM   docker0      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+06:58:38 AM veth927c207      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+
+06:58:38 AM     CPU     %user     %nice   %system   %iowait    %steal     %idle
+06:58:39 AM     all      0.00      0.00      0.25      0.00      0.00     99.75
+
+06:58:38 AM kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+06:58:39 AM   3053252   5759324   1776132     22.39     85344   2792048   5433396     68.50   1894040   2661756       384
+
+06:58:38 AM     IFACE   rxpck/s   txpck/s    rxkB/s    txkB/s   rxcmp/s   txcmp/s  rxmcst/s   %ifutil
+06:58:39 AM        lo      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+06:58:39 AM      eth0      6.00      4.00      1.37      0.32      0.00      0.00      0.00      0.00
+06:58:39 AM   docker0      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+06:58:39 AM veth927c207      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+
+06:58:39 AM     CPU     %user     %nice   %system   %iowait    %steal     %idle
+06:58:40 AM     all      0.75      0.00      0.50      0.00      0.00     98.75
+
+06:58:39 AM kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+06:58:40 AM   3052020   5758104   1777364     22.41     85344   2792048   5435488     68.53   1894724   2661768       460
+
+06:58:39 AM     IFACE   rxpck/s   txpck/s    rxkB/s    txkB/s   rxcmp/s   txcmp/s  rxmcst/s   %ifutil
+06:58:40 AM        lo      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+06:58:40 AM      eth0      9.00      7.00      1.16      1.88      0.00      0.00      0.00      0.00
+06:58:40 AM   docker0      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+06:58:40 AM veth927c207      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+
+06:58:40 AM     CPU     %user     %nice   %system   %iowait    %steal     %idle
+06:58:41 AM     all      0.00      0.00      0.25      0.00      0.00     99.75
+
+06:58:40 AM kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+06:58:41 AM   3052020   5758104   1777364     22.41     85344   2792048   5435488     68.53   1894724   2661768       460
+
+06:58:40 AM     IFACE   rxpck/s   txpck/s    rxkB/s    txkB/s   rxcmp/s   txcmp/s  rxmcst/s   %ifutil
+06:58:41 AM        lo      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+06:58:41 AM      eth0      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+06:58:41 AM   docker0      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+06:58:41 AM veth927c207      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+
+06:58:41 AM     CPU     %user     %nice   %system   %iowait    %steal     %idle
+06:58:42 AM     all      7.99      0.00      5.93      0.00      0.00     86.08
+
+06:58:41 AM kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+06:58:42 AM   3051544   5757640   1777724     22.41     85344   2792068   5435488     68.53   1894852   2661780       504
+
+06:58:41 AM     IFACE   rxpck/s   txpck/s    rxkB/s    txkB/s   rxcmp/s   txcmp/s  rxmcst/s   %ifutil
+06:58:42 AM        lo   1751.00   1751.00    547.81    547.81      0.00      0.00      0.00      0.00
+06:58:42 AM      eth0    180.00    349.00    277.53    190.77      0.00      0.00      0.00      0.00
+06:58:42 AM   docker0    865.00    865.00    198.00    343.63      0.00      0.00      0.00      0.00
+06:58:42 AM veth927c207    865.00    865.00    209.83    343.63      0.00      0.00      0.00      0.03
+
+06:58:42 AM     CPU     %user     %nice   %system   %iowait    %steal     %idle
+06:58:43 AM     all      9.72      0.00      6.65      0.00      0.00     83.63
+
+06:58:42 AM kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+06:58:43 AM   3051320   5757448   1777796     22.41     85344   2792104   5435488     68.53   1894952   2661812       536
+
+06:58:42 AM     IFACE   rxpck/s   txpck/s    rxkB/s    txkB/s   rxcmp/s   txcmp/s  rxmcst/s   %ifutil
+06:58:43 AM        lo   2170.00   2170.00    670.54    670.54      0.00      0.00      0.00      0.00
+06:58:43 AM      eth0    212.00    423.00    338.00    232.48      0.00      0.00      0.00      0.00
+06:58:43 AM   docker0   1055.00   1055.00    241.50    419.12      0.00      0.00      0.00      0.00
+06:58:43 AM veth927c207   1055.00   1055.00    255.92    419.12      0.00      0.00      0.00      0.03
+
+06:58:43 AM     CPU     %user     %nice   %system   %iowait    %steal     %idle
+06:58:44 AM     all     10.34      0.00      7.75      0.00      0.00     81.91
+
+06:58:43 AM kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+06:58:44 AM   3050632   5756760   1778344     22.42     85344   2792132   5435488     68.53   1895012   2661812       576
+
+06:58:43 AM     IFACE   rxpck/s   txpck/s    rxkB/s    txkB/s   rxcmp/s   txcmp/s  rxmcst/s   %ifutil
+06:58:44 AM        lo   2194.00   2194.00    688.88    688.88      0.00      0.00      0.00      0.00
+06:58:44 AM      eth0    219.00    436.00    349.21    239.22      0.00      0.00      0.00      0.00
+06:58:44 AM   docker0   1087.00   1088.00    248.47    432.89      0.00      0.00      0.00      0.00
+06:58:44 AM veth927c207   1087.00   1088.00    263.33    432.89      0.00      0.00      0.00      0.04
+
+06:58:44 AM     CPU     %user     %nice   %system   %iowait    %steal     %idle
+06:58:45 AM     all      9.72      0.00      8.44      0.00      0.00     81.84
+
+06:58:44 AM kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+06:58:45 AM   3049932   5756092   1778900     22.43     85344   2792172   5435488     68.53   1895144   2661844       620
+
+06:58:44 AM     IFACE   rxpck/s   txpck/s    rxkB/s    txkB/s   rxcmp/s   txcmp/s  rxmcst/s   %ifutil
+06:58:45 AM        lo   2286.00   2286.00    714.06    714.06      0.00      0.00      0.00      0.00
+06:58:45 AM      eth0    225.00    451.00    360.35    248.89      0.00      0.00      0.00      0.00
+06:58:45 AM   docker0   1128.00   1127.00    258.55    447.05      0.00      0.00      0.00      0.00
+06:58:45 AM veth927c207   1128.00   1127.00    273.98    447.05      0.00      0.00      0.00      0.04
+
+06:58:45 AM     CPU     %user     %nice   %system   %iowait    %steal     %idle
+06:58:46 AM     all     10.77      0.00      8.72      0.00      0.00     80.51
+
+06:58:45 AM kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+06:58:46 AM   3049232   5755408   1779424     22.43     85344   2792200   5435488     68.53   1895188   2661860       660
+
+06:58:45 AM     IFACE   rxpck/s   txpck/s    rxkB/s    txkB/s   rxcmp/s   txcmp/s  rxmcst/s   %ifutil
+06:58:46 AM        lo   2356.00   2356.00    734.55    734.55      0.00      0.00      0.00      0.00
+06:58:46 AM      eth0    232.00    463.00    371.56    254.53      0.00      0.00      0.00      0.00
+06:58:46 AM   docker0   1157.00   1158.00    264.50    460.70      0.00      0.00      0.00      0.00
+06:58:46 AM veth927c207   1157.00   1158.00    280.31    460.70      0.00      0.00      0.00      0.04
+
+06:58:46 AM     CPU     %user     %nice   %system   %iowait    %steal     %idle
+06:58:47 AM     all     11.49      0.00      9.14      0.00      0.00     79.37
+
+06:58:46 AM kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+06:58:47 AM   3049008   5755276   1779396     22.43     85344   2792256   5435488     68.53   1895200   2661952       528
+
+06:58:46 AM     IFACE   rxpck/s   txpck/s    rxkB/s    txkB/s   rxcmp/s   txcmp/s  rxmcst/s   %ifutil
+06:58:47 AM        lo   2423.00   2423.00    759.74    759.74      0.00      0.00      0.00      0.00
+06:58:47 AM      eth0    244.00    482.00    384.64    264.56      0.00      0.00      0.00      0.00
+06:58:47 AM   docker0   1200.00   1200.00    274.69    476.72      0.00      0.00      0.00      0.00
+06:58:47 AM veth927c207   1200.00   1200.00    291.09    476.72      0.00      0.00      0.00      0.04
+
+06:58:47 AM     CPU     %user     %nice   %system   %iowait    %steal     %idle
+06:58:48 AM     all     12.40      0.00      9.04      0.00      0.00     78.55
+
+06:58:47 AM kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+06:58:48 AM   3048336   5754612   1779888     22.44     85344   2792296   5435488     68.53   1895200   2661960       580
+
+06:58:47 AM     IFACE   rxpck/s   txpck/s    rxkB/s    txkB/s   rxcmp/s   txcmp/s  rxmcst/s   %ifutil
+06:58:48 AM        lo   2496.00   2496.00    783.04    783.04      0.00      0.00      0.00      0.00
+06:58:48 AM      eth0    247.00    495.00    395.59    273.12      0.00      0.00      0.00      0.00
+06:58:48 AM   docker0   1238.00   1237.00    283.73    490.75      0.00      0.00      0.00      0.00
+06:58:48 AM veth927c207   1238.00   1237.00    300.66    490.75      0.00      0.00      0.00      0.04
+
+06:58:48 AM     CPU     %user     %nice   %system   %iowait    %steal     %idle
+06:58:49 AM     all     11.83      0.00      9.25      0.00      0.00     78.92
+
+06:58:48 AM kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+06:58:49 AM   3047888   5754164   1780144     22.44     85344   2792328   5435488     68.53   1895200   2661960       620
+
+06:58:48 AM     IFACE   rxpck/s   txpck/s    rxkB/s    txkB/s   rxcmp/s   txcmp/s  rxmcst/s   %ifutil
+06:58:49 AM        lo   2583.00   2583.00    806.91    806.91      0.00      0.00      0.00      0.00
+06:58:49 AM      eth0    257.00    511.00    408.52    280.03      0.00      0.00      0.00      0.00
+06:58:49 AM   docker0   1270.00   1273.00    290.72    504.73      0.00      0.00      0.00      0.00
+06:58:49 AM veth927c207   1270.00   1273.00    308.08    504.73      0.00      0.00      0.00      0.04
+
+06:58:49 AM     CPU     %user     %nice   %system   %iowait    %steal     %idle
+06:58:50 AM     all     12.21      0.00      9.61      0.00      0.00     78.18
+
+06:58:49 AM kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+06:58:50 AM   3046968   5753268   1780856     22.45     85344   2792368   5435488     68.53   1895236   2661984       664
+
+06:58:49 AM     IFACE   rxpck/s   txpck/s    rxkB/s    txkB/s   rxcmp/s   txcmp/s  rxmcst/s   %ifutil
+06:58:50 AM        lo   2644.00   2644.00    826.78    826.78      0.00      0.00      0.00      0.00
+06:58:50 AM      eth0    261.00    522.00    418.01    287.51      0.00      0.00      0.00      0.00
+06:58:50 AM   docker0   1305.00   1307.00    298.72    520.22      0.00      0.00      0.00      0.00
+06:58:50 AM veth927c207   1305.00   1307.00    316.56    520.22      0.00      0.00      0.00      0.04
+
+06:58:50 AM     CPU     %user     %nice   %system   %iowait    %steal     %idle
+06:58:51 AM     all     13.44      0.00     10.59      0.00      0.00     75.97
+
+06:58:50 AM kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+06:58:51 AM   3046268   5752696   1781360     22.46     85344   2792412   5435488     68.53   1895348   2662112       716
+
+06:58:50 AM     IFACE   rxpck/s   txpck/s    rxkB/s    txkB/s   rxcmp/s   txcmp/s  rxmcst/s   %ifutil
+06:58:51 AM        lo   2708.00   2708.00    853.71    853.71      0.00      0.00      0.00      0.00
+06:58:51 AM      eth0    272.00    542.00    432.54    297.59      0.00      0.00      0.00      0.00
+06:58:51 AM   docker0   1349.00   1348.00    308.97    534.52      0.00      0.00      0.00      0.00
+06:58:51 AM veth927c207   1349.00   1348.00    327.42    534.52      0.00      0.00      0.00      0.04
+
+06:58:51 AM     CPU     %user     %nice   %system   %iowait    %steal     %idle
+06:58:52 AM     all     12.89      0.00     10.31      0.00      0.00     76.80
+
+06:58:51 AM kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+06:58:52 AM   3044876   5751340   1782488     22.47     85344   2792464   5435488     68.53   1895432   2662148       772
+
+06:58:51 AM     IFACE   rxpck/s   txpck/s    rxkB/s    txkB/s   rxcmp/s   txcmp/s  rxmcst/s   %ifutil
+06:58:52 AM        lo   2799.00   2799.00    877.09    877.09      0.00      0.00      0.00      0.00
+06:58:52 AM      eth0    277.00    554.00    443.63    305.13      0.00      0.00      0.00      0.00
+06:58:52 AM   docker0   1384.00   1384.00    316.98    550.14      0.00      0.00      0.00      0.00
+06:58:52 AM veth927c207   1384.00   1384.00    335.90    550.14      0.00      0.00      0.00      0.05
+
+06:58:52 AM     CPU     %user     %nice   %system   %iowait    %steal     %idle
+06:58:53 AM     all     12.21      0.00      9.87      0.00      0.00     77.92
+
+06:58:52 AM kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+06:58:53 AM   3044148   5750616   1783052     22.48     85344   2792504   5435496     68.53   1895432   2662152       808
+
+06:58:52 AM     IFACE   rxpck/s   txpck/s    rxkB/s    txkB/s   rxcmp/s   txcmp/s  rxmcst/s   %ifutil
+06:58:53 AM        lo   2893.00   2893.00    900.76    900.76      0.00      0.00      0.00      0.00
+06:58:53 AM      eth0    284.00    568.00    454.84    312.84      0.00      0.00      0.00      0.00
+06:58:53 AM   docker0   1422.00   1423.00    325.16    565.97      0.00      0.00      0.00      0.00
+06:58:53 AM veth927c207   1422.00   1423.00    344.60    565.97      0.00      0.00      0.00      0.05
+
+06:58:53 AM     CPU     %user     %nice   %system   %iowait    %steal     %idle
+06:58:54 AM     all     12.40      0.00      9.04      0.00      0.00     78.55
+
+06:58:53 AM kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+06:58:54 AM   3043228   5749784   1783684     22.49     85344   2792552   5435496     68.53   1895560   2662240       392
+
+06:58:53 AM     IFACE   rxpck/s   txpck/s    rxkB/s    txkB/s   rxcmp/s   txcmp/s  rxmcst/s   %ifutil
+06:58:54 AM        lo   2983.00   2983.00    926.61    926.61      0.00      0.00      0.00      0.00
+06:58:54 AM      eth0    292.00    584.00    467.66    321.66      0.00      0.00      0.00      0.00
+06:58:54 AM   docker0   1459.00   1461.00    334.15    580.07      0.00      0.00      0.00      0.00
+06:58:54 AM veth927c207   1459.00   1461.00    354.10    580.07      0.00      0.00      0.00      0.05
+
+06:58:54 AM     CPU     %user     %nice   %system   %iowait    %steal     %idle
+06:58:55 AM     all     14.32      0.00     10.94      0.00      0.00     74.74
+
+06:58:54 AM kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+06:58:55 AM   3042780   5749352   1784012     22.49     85344   2792592   5435496     68.53   1895604   2662256       444
+
+06:58:54 AM     IFACE   rxpck/s   txpck/s    rxkB/s    txkB/s   rxcmp/s   txcmp/s  rxmcst/s   %ifutil
+06:58:55 AM        lo   3000.00   3000.00    943.76    943.76      0.00      0.00      0.00      0.00
+06:58:55 AM      eth0    301.00    597.00    477.47    328.34      0.00      0.00      0.00      0.00
+06:58:55 AM   docker0   1491.00   1492.00    342.00    592.05      0.00      0.00      0.00      0.00
+06:58:55 AM veth927c207   1491.00   1493.00    362.39    592.12      0.00      0.00      0.00      0.05
+
+06:58:55 AM     CPU     %user     %nice   %system   %iowait    %steal     %idle
+06:58:56 AM     all     15.46      0.00     12.11      0.00      0.00     72.42
+
+06:58:55 AM kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+06:58:56 AM   3039352   5746016   1787136     22.53     85344   2792644   5435496     68.53   1895644   2662348       708
+
+06:58:55 AM     IFACE   rxpck/s   txpck/s    rxkB/s    txkB/s   rxcmp/s   txcmp/s  rxmcst/s   %ifutil
+06:58:56 AM        lo   3100.00   3100.00    971.14    971.14      0.00      0.00      0.00      0.00
+06:58:56 AM      eth0    331.00    633.00    494.81    340.90      0.00      0.00      0.00      0.00
+06:58:56 AM   docker0   1533.00   1534.00    350.39    609.74      0.00      0.00      0.00      0.00
+06:58:56 AM veth927c207   1533.00   1533.00    371.35    609.67      0.00      0.00      0.00      0.05
+
+06:58:56 AM     CPU     %user     %nice   %system   %iowait    %steal     %idle
+06:58:57 AM     all     14.84      0.00     11.20      0.00      0.00     73.96
+
+06:58:56 AM kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+06:58:57 AM   3039128   5745804   1787140     22.53     85344   2792696   5435496     68.53   1895796   2662360       404
+
+06:58:56 AM     IFACE   rxpck/s   txpck/s    rxkB/s    txkB/s   rxcmp/s   txcmp/s  rxmcst/s   %ifutil
+06:58:57 AM        lo   3175.00   3175.00    994.44    994.44      0.00      0.00      0.00      0.00
+06:58:57 AM      eth0    322.00    634.00    503.53    346.31      0.00      0.00      0.00      0.00
+06:58:57 AM   docker0   1576.00   1578.00    359.72    624.35      0.00      0.00      0.00      0.00
+06:58:57 AM veth927c207   1576.00   1578.00    381.26    624.35      0.00      0.00      0.00      0.05
+
+06:58:57 AM     CPU     %user     %nice   %system   %iowait    %steal     %idle
+06:58:58 AM     all     14.58      0.00     10.68      0.00      0.00     74.74
+
+06:58:57 AM kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+06:58:58 AM   3038176   5744876   1787748     22.54     85344   2792748   5435496     68.53   1895824   2662384       388
+
+06:58:57 AM     IFACE   rxpck/s   txpck/s    rxkB/s    txkB/s   rxcmp/s   txcmp/s  rxmcst/s   %ifutil
+06:58:58 AM        lo   3260.00   3260.00   1017.36   1017.36      0.00      0.00      0.00      0.00
+06:58:58 AM      eth0    322.00    643.00    514.17    353.72      0.00      0.00      0.00      0.00
+06:58:58 AM   docker0   1605.00   1605.00    367.39    637.61      0.00      0.00      0.00      0.00
+06:58:58 AM veth927c207   1605.00   1605.00    389.34    637.61      0.00      0.00      0.00      0.05
+
+06:58:58 AM     CPU     %user     %nice   %system   %iowait    %steal     %idle
+06:58:59 AM     all     14.47      0.00     11.37      0.00      0.00     74.16
+
+06:58:58 AM kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+06:58:59 AM   3037704   5744472   1788024     22.54     85344   2792784   5435496     68.53   1895484   2662452       424
+
+06:58:58 AM     IFACE   rxpck/s   txpck/s    rxkB/s    txkB/s   rxcmp/s   txcmp/s  rxmcst/s   %ifutil
+06:58:59 AM        lo   3316.00   3316.00   1039.75   1039.75      0.00      0.00      0.00      0.00
+06:58:59 AM      eth0    334.00    659.00    527.22    362.47      0.00      0.00      0.00      0.00
+06:58:59 AM   docker0   1641.00   1644.00    376.34    651.77      0.00      0.00      0.00      0.00
+06:58:59 AM veth927c207   1641.00   1644.00    398.78    651.77      0.00      0.00      0.00      0.05
+
+06:58:59 AM     CPU     %user     %nice   %system   %iowait    %steal     %idle
+06:59:00 AM     all     17.40      0.00     12.47      0.00      0.00     70.13
+
+06:58:59 AM kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+06:59:00 AM   3036736   5743544   1788740     22.55     85344   2792852   5435496     68.53   1895504   2662492       496
+
+06:58:59 AM     IFACE   rxpck/s   txpck/s    rxkB/s    txkB/s   rxcmp/s   txcmp/s  rxmcst/s   %ifutil
+06:59:00 AM        lo   3373.00   3373.00   1062.55   1062.55      0.00      0.00      0.00      0.00
+06:59:00 AM      eth0    338.00    673.00    536.72    370.20      0.00      0.00      0.00      0.00
+06:59:00 AM   docker0   1680.00   1680.00    384.56    667.41      0.00      0.00      0.00      0.00
+06:59:00 AM veth927c207   1680.00   1680.00    407.53    667.41      0.00      0.00      0.00      0.05
+
+06:59:00 AM     CPU     %user     %nice   %system   %iowait    %steal     %idle
+06:59:01 AM     all     15.50      0.00     12.40      0.00      0.00     72.09
+
+06:59:00 AM kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+06:59:01 AM   3036864   5743700   1788512     22.55     85344   2792904   5435496     68.53   1894556   2662520       564
+
+06:59:00 AM     IFACE   rxpck/s   txpck/s    rxkB/s    txkB/s   rxcmp/s   txcmp/s  rxmcst/s   %ifutil
+06:59:01 AM        lo   3479.00   3479.00   1089.48   1089.48      0.00      0.00      0.00      0.00
+06:59:01 AM      eth0    346.00    690.00    551.07    378.14      0.00      0.00      0.00      0.00
+06:59:01 AM   docker0   1719.00   1719.00    393.67    683.23      0.00      0.00      0.00      0.00
+06:59:01 AM veth927c207   1719.00   1719.00    417.17    683.23      0.00      0.00      0.00      0.06
+
+06:59:01 AM     CPU     %user     %nice   %system   %iowait    %steal     %idle
+06:59:02 AM     all     14.69      0.00     10.05      0.00      0.00     75.26
+
+06:59:01 AM kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+06:59:02 AM   3036440   5743364   1788772     22.55     85344   2792960   5435496     68.53   1894576   2662608       608
+
+06:59:01 AM     IFACE   rxpck/s   txpck/s    rxkB/s    txkB/s   rxcmp/s   txcmp/s  rxmcst/s   %ifutil
+06:59:02 AM        lo   3548.00   3548.00   1107.86   1107.86      0.00      0.00      0.00      0.00
+06:59:02 AM      eth0    350.00    700.00    560.55    385.55      0.00      0.00      0.00      0.00
+06:59:02 AM   docker0   1748.00   1750.00    399.60    695.21      0.00      0.00      0.00      0.00
+06:59:02 AM veth927c207   1748.00   1750.00    423.50    695.21      0.00      0.00      0.00      0.06
+
+06:59:02 AM     CPU     %user     %nice   %system   %iowait    %steal     %idle
+06:59:03 AM     all     14.65      0.00     12.34      0.00      0.00     73.01
+
+06:59:02 AM kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+06:59:03 AM   3036212   5743196   1788796     22.55     85344   2793008   5435496     68.53   1894588   2662668       664
+
+06:59:02 AM     IFACE   rxpck/s   txpck/s    rxkB/s    txkB/s   rxcmp/s   txcmp/s  rxmcst/s   %ifutil
+06:59:03 AM        lo   3645.00   3645.00   1137.84   1137.84      0.00      0.00      0.00      0.00
+06:59:03 AM      eth0    363.00    720.00    575.23    395.65      0.00      0.00      0.00      0.00
+06:59:03 AM   docker0   1795.00   1795.00    410.89    713.09      0.00      0.00      0.00      0.00
+06:59:03 AM veth927c207   1795.00   1795.00    435.43    713.09      0.00      0.00      0.00      0.06
+
+06:59:03 AM     CPU     %user     %nice   %system   %iowait    %steal     %idle
+06:59:04 AM     all     17.85      0.00     12.60      0.00      0.00     69.55
+
+06:59:03 AM kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+06:59:04 AM   3036056   5743040   1788696     22.55     85344   2793076   5435496     68.53   1894588   2662668       824
+
+06:59:03 AM     IFACE   rxpck/s   txpck/s    rxkB/s    txkB/s   rxcmp/s   txcmp/s  rxmcst/s   %ifutil
+06:59:04 AM        lo   3676.00   3676.00   1154.99   1154.99      0.00      0.00      0.00      0.00
+06:59:04 AM      eth0    365.00    730.00    584.57    402.07      0.00      0.00      0.00      0.00
+06:59:04 AM   docker0   1825.00   1825.00    417.75    725.01      0.00      0.00      0.00      0.00
+06:59:04 AM veth927c207   1825.00   1825.00    442.71    725.01      0.00      0.00      0.00      0.06
+
+06:59:04 AM     CPU     %user     %nice   %system   %iowait    %steal     %idle
+06:59:05 AM     all     18.75      0.00     14.58      0.00      0.00     66.67
+
+06:59:04 AM kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+06:59:05 AM   3036204   5743328   1788468     22.55     85344   2793132   5435496     68.53   1894600   2662808       576
+
+06:59:04 AM     IFACE   rxpck/s   txpck/s    rxkB/s    txkB/s   rxcmp/s   txcmp/s  rxmcst/s   %ifutil
+06:59:05 AM        lo   3763.00   3763.00   1180.61   1180.61      0.00      0.00      0.00      0.00
+06:59:05 AM      eth0    377.00    748.00    597.65    411.07      0.00      0.00      0.00      0.00
+06:59:05 AM   docker0   1865.00   1865.00    426.91    740.90      0.00      0.00      0.00      0.00
+06:59:05 AM veth927c207   1865.00   1865.00    452.41    740.90      0.00      0.00      0.00      0.06
+
+06:59:05 AM     CPU     %user     %nice   %system   %iowait    %steal     %idle
+06:59:06 AM     all     16.15      0.00     12.50      0.00      0.00     71.35
+
+06:59:05 AM kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+06:59:06 AM   3036184   5743308   1788372     22.55     85344   2793192   5435496     68.53   1894600   2662808       660
+
+06:59:05 AM     IFACE   rxpck/s   txpck/s    rxkB/s    txkB/s   rxcmp/s   txcmp/s  rxmcst/s   %ifutil
+06:59:06 AM        lo   3876.00   3876.00   1208.80   1208.80      0.00      0.00      0.00      0.00
+06:59:06 AM      eth0    381.00    763.00    610.20    420.73      0.00      0.00      0.00      0.00
+06:59:06 AM   docker0   1908.00   1907.00    437.10    756.92      0.00      0.00      0.00      0.00
+06:59:06 AM veth927c207   1908.00   1907.00    463.19    756.92      0.00      0.00      0.00      0.06
+
+06:59:06 AM     CPU     %user     %nice   %system   %iowait    %steal     %idle
+06:59:07 AM     all     16.36      0.00     12.47      0.00      0.00     71.17
+
+06:59:06 AM kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+06:59:07 AM   3035932   5743056   1788424     22.55     85344   2793248   5435496     68.53   1894600   2662808       716
+
+06:59:06 AM     IFACE   rxpck/s   txpck/s    rxkB/s    txkB/s   rxcmp/s   txcmp/s  rxmcst/s   %ifutil
+06:59:07 AM        lo   3927.00   3927.00   1228.90   1228.90      0.00      0.00      0.00      0.00
+06:59:07 AM      eth0    388.00    775.00    621.41    426.37      0.00      0.00      0.00      0.00
+06:59:07 AM   docker0   1939.00   1940.00    444.03    770.70      0.00      0.00      0.00      0.00
+06:59:07 AM veth927c207   1939.00   1940.00    470.54    770.70      0.00      0.00      0.00      0.06
+
+06:59:07 AM     CPU     %user     %nice   %system   %iowait    %steal     %idle
+06:59:08 AM     all     16.36      0.00     13.25      0.00      0.00     70.39
+
+06:59:07 AM kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+06:59:08 AM   3035684   5742988   1788368     22.55     85344   2793320   5435496     68.53   1894604   2662988       776
+
+06:59:07 AM     IFACE   rxpck/s   txpck/s    rxkB/s    txkB/s   rxcmp/s   txcmp/s  rxmcst/s   %ifutil
+06:59:08 AM        lo   4008.00   4008.00   1250.87   1250.87      0.00      0.00      0.00      0.00
+06:59:08 AM      eth0    397.00    791.00    632.72    435.17      0.00      0.00      0.00      0.00
+06:59:08 AM   docker0   1973.00   1974.00    451.11    784.54      0.00      0.00      0.00      0.00
+06:59:08 AM veth927c207   1973.00   1974.00    478.08    784.54      0.00      0.00      0.00      0.06
+
+06:59:08 AM     CPU     %user     %nice   %system   %iowait    %steal     %idle
+06:59:09 AM     all     19.22      0.00     12.99      0.00      0.00     67.79
+
+06:59:08 AM kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+06:59:09 AM   3035396   5742704   1788532     22.55     85344   2793368   5435496     68.53   1894604   2662992       856
+
+06:59:08 AM     IFACE   rxpck/s   txpck/s    rxkB/s    txkB/s   rxcmp/s   txcmp/s  rxmcst/s   %ifutil
+06:59:09 AM        lo   4060.00   4060.00   1277.88   1277.88      0.00      0.00      0.00      0.00
+06:59:09 AM      eth0    404.00    808.00    647.03    445.03      0.00      0.00      0.00      0.00
+06:59:09 AM   docker0   2018.00   2022.00    462.29    802.61      0.00      0.00      0.00      0.00
+06:59:09 AM veth927c207   2018.00   2022.00    489.88    802.61      0.00      0.00      0.00      0.07
+
+06:59:09 AM     CPU     %user     %nice   %system   %iowait    %steal     %idle
+06:59:10 AM     all     17.97      0.00     15.10      0.00      0.00     66.93
+
+06:59:09 AM kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+06:59:10 AM   3050652   5758108   1773092     22.35     85344   2793448   5435492     68.53   1894524   2663140      1024
+
+06:59:09 AM     IFACE   rxpck/s   txpck/s    rxkB/s    txkB/s   rxcmp/s   txcmp/s  rxmcst/s   %ifutil
+06:59:10 AM        lo   4209.00   4209.00   1315.09   1315.09      0.00      0.00      0.00      0.00
+06:59:10 AM      eth0    430.00    841.00    667.17    459.35      0.00      0.00      0.00      0.00
+06:59:10 AM   docker0   2075.00   2076.00    474.98    824.39      0.00      0.00      0.00      0.00
+06:59:10 AM veth927c207   2075.00   2076.00    503.35    824.39      0.00      0.00      0.00      0.07
+
+06:59:10 AM     CPU     %user     %nice   %system   %iowait    %steal     %idle
+06:59:11 AM     all     17.89      0.00     12.63      0.00      0.00     69.47
+
+06:59:10 AM kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+06:59:11 AM   3049756   5757212   1773780     22.36     85344   2793500   5435492     68.53   1894524   2663140      1076
+
+06:59:10 AM     IFACE   rxpck/s   txpck/s    rxkB/s    txkB/s   rxcmp/s   txcmp/s  rxmcst/s   %ifutil
+06:59:11 AM        lo   4343.00   4343.00   1353.74   1353.74      0.00      0.00      0.00      0.00
+06:59:11 AM      eth0    428.00    856.00    683.93    470.49      0.00      0.00      0.00      0.00
+06:59:11 AM   docker0   2132.00   2136.00    488.56    846.57      0.00      0.00      0.00      0.00
+06:59:11 AM veth927c207   2132.00   2136.00    517.71    846.57      0.00      0.00      0.00      0.07
+
+06:59:11 AM     CPU     %user     %nice   %system   %iowait    %steal     %idle
+06:59:12 AM     all     19.64      0.00     14.47      0.00      0.00     65.89
+
+06:59:11 AM kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+06:59:12 AM   3048836   5756364   1774380     22.37     85344   2793580   5435492     68.53   1894648   2663212      1156
+
+06:59:11 AM     IFACE   rxpck/s   txpck/s    rxkB/s    txkB/s   rxcmp/s   txcmp/s  rxmcst/s   %ifutil
+06:59:12 AM        lo   4437.00   4437.00   1386.07   1386.07      0.00      0.00      0.00      0.00
+06:59:12 AM      eth0    459.00    886.00    702.85    482.23      0.00      0.00      0.00      0.00
+06:59:12 AM   docker0   2187.00   2188.00    501.14    869.88      0.00      0.00      0.00      0.00
+06:59:12 AM veth927c207   2187.00   2188.00    531.04    869.88      0.00      0.00      0.00      0.07
+
+06:59:12 AM     CPU     %user     %nice   %system   %iowait    %steal     %idle
+06:59:13 AM     all     20.42      0.00     14.06      0.00      0.00     65.52
+
+06:59:12 AM kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+06:59:13 AM   3048136   5755740   1774956     22.38     85344   2793628   5435492     68.53   1894692   2663288      1224
+
+06:59:12 AM     IFACE   rxpck/s   txpck/s    rxkB/s    txkB/s   rxcmp/s   txcmp/s  rxmcst/s   %ifutil
+06:59:13 AM        lo   4553.00   4553.00   1421.88   1421.88      0.00      0.00      0.00      0.00
+06:59:13 AM      eth0    448.00    897.00    717.50    494.54      0.00      0.00      0.00      0.00
+06:59:13 AM   docker0   2243.00   2245.00    512.91    891.86      0.00      0.00      0.00      0.00
+06:59:13 AM veth927c207   2243.00   2245.00    543.58    891.86      0.00      0.00      0.00      0.07
+
+06:59:13 AM     CPU     %user     %nice   %system   %iowait    %steal     %idle
+06:59:14 AM     all     17.22      0.00     15.94      0.00      0.00     66.84
+
+06:59:13 AM kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+06:59:14 AM   3047240   5754896   1775640     22.39     85344   2793720   5435492     68.53   1894704   2663340      1320
+
+06:59:13 AM     IFACE   rxpck/s   txpck/s    rxkB/s    txkB/s   rxcmp/s   txcmp/s  rxmcst/s   %ifutil
+06:59:14 AM        lo   4685.00   4685.00   1457.96   1457.96      0.00      0.00      0.00      0.00
+06:59:14 AM      eth0    460.00    919.00    736.72    505.68      0.00      0.00      0.00      0.00
+06:59:14 AM   docker0   2294.00   2301.00    525.30    913.78      0.00      0.00      0.00      0.00
+06:59:14 AM veth927c207   2294.00   2301.00    556.66    913.78      0.00      0.00      0.00      0.07
+
+06:59:14 AM     CPU     %user     %nice   %system   %iowait    %steal     %idle
+06:59:15 AM     all     20.37      0.00     14.62      0.00      0.00     65.01
+
+06:59:14 AM kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+06:59:15 AM   3046320   5754056   1776316     22.40     85344   2793788   5435492     68.53   1894748   2663420      1188
+
+06:59:14 AM     IFACE   rxpck/s   txpck/s    rxkB/s    txkB/s   rxcmp/s   txcmp/s  rxmcst/s   %ifutil
+06:59:15 AM        lo   4770.00   4770.00   1490.28   1490.28      0.00      0.00      0.00      0.00
+06:59:15 AM      eth0    472.00    942.00    754.40    518.89      0.00      0.00      0.00      0.00
+06:59:15 AM   docker0   2352.00   2355.00    538.91    933.90      0.00      0.00      0.00      0.00
+06:59:15 AM veth927c207   2352.00   2355.00    571.07    933.90      0.00      0.00      0.00      0.08
+
+06:59:15 AM     CPU     %user     %nice   %system   %iowait    %steal     %idle
+06:59:16 AM     all     17.57      0.00     15.76      0.00      0.00     66.67
+
+06:59:15 AM kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+06:59:16 AM   3045424   5753248   1776936     22.40     85344   2793852   5435492     68.53   1894748   2663508      1212
+
+06:59:15 AM     IFACE   rxpck/s   txpck/s    rxkB/s    txkB/s   rxcmp/s   txcmp/s  rxmcst/s   %ifutil
+06:59:16 AM        lo   4919.00   4919.00   1529.30   1529.30      0.00      0.00      0.00      0.00
+06:59:16 AM      eth0    482.00    966.00    770.42    531.08      0.00      0.00      0.00      0.00
+06:59:16 AM   docker0   2410.00   2410.00    551.66    957.41      0.00      0.00      0.00      0.00
+06:59:16 AM veth927c207   2410.00   2410.00    584.61    957.41      0.00      0.00      0.00      0.08
+
+06:59:16 AM     CPU     %user     %nice   %system   %iowait    %steal     %idle
+06:59:17 AM     all     23.95      0.00     16.58      0.00      0.00     59.47
+
+06:59:16 AM kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+06:59:17 AM   3044976   5752848   1777108     22.41     85344   2793948   5435492     68.53   1894820   2663556      1424
+
+06:59:16 AM     IFACE   rxpck/s   txpck/s    rxkB/s    txkB/s   rxcmp/s   txcmp/s  rxmcst/s   %ifutil
+06:59:17 AM        lo   4969.00   4969.00   1560.17   1560.17      0.00      0.00      0.00      0.00
+06:59:17 AM      eth0    494.00    987.00    789.63    542.16      0.00      0.00      0.00      0.00
+06:59:17 AM   docker0   2463.00   2465.00    564.15    979.26      0.00      0.00      0.00      0.00
+06:59:17 AM veth927c207   2463.00   2465.00    597.83    979.26      0.00      0.00      0.00      0.08
+
+06:59:17 AM     CPU     %user     %nice   %system   %iowait    %steal     %idle
+06:59:18 AM     all     21.00      0.00     15.22      0.00      0.00     63.78
+
+06:59:17 AM kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+06:59:18 AM   3043588   5751576   1778312     22.42     85344   2794012   5435492     68.53   1894944   2663672      1496
+
+06:59:17 AM     IFACE   rxpck/s   txpck/s    rxkB/s    txkB/s   rxcmp/s   txcmp/s  rxmcst/s   %ifutil
+06:59:18 AM        lo   5137.00   5137.00   1599.45   1599.45      0.00      0.00      0.00      0.00
+06:59:18 AM      eth0    510.00   1012.00    807.56    556.40      0.00      0.00      0.00      0.00
+06:59:18 AM   docker0   2522.00   2524.00    577.83   1001.37      0.00      0.00      0.00      0.00
+06:59:18 AM veth927c207   2522.00   2524.00    612.31   1001.37      0.00      0.00      0.00      0.08
+
+06:59:18 AM     CPU     %user     %nice   %system   %iowait    %steal     %idle
+06:59:19 AM     all     20.52      0.00     14.29      0.26      0.00     64.94
+
+06:59:18 AM kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+06:59:19 AM   3042204   5750288   1779300     22.43     85344   2794108   5435492     68.53   1895072   2663768      1612
+
+06:59:18 AM     IFACE   rxpck/s   txpck/s    rxkB/s    txkB/s   rxcmp/s   txcmp/s  rxmcst/s   %ifutil
+06:59:19 AM        lo   5186.00   5186.00   1614.23   1614.23      0.00      0.00      0.00      0.00
+06:59:19 AM      eth0    526.00   1026.00    816.33    562.26      0.00      0.00      0.00      0.00
+06:59:19 AM   docker0   2543.00   2549.00    582.46   1011.30      0.00      0.00      0.00      0.00
+06:59:19 AM veth927c207   2543.00   2549.00    617.23   1011.30      0.00      0.00      0.00      0.08
+
+06:59:19 AM     CPU     %user     %nice   %system   %iowait    %steal     %idle
+06:59:20 AM     all     19.74      0.00     14.87      0.00      0.00     65.38
+
+06:59:19 AM kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+06:59:20 AM   3041280   5749476   1779964     22.44     85344   2794168   5436500     68.54   1895332   2663880      1676
+
+06:59:19 AM     IFACE   rxpck/s   txpck/s    rxkB/s    txkB/s   rxcmp/s   txcmp/s  rxmcst/s   %ifutil
+06:59:20 AM        lo   5383.00   5383.00   1682.45   1682.45      0.00      0.00      0.00      0.00
+06:59:20 AM      eth0    551.00   1067.00    851.74    585.27      0.00      0.00      0.00      0.00
+06:59:20 AM   docker0   2649.00   2662.00    607.44   1055.19      0.00      0.00      0.00      0.00
+06:59:20 AM veth927c207   2649.00   2662.00    643.66   1055.19      0.00      0.00      0.00      0.09
+
+06:59:20 AM     CPU     %user     %nice   %system   %iowait    %steal     %idle
+06:59:21 AM     all     23.32      0.00     19.69      0.00      0.00     56.99
+
+06:59:20 AM kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+06:59:21 AM   3040132   5748352   1780776     22.45     85344   2794276   5436500     68.54   1895408   2663904      1792
+
+06:59:20 AM     IFACE   rxpck/s   txpck/s    rxkB/s    txkB/s   rxcmp/s   txcmp/s  rxmcst/s   %ifutil
+06:59:21 AM        lo   5456.00   5456.00   1706.32   1706.32      0.00      0.00      0.00      0.00
+06:59:21 AM      eth0    540.00   1078.00    863.31    592.82      0.00      0.00      0.00      0.00
+06:59:21 AM   docker0   2691.00   2696.00    615.82   1070.70      0.00      0.00      0.00      0.00
+06:59:21 AM veth927c207   2691.00   2696.00    652.61   1070.70      0.00      0.00      0.00      0.09
+
+06:59:21 AM     CPU     %user     %nice   %system   %iowait    %steal     %idle
+06:59:22 AM     all     23.48      0.00     19.00      0.00      0.00     57.52
+
+06:59:21 AM kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+06:59:22 AM   3039236   5747588   1781564     22.46     85344   2794340   5436500     68.54   1895524   2664036      1700
+
+06:59:21 AM     IFACE   rxpck/s   txpck/s    rxkB/s    txkB/s   rxcmp/s   txcmp/s  rxmcst/s   %ifutil
+06:59:22 AM        lo   5583.00   5583.00   1739.72   1739.72      0.00      0.00      0.00      0.00
+06:59:22 AM      eth0    551.00   1099.00    879.39    603.83      0.00      0.00      0.00      0.00
+06:59:22 AM   docker0   2742.00   2741.00    628.19   1088.57      0.00      0.00      0.00      0.00
+06:59:22 AM veth927c207   2742.00   2741.00    665.68   1088.57      0.00      0.00      0.00      0.09
+
+06:59:22 AM     CPU     %user     %nice   %system   %iowait    %steal     %idle
+06:59:23 AM     all     21.67      0.00     15.93      0.26      0.00     62.14
+
+06:59:22 AM kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+06:59:23 AM   3037260   5745680   1783232     22.48     85344   2794448   5436504     68.54   1895468   2664104      2036
+
+06:59:22 AM     IFACE   rxpck/s   txpck/s    rxkB/s    txkB/s   rxcmp/s   txcmp/s  rxmcst/s   %ifutil
+06:59:23 AM        lo   5740.00   5740.00   1776.38   1776.38      0.00      0.00      0.00      0.00
+06:59:23 AM      eth0    574.00   1130.00    897.78    619.01      0.00      0.00      0.00      0.00
+06:59:23 AM   docker0   2795.00   2801.00    639.80   1110.75      0.00      0.00      0.00      0.00
+06:59:23 AM veth927c207   2795.00   2801.00    678.01   1110.75      0.00      0.00      0.00      0.09
+
+06:59:23 AM     CPU     %user     %nice   %system   %iowait    %steal     %idle
+06:59:24 AM     all     22.45      0.00     15.40      0.00      0.00     62.14
+
+06:59:23 AM kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+06:59:24 AM   3035668   5744184   1784568     22.50     85344   2794540   5436504     68.54   1895612   2664200      2124
+
+06:59:23 AM     IFACE   rxpck/s   txpck/s    rxkB/s    txkB/s   rxcmp/s   txcmp/s  rxmcst/s   %ifutil
+06:59:24 AM        lo   5804.00   5804.00   1808.10   1808.10      0.00      0.00      0.00      0.00
+06:59:24 AM      eth0    572.00   1142.00    914.56    627.04      0.00      0.00      0.00      0.00
+06:59:24 AM   docker0   2849.00   2853.00    651.46   1135.72      0.00      0.00      0.00      0.00
+06:59:24 AM veth927c207   2849.00   2853.00    690.41   1135.72      0.00      0.00      0.00      0.09
+
+06:59:24 AM     CPU     %user     %nice   %system   %iowait    %steal     %idle
+06:59:25 AM     all     21.52      0.00     17.06      0.00      0.00     61.42
+
+06:59:24 AM kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+06:59:25 AM   3034748   5743312   1785284     22.51     85344   2794612   5436504     68.54   1895624   2664248      2204
+
+06:59:24 AM     IFACE   rxpck/s   txpck/s    rxkB/s    txkB/s   rxcmp/s   txcmp/s  rxmcst/s   %ifutil
+06:59:25 AM        lo   5909.00   5909.00   1845.39   1845.39      0.00      0.00      0.00      0.00
+06:59:25 AM      eth0    584.00   1166.00    932.22    642.20      0.00      0.00      0.00      0.00
+06:59:25 AM   docker0   2911.00   2914.00    667.05   1156.30      0.00      0.00      0.00      0.00
+06:59:25 AM veth927c207   2911.00   2914.00    706.85   1156.30      0.00      0.00      0.00      0.09
+
+06:59:25 AM     CPU     %user     %nice   %system   %iowait    %steal     %idle
+06:59:26 AM     all     24.94      0.00     18.18      0.00      0.00     56.88
+
+06:59:25 AM kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+06:59:26 AM   3033824   5742516   1786000     22.52     85344   2794724   5436504     68.54   1895736   2664376      2328
+
+06:59:25 AM     IFACE   rxpck/s   txpck/s    rxkB/s    txkB/s   rxcmp/s   txcmp/s  rxmcst/s   %ifutil
+06:59:26 AM        lo   6041.00   6041.00   1881.55   1881.55      0.00      0.00      0.00      0.00
+06:59:26 AM      eth0    595.00   1188.00    949.83    654.32      0.00      0.00      0.00      0.00
+06:59:26 AM   docker0   2965.00   2971.00    679.59   1178.28      0.00      0.00      0.00      0.00
+06:59:26 AM veth927c207   2965.00   2971.00    720.13   1178.28      0.00      0.00      0.00      0.10
+
+06:59:26 AM     CPU     %user     %nice   %system   %iowait    %steal     %idle
+06:59:27 AM     all     22.57      0.00     17.06      0.00      0.00     60.37
+
+06:59:26 AM kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+06:59:27 AM   3032452   5741236   1787144     22.53     85344   2794796   5436504     68.54   1895780   2664468      2392
+
+06:59:26 AM     IFACE   rxpck/s   txpck/s    rxkB/s    txkB/s   rxcmp/s   txcmp/s  rxmcst/s   %ifutil
+06:59:27 AM        lo   6151.00   6151.00   1912.66   1912.66      0.00      0.00      0.00      0.00
+06:59:27 AM      eth0    604.00   1207.00    965.81    664.36      0.00      0.00      0.00      0.00
+06:59:27 AM   docker0   3013.00   3016.00    690.05   1196.16      0.00      0.00      0.00      0.00
+06:59:27 AM veth927c207   3013.00   3016.00    731.24   1196.16      0.00      0.00      0.00      0.10
+
+06:59:27 AM     CPU     %user     %nice   %system   %iowait    %steal     %idle
+06:59:28 AM     all     22.74      0.00     16.02      0.00      0.00     61.24
+
+06:59:27 AM kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+06:59:28 AM   3031336   5740256   1787868     22.54     85344   2794908   5436504     68.54   1896004   2664604       116
+
+06:59:27 AM     IFACE   rxpck/s   txpck/s    rxkB/s    txkB/s   rxcmp/s   txcmp/s  rxmcst/s   %ifutil
+06:59:28 AM        lo   6250.00   6250.00   1950.18   1950.18      0.00      0.00      0.00      0.00
+06:59:28 AM      eth0    615.00   1231.00    984.96    678.50      0.00      0.00      0.00      0.00
+06:59:28 AM   docker0   3078.00   3079.00    704.92   1223.51      0.00      0.00      0.00      0.00
+06:59:28 AM veth927c207   3078.00   3079.00    747.00   1223.51      0.00      0.00      0.00      0.10
+
+06:59:28 AM     CPU     %user     %nice   %system   %iowait    %steal     %idle
+06:59:29 AM     all     22.25      0.00     16.75      0.00      0.00     60.99
+
+06:59:28 AM kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+06:59:29 AM   3029708   5738720   1789128     22.56     85344   2795008   5440544     68.59   1896204   2664696       216
+
+06:59:28 AM     IFACE   rxpck/s   txpck/s    rxkB/s    txkB/s   rxcmp/s   txcmp/s  rxmcst/s   %ifutil
+06:59:29 AM        lo   6376.00   6376.00   1988.66   1988.66      0.00      0.00      0.00      0.00
+06:59:29 AM      eth0    634.00   1256.00   1006.18    689.85      0.00      0.00      0.00      0.00
+06:59:29 AM   docker0   3127.00   3142.00    716.34   1245.89      0.00      0.00      0.00      0.00
+06:59:29 AM veth927c207   3127.00   3142.00    759.09   1245.89      0.00      0.00      0.00      0.10
+
+06:59:29 AM     CPU     %user     %nice   %system   %iowait    %steal     %idle
+06:59:30 AM     all     23.51      0.00     19.64      0.00      0.00     56.85
+
+06:59:29 AM kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+06:59:30 AM   3029300   5738384   1789316     22.56     85344   2795100   5440544     68.59   1896300   2664768       432
+
+06:59:29 AM     IFACE   rxpck/s   txpck/s    rxkB/s    txkB/s   rxcmp/s   txcmp/s  rxmcst/s   %ifutil
+06:59:30 AM        lo   6527.00   6527.00   2023.65   2023.65      0.00      0.00      0.00      0.00
+06:59:30 AM      eth0    637.00   1275.00   1020.20    702.73      0.00      0.00      0.00      0.00
+06:59:30 AM   docker0   3188.00   3189.00    730.10   1267.21      0.00      0.00      0.00      0.00
+06:59:30 AM veth927c207   3188.00   3189.00    773.69   1267.21      0.00      0.00      0.00      0.10
+
+06:59:30 AM     CPU     %user     %nice   %system   %iowait    %steal     %idle
+06:59:31 AM     all     22.60      0.00     17.66      0.00      0.00     59.74
+
+06:59:30 AM kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+06:59:31 AM   3028588   5737776   1789688     22.56     85344   2795208   5440544     68.59   1896496   2664872       540
+
+06:59:30 AM     IFACE   rxpck/s   txpck/s    rxkB/s    txkB/s   rxcmp/s   txcmp/s  rxmcst/s   %ifutil
+06:59:31 AM        lo   6593.00   6593.00   2046.89   2046.89      0.00      0.00      0.00      0.00
+06:59:31 AM      eth0    645.00   1290.00   1033.01    710.51      0.00      0.00      0.00      0.00
+06:59:31 AM   docker0   3225.00   3227.00    739.11   1281.31      0.00      0.00      0.00      0.00
+06:59:31 AM veth927c207   3225.00   3227.00    783.20   1281.31      0.00      0.00      0.00      0.10
+
+06:59:31 AM     CPU     %user     %nice   %system   %iowait    %steal     %idle
+06:59:32 AM     all     23.58      0.00     17.10      0.00      0.00     59.33
+
+06:59:31 AM kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+06:59:32 AM   3024576   5733892   1793300     22.61     85344   2795316   5443996     68.64   1898284   2665000       700
+
+06:59:31 AM     IFACE   rxpck/s   txpck/s    rxkB/s    txkB/s   rxcmp/s   txcmp/s  rxmcst/s   %ifutil
+06:59:32 AM        lo   6753.00   6753.00   2101.62   2101.62      0.00      0.00      0.00      0.00
+06:59:32 AM      eth0    674.00   1337.00   1063.76    731.93      0.00      0.00      0.00      0.00
+06:59:32 AM   docker0   3308.00   3317.00    756.70   1317.06      0.00      0.00      0.00      0.00
+06:59:32 AM veth927c207   3308.00   3317.00    801.93   1317.06      0.00      0.00      0.00      0.11
+
+06:59:32 AM     CPU     %user     %nice   %system   %iowait    %steal     %idle
+06:59:33 AM     all     20.98      0.00     15.80      0.00      0.00     63.21
+
+06:59:32 AM kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+06:59:33 AM   3024700   5734124   1792920     22.60     85344   2795412   5443996     68.64   1898420   2665100       736
+
+06:59:32 AM     IFACE   rxpck/s   txpck/s    rxkB/s    txkB/s   rxcmp/s   txcmp/s  rxmcst/s   %ifutil
+06:59:33 AM        lo   6847.00   6847.00   2128.04   2128.04      0.00      0.00      0.00      0.00
+06:59:33 AM      eth0    673.00   1347.00   1074.78    740.43      0.00      0.00      0.00      0.00
+06:59:33 AM   docker0   3354.00   3356.00    768.80   1331.23      0.00      0.00      0.00      0.00
+06:59:33 AM veth927c207   3354.00   3356.00    814.66   1331.23      0.00      0.00      0.00      0.11
+
+06:59:33 AM     CPU     %user     %nice   %system   %iowait    %steal     %idle
+06:59:34 AM     all     20.41      0.00     16.28      0.00      0.00     63.31
+
+06:59:33 AM kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+06:59:34 AM   3024600   5734124   1792832     22.60     85344   2795516   5443996     68.64   1898468   2665200       868
+
+06:59:33 AM     IFACE   rxpck/s   txpck/s    rxkB/s    txkB/s   rxcmp/s   txcmp/s  rxmcst/s   %ifutil
+06:59:34 AM        lo   6949.00   6949.00   2164.46   2164.46      0.00      0.00      0.00      0.00
+06:59:34 AM      eth0    688.00   1373.00   1092.64    751.87      0.00      0.00      0.00      0.00
+06:59:34 AM   docker0   3407.00   3413.00    780.42   1354.87      0.00      0.00      0.00      0.00
+06:59:34 AM veth927c207   3407.00   3413.00    827.00   1354.87      0.00      0.00      0.00      0.11
+
+06:59:34 AM     CPU     %user     %nice   %system   %iowait    %steal     %idle
+06:59:35 AM     all     24.03      0.00     18.35      0.00      0.00     57.62
+
+06:59:34 AM kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+06:59:35 AM   3026832   5736432   1790244     22.57     85344   2795620   5440544     68.59   1896776   2665276       840
+
+06:59:34 AM     IFACE   rxpck/s   txpck/s    rxkB/s    txkB/s   rxcmp/s   txcmp/s  rxmcst/s   %ifutil
+06:59:35 AM        lo   7057.00   7057.00   2196.63   2196.63      0.00      0.00      0.00      0.00
+06:59:35 AM      eth0    695.00   1387.00   1110.01    762.53      0.00      0.00      0.00      0.00
+06:59:35 AM   docker0   3461.00   3468.00    792.08   1376.73      0.00      0.00      0.00      0.00
+06:59:35 AM veth927c207   3461.00   3468.00    839.40   1376.73      0.00      0.00      0.00      0.11
+
+06:59:35 AM     CPU     %user     %nice   %system   %iowait    %steal     %idle
+06:59:36 AM     all     21.30      0.00     17.14      0.00      0.00     61.56
+
+06:59:35 AM kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+06:59:36 AM   3026336   5736040   1790380     22.57     85344   2795744   5440544     68.59   1896496   2665388      1092
+
+06:59:35 AM     IFACE   rxpck/s   txpck/s    rxkB/s    txkB/s   rxcmp/s   txcmp/s  rxmcst/s   %ifutil
+06:59:36 AM        lo   7179.00   7179.00   2230.62   2230.62      0.00      0.00      0.00      0.00
+06:59:36 AM      eth0    704.00   1407.00   1125.96    774.51      0.00      0.00      0.00      0.00
+06:59:36 AM   docker0   3516.00   3517.00    804.66   1398.17      0.00      0.00      0.00      0.00
+06:59:36 AM veth927c207   3516.00   3517.00    852.73   1398.17      0.00      0.00      0.00      0.11
+
+06:59:36 AM     CPU     %user     %nice   %system   %iowait    %steal     %idle
+06:59:37 AM     all     21.09      0.00     17.19      0.00      0.00     61.72
+
+06:59:36 AM kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+06:59:37 AM   3026548   5736340   1789924     22.57     85344   2795832   5440544     68.59   1896528   2665476      1180
+
+06:59:36 AM     IFACE   rxpck/s   txpck/s    rxkB/s    txkB/s   rxcmp/s   txcmp/s  rxmcst/s   %ifutil
+06:59:37 AM        lo   7345.00   7345.00   2276.16   2276.16      0.00      0.00      0.00      0.00
+06:59:37 AM      eth0    717.00   1434.00   1148.32    789.82      0.00      0.00      0.00      0.00
+06:59:37 AM   docker0   3579.00   3588.00    820.32   1422.73      0.00      0.00      0.00      0.00
+06:59:37 AM veth927c207   3579.00   3588.00    869.25   1422.73      0.00      0.00      0.00      0.12
+
+06:59:37 AM     CPU     %user     %nice   %system   %iowait    %steal     %idle
+06:59:38 AM     all     21.09      0.00     16.41      0.00      0.00     62.50
+
+06:59:37 AM kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+06:59:38 AM   3025740   5735612   1790520     22.57     85344   2795940   5440544     68.59   1896568   2665556      1288
+
+06:59:37 AM     IFACE   rxpck/s   txpck/s    rxkB/s    txkB/s   rxcmp/s   txcmp/s  rxmcst/s   %ifutil
+06:59:38 AM        lo   7457.00   7457.00   2309.63   2309.63      0.00      0.00      0.00      0.00
+06:59:38 AM      eth0    727.00   1455.00   1164.34    801.87      0.00      0.00      0.00      0.00
+06:59:38 AM   docker0   3636.00   3644.00    833.02   1444.64      0.00      0.00      0.00      0.00
+06:59:38 AM veth927c207   3636.00   3644.00    882.73   1444.64      0.00      0.00      0.00      0.12
+
+06:59:38 AM     CPU     %user     %nice   %system   %iowait    %steal     %idle
+06:59:39 AM     all     24.42      0.00     18.51      0.00      0.00     57.07
+
+06:59:38 AM kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+06:59:39 AM   3025772   5735808   1790120     22.57     85344   2796060   5440544     68.59   1896712   2665720      1404
+
+06:59:38 AM     IFACE   rxpck/s   txpck/s    rxkB/s    txkB/s   rxcmp/s   txcmp/s  rxmcst/s   %ifutil
+06:59:39 AM        lo   7491.00   7491.00   2339.79   2339.79      0.00      0.00      0.00      0.00
+06:59:39 AM      eth0    740.00   1480.00   1182.07    814.17      0.00      0.00      0.00      0.00
+06:59:39 AM   docker0   3690.00   3699.00    845.55   1468.15      0.00      0.00      0.00      0.00
+06:59:39 AM veth927c207   3690.00   3699.00    896.00   1468.15      0.00      0.00      0.00      0.12
+
+06:59:39 AM     CPU     %user     %nice   %system   %iowait    %steal     %idle
+06:59:40 AM     all     21.08      0.00     16.97      0.00      0.00     61.95
+
+06:59:39 AM kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+06:59:40 AM   3026364   5736584   1789200     22.56     85344   2796188   5440544     68.59   1896784   2665904      1564
+
+06:59:39 AM     IFACE   rxpck/s   txpck/s    rxkB/s    txkB/s   rxcmp/s   txcmp/s  rxmcst/s   %ifutil
+06:59:40 AM        lo   7645.00   7645.00   2378.93   2378.93      0.00      0.00      0.00      0.00
+06:59:40 AM      eth0    792.00   1534.00   1205.47    829.85      0.00      0.00      0.00      0.00
+06:59:40 AM   docker0   3749.00   3753.00    858.35   1489.94      0.00      0.00      0.00      0.00
+06:59:40 AM veth927c207   3749.00   3753.00    909.60   1489.94      0.00      0.00      0.00      0.12
+
+06:59:40 AM     CPU     %user     %nice   %system   %iowait    %steal     %idle
+06:59:41 AM     all     20.21      0.00     15.28      0.00      0.00     64.51
+
+06:59:40 AM kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+06:59:41 AM   3023292   5733592   1792016     22.59     85344   2796296   5443996     68.64   1898764   2665984      1752
+
+06:59:40 AM     IFACE   rxpck/s   txpck/s    rxkB/s    txkB/s   rxcmp/s   txcmp/s  rxmcst/s   %ifutil
+06:59:41 AM        lo   7733.00   7733.00   2414.81   2414.81      0.00      0.00      0.00      0.00
+06:59:41 AM      eth0    775.00   1535.00   1222.63    841.91      0.00      0.00      0.00      0.00
+06:59:41 AM   docker0   3808.00   3812.00    872.03   1513.71      0.00      0.00      0.00      0.00
+06:59:41 AM veth927c207   3808.00   3812.00    924.09   1513.71      0.00      0.00      0.00      0.12
+
+06:59:41 AM     CPU     %user     %nice   %system   %iowait    %steal     %idle
+06:59:42 AM     all     22.40      0.00     16.93      0.00      0.00     60.68
+
+06:59:41 AM kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+06:59:42 AM   3023920   5734296   1791152     22.58     85344   2796400   5443996     68.64   1898868   2666060      1856
+
+06:59:41 AM     IFACE   rxpck/s   txpck/s    rxkB/s    txkB/s   rxcmp/s   txcmp/s  rxmcst/s   %ifutil
+06:59:42 AM        lo   7876.00   7876.00   2449.22   2449.22      0.00      0.00      0.00      0.00
+06:59:42 AM      eth0    790.00   1550.00   1237.61    850.84      0.00      0.00      0.00      0.00
+06:59:42 AM   docker0   3852.00   3870.00    883.17   1534.09      0.00      0.00      0.00      0.00
+06:59:42 AM veth927c207   3852.00   3870.00    935.84   1534.09      0.00      0.00      0.00      0.13
+
+06:59:42 AM     CPU     %user     %nice   %system   %iowait    %steal     %idle
+06:59:43 AM     all     24.80      0.00     17.94      0.00      0.00     57.26
+
+06:59:42 AM kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+06:59:43 AM   3022872   5733360   1791868     22.59     85344   2796556   5443996     68.64   1898936   2666172       348
+
+06:59:42 AM     IFACE   rxpck/s   txpck/s    rxkB/s    txkB/s   rxcmp/s   txcmp/s  rxmcst/s   %ifutil
+06:59:43 AM        lo   8006.00   8006.00   2492.76   2492.76      0.00      0.00      0.00      0.00
+06:59:43 AM      eth0    788.00   1574.00   1258.95    866.00      0.00      0.00      0.00      0.00
+06:59:43 AM   docker0   3924.00   3936.00    899.30   1561.64      0.00      0.00      0.00      0.00
+06:59:43 AM veth927c207   3924.00   3936.00    952.95   1561.64      0.00      0.00      0.00      0.13
+
+06:59:43 AM     CPU     %user     %nice   %system   %iowait    %steal     %idle
+06:59:44 AM     all     23.82      0.00     17.28      0.00      0.00     58.90
+
+06:59:43 AM kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+06:59:44 AM   3033292   5743968   1781212     22.46     85344   2796652   5440544     68.59   1897324   2666360       284
+
+06:59:43 AM     IFACE   rxpck/s   txpck/s    rxkB/s    txkB/s   rxcmp/s   txcmp/s  rxmcst/s   %ifutil
+06:59:44 AM        lo   8139.00   8139.00   2531.46   2531.46      0.00      0.00      0.00      0.00
+06:59:44 AM      eth0    800.00   1598.00   1278.18    879.23      0.00      0.00      0.00      0.00
+06:59:44 AM   docker0   3985.00   3996.00    913.08   1585.48      0.00      0.00      0.00      0.00
+06:59:44 AM veth927c207   3985.00   3996.00    967.56   1585.48      0.00      0.00      0.00      0.13
+
+06:59:44 AM     CPU     %user     %nice   %system   %iowait    %steal     %idle
+06:59:45 AM     all     22.40      0.00     15.10      0.00      0.00     62.50
+
+06:59:44 AM kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+06:59:45 AM   3031948   5742648   1782216     22.47     85344   2796808   5440544     68.59   1897196   2666384       460
+
+06:59:44 AM     IFACE   rxpck/s   txpck/s    rxkB/s    txkB/s   rxcmp/s   txcmp/s  rxmcst/s   %ifutil
+06:59:45 AM        lo   8214.00   8214.00   2561.48   2561.48      0.00      0.00      0.00      0.00
+06:59:45 AM      eth0    817.00   1619.00   1296.15    888.35      0.00      0.00      0.00      0.00
+06:59:45 AM   docker0   4033.00   4046.00    923.55   1607.00      0.00      0.00      0.00      0.00
+06:59:45 AM veth927c207   4033.00   4046.00    978.69   1607.00      0.00      0.00      0.00      0.13
+
+06:59:45 AM     CPU     %user     %nice   %system   %iowait    %steal     %idle
+06:59:46 AM     all     22.25      0.00     16.23      0.00      0.00     61.52
+
+06:59:45 AM kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+06:59:46 AM   3030380   5741272   1783636     22.49     85344   2796912   5440544     68.59   1897224   2666576       540
+
+06:59:45 AM     IFACE   rxpck/s   txpck/s    rxkB/s    txkB/s   rxcmp/s   txcmp/s  rxmcst/s   %ifutil
+06:59:46 AM        lo   8290.00   8290.00   2592.23   2592.23      0.00      0.00      0.00      0.00
+06:59:46 AM      eth0    821.00   1642.00   1311.81    902.43      0.00      0.00      0.00      0.00
+06:59:46 AM   docker0   4088.00   4094.00    936.12   1623.42      0.00      0.00      0.00      0.00
+06:59:46 AM veth927c207   4088.00   4094.00    992.02   1623.42      0.00      0.00      0.00      0.13
+
+06:59:46 AM     CPU     %user     %nice   %system   %iowait    %steal     %idle
+06:59:47 AM     all     20.63      0.00     12.53      0.00      0.00     66.84
+
+06:59:46 AM kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+06:59:47 AM   3028588   5739592   1785152     22.51     85344   2797068   5440544     68.59   1897176   2666688       692
+
+06:59:46 AM     IFACE   rxpck/s   txpck/s    rxkB/s    txkB/s   rxcmp/s   txcmp/s  rxmcst/s   %ifutil
+06:59:47 AM        lo   8430.00   8430.00   2637.62   2637.62      0.00      0.00      0.00      0.00
+06:59:47 AM      eth0    832.00   1666.00   1330.96    918.62      0.00      0.00      0.00      0.00
+06:59:47 AM   docker0   4165.00   4167.00    954.27   1654.73      0.00      0.00      0.00      0.00
+06:59:47 AM veth927c207   4165.00   4167.00   1011.21   1654.73      0.00      0.00      0.00      0.14
+
+06:59:47 AM     CPU     %user     %nice   %system   %iowait    %steal     %idle
+06:59:48 AM     all     21.85      0.00     15.68      0.00      0.00     62.47
+
+06:59:47 AM kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+06:59:48 AM   3026768   5737908   1786692     22.53     85344   2797188   5440544     68.59   1896828   2666824       812
+
+06:59:47 AM     IFACE   rxpck/s   txpck/s    rxkB/s    txkB/s   rxcmp/s   txcmp/s  rxmcst/s   %ifutil
+06:59:48 AM        lo   8541.00   8541.00   2670.41   2670.41      0.00      0.00      0.00      0.00
+06:59:48 AM      eth0    844.00   1687.00   1350.17    928.67      0.00      0.00      0.00      0.00
+06:59:48 AM   docker0   4210.00   4223.00    964.59   1674.99      0.00      0.00      0.00      0.00
+06:59:48 AM veth927c207   4210.00   4223.00   1022.14   1674.99      0.00      0.00      0.00      0.14
+
+06:59:48 AM     CPU     %user     %nice   %system   %iowait    %steal     %idle
+06:59:49 AM     all     22.49      0.00     15.61      0.00      0.00     61.90
+
+06:59:48 AM kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+06:59:49 AM   3024684   5735964   1788500     22.55     85344   2797308   5440544     68.59   1896848   2666964       896
+
+06:59:48 AM     IFACE   rxpck/s   txpck/s    rxkB/s    txkB/s   rxcmp/s   txcmp/s  rxmcst/s   %ifutil
+06:59:49 AM        lo   8636.00   8636.00   2703.62   2703.62      0.00      0.00      0.00      0.00
+06:59:49 AM      eth0    857.00   1708.00   1367.91    938.83      0.00      0.00      0.00      0.00
+06:59:49 AM   docker0   4263.00   4270.00    976.19   1696.32      0.00      0.00      0.00      0.00
+06:59:49 AM veth927c207   4263.00   4270.00   1034.47   1696.32      0.00      0.00      0.00      0.14
+
+06:59:49 AM     CPU     %user     %nice   %system   %iowait    %steal     %idle
+06:59:50 AM     all     22.08      0.00     15.84      0.00      0.00     62.08
+
+06:59:49 AM kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+06:59:50 AM   3023780   5735172   1789184     22.56     85344   2797456   5440544     68.59   1896856   2667076      1048
+
+06:59:49 AM     IFACE   rxpck/s   txpck/s    rxkB/s    txkB/s   rxcmp/s   txcmp/s  rxmcst/s   %ifutil
+06:59:50 AM        lo   8767.00   8767.00   2741.39   2741.39      0.00      0.00      0.00      0.00
+06:59:50 AM      eth0    882.00   1737.00   1386.46    954.30      0.00      0.00      0.00      0.00
+06:59:50 AM   docker0   4320.00   4337.00    990.65   1718.95      0.00      0.00      0.00      0.00
+06:59:50 AM veth927c207   4321.00   4337.00   1049.78   1718.95      0.00      0.00      0.00      0.14
+
+06:59:50 AM     CPU     %user     %nice   %system   %iowait    %steal     %idle
+06:59:51 AM     all     23.12      0.00     16.88      0.00      0.00     60.00
+
+06:59:50 AM kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+06:59:51 AM   3023512   5735056   1789252     22.56     85344   2797604   5440544     68.59   1896864   2667228      1248
+
+06:59:50 AM     IFACE   rxpck/s   txpck/s    rxkB/s    txkB/s   rxcmp/s   txcmp/s  rxmcst/s   %ifutil
+06:59:51 AM        lo   8907.00   8907.00   2780.32   2780.32      0.00      0.00      0.00      0.00
+06:59:51 AM      eth0    878.00   1755.00   1406.17    966.13      0.00      0.00      0.00      0.00
+06:59:51 AM   docker0   4376.00   4391.00   1002.41   1742.40      0.00      0.00      0.00      0.00
+06:59:51 AM veth927c207   4375.00   4391.00   1062.18   1742.40      0.00      0.00      0.00      0.14
+
+06:59:51 AM     CPU     %user     %nice   %system   %iowait    %steal     %idle
+06:59:52 AM     all     23.26      0.00     19.12      0.00      0.00     57.62
+
+06:59:51 AM kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+06:59:52 AM   3023228   5734856   1789280     22.56     85344   2797704   5440544     68.59   1896872   2667312      1348
+
+06:59:51 AM     IFACE   rxpck/s   txpck/s    rxkB/s    txkB/s   rxcmp/s   txcmp/s  rxmcst/s   %ifutil
+06:59:52 AM        lo   9000.00   9000.00   2811.75   2811.75      0.00      0.00      0.00      0.00
+06:59:52 AM      eth0    887.00   1775.00   1420.59    978.12      0.00      0.00      0.00      0.00
+06:59:52 AM   docker0   4429.00   4451.00   1015.79   1764.57      0.00      0.00      0.00      0.00
+06:59:52 AM veth927c207   4429.00   4451.00   1076.34   1764.57      0.00      0.00      0.00      0.14
+
+06:59:52 AM     CPU     %user     %nice   %system   %iowait    %steal     %idle
+06:59:53 AM     all     21.15      0.00     15.14      0.00      0.00     63.71
+
+06:59:52 AM kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+06:59:53 AM   3038364   5750172   1773852     22.36     85344   2797856   5440612     68.59   1896776   2667492      1500
+
+06:59:52 AM     IFACE   rxpck/s   txpck/s    rxkB/s    txkB/s   rxcmp/s   txcmp/s  rxmcst/s   %ifutil
+06:59:53 AM        lo   9114.00   9114.00   2858.57   2858.57      0.00      0.00      0.00      0.00
+06:59:53 AM      eth0    918.00   1817.00   1448.73    996.91      0.00      0.00      0.00      0.00
+06:59:53 AM   docker0   4504.00   4526.00   1032.95   1794.36      0.00      0.00      0.00      0.00
+06:59:53 AM veth927c207   4504.00   4526.00   1094.53   1794.36      0.00      0.00      0.00      0.15
+
+06:59:53 AM     CPU     %user     %nice   %system   %iowait    %steal     %idle
+06:59:54 AM     all     21.50      0.00     14.51      0.00      0.00     63.99
+
+06:59:53 AM kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+06:59:54 AM   3036044   5748044   1775956     22.39     85344   2798008   5440612     68.59   1896928   2667684      1552
+
+06:59:53 AM     IFACE   rxpck/s   txpck/s    rxkB/s    txkB/s   rxcmp/s   txcmp/s  rxmcst/s   %ifutil
+06:59:54 AM        lo   9182.00   9182.00   2880.61   2880.61      0.00      0.00      0.00      0.00
+06:59:54 AM      eth0    910.00   1820.00   1457.42   1002.42      0.00      0.00      0.00      0.00
+06:59:54 AM   docker0   4544.00   4556.00   1041.22   1807.95      0.00      0.00      0.00      0.00
+06:59:54 AM veth927c207   4544.00   4556.00   1103.34   1807.95      0.00      0.00      0.00      0.15
+
+06:59:54 AM     CPU     %user     %nice   %system   %iowait    %steal     %idle
+06:59:55 AM     all     22.34      0.00     15.06      0.00      0.00     62.60
+
+06:59:54 AM kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+06:59:55 AM   3034476   5746556   1777332     22.41     85344   2798168   5440612     68.59   1896820   2667764      1676
+
+06:59:54 AM     IFACE   rxpck/s   txpck/s    rxkB/s    txkB/s   rxcmp/s   txcmp/s  rxmcst/s   %ifutil
+06:59:55 AM        lo   9319.00   9319.00   2925.77   2925.77      0.00      0.00      0.00      0.00
+06:59:55 AM      eth0    927.00   1851.00   1481.56   1019.00      0.00      0.00      0.00      0.00
+06:59:55 AM   docker0   4622.00   4624.00   1058.53   1835.62      0.00      0.00      0.00      0.00
+06:59:55 AM veth927c207   4622.00   4624.00   1121.72   1835.62      0.00      0.00      0.00      0.15
+
+06:59:55 AM     CPU     %user     %nice   %system   %iowait    %steal     %idle
+06:59:56 AM     all     22.56      0.00     15.90      0.00      0.00     61.54
+
+06:59:55 AM kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+06:59:56 AM   3032880   5745132   1778716     22.43     85344   2798308   5440612     68.59   1896844   2667936      1884
+
+06:59:55 AM     IFACE   rxpck/s   txpck/s    rxkB/s    txkB/s   rxcmp/s   txcmp/s  rxmcst/s   %ifutil
+06:59:56 AM        lo   9355.00   9355.00   2945.43   2945.43      0.00      0.00      0.00      0.00
+06:59:56 AM      eth0    931.00   1861.00   1491.05   1024.52      0.00      0.00      0.00      0.00
+06:59:56 AM   docker0   4646.00   4665.00   1064.23   1851.58      0.00      0.00      0.00      0.00
+06:59:56 AM veth927c207   4646.00   4665.00   1127.75   1851.58      0.00      0.00      0.00      0.15
+
+06:59:56 AM     CPU     %user     %nice   %system   %iowait    %steal     %idle
+06:59:57 AM     all     25.45      0.00     17.40      0.00      0.00     57.14
+
+06:59:56 AM kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+06:59:57 AM   3031072   5743452   1780268     22.45     85344   2798444   5440612     68.59   1896880   2668064      2012
+
+06:59:56 AM     IFACE   rxpck/s   txpck/s    rxkB/s    txkB/s   rxcmp/s   txcmp/s  rxmcst/s   %ifutil
+06:59:57 AM        lo   9643.00   9643.00   3012.39   3012.39      0.00      0.00      0.00      0.00
+06:59:57 AM      eth0    950.00   1902.00   1521.48   1048.56      0.00      0.00      0.00      0.00
+06:59:57 AM   docker0   4746.00   4765.00   1088.87   1887.98      0.00      0.00      0.00      0.00
+06:59:57 AM veth927c207   4746.00   4765.00   1153.75   1887.98      0.00      0.00      0.00      0.15
+
+06:59:57 AM     CPU     %user     %nice   %system   %iowait    %steal     %idle
+06:59:58 AM     all     20.98      0.00     15.80      0.00      0.00     63.21
+
+06:59:57 AM kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+06:59:58 AM   3029280   5741844   1781832     22.46     85344   2798576   5440612     68.59   1896972   2668248      2164
+
+06:59:57 AM     IFACE   rxpck/s   txpck/s    rxkB/s    txkB/s   rxcmp/s   txcmp/s  rxmcst/s   %ifutil
+06:59:58 AM        lo   9665.00   9665.00   3032.88   3032.88      0.00      0.00      0.00      0.00
+06:59:58 AM      eth0    967.00   1930.00   1534.86   1056.21      0.00      0.00      0.00      0.00
+06:59:58 AM   docker0   4782.00   4798.00   1096.05   1903.42      0.00      0.00      0.00      0.00
+06:59:58 AM veth927c207   4782.00   4798.00   1161.43   1903.42      0.00      0.00      0.00      0.16
+
+06:59:58 AM     CPU     %user     %nice   %system   %iowait    %steal     %idle
+06:59:59 AM     all     20.57      0.00     17.22      0.00      0.00     62.21
+
+06:59:58 AM kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+06:59:59 AM   3027464   5740144   1783464     22.49     85344   2798724   5440612     68.59   1896892   2668364       248
+
+06:59:58 AM     IFACE   rxpck/s   txpck/s    rxkB/s    txkB/s   rxcmp/s   txcmp/s  rxmcst/s   %ifutil
+06:59:59 AM        lo   9700.00   9700.00   3061.84   3061.84      0.00      0.00      0.00      0.00
+06:59:59 AM      eth0    973.00   1940.00   1552.18   1066.57      0.00      0.00      0.00      0.00
+06:59:59 AM   docker0   4836.00   4851.00   1107.71   1925.14      0.00      0.00      0.00      0.00
+06:59:59 AM veth927c207   4836.00   4851.00   1173.83   1925.14      0.00      0.00      0.00      0.16
+
+06:59:59 AM     CPU     %user     %nice   %system   %iowait    %steal     %idle
+07:00:00 AM     all     23.76      0.00     15.40      0.00      0.00     60.84
+
+06:59:59 AM kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+07:00:00 AM   3025896   5738684   1784780     22.50     85344   2798884   5440612     68.59   1896748   2668472       412
+
+06:59:59 AM     IFACE   rxpck/s   txpck/s    rxkB/s    txkB/s   rxcmp/s   txcmp/s  rxmcst/s   %ifutil
+07:00:00 AM        lo   9863.00   9863.00   3096.49   3096.49      0.00      0.00      0.00      0.00
+07:00:00 AM      eth0   1038.00   1982.00   1570.34   1080.16      0.00      0.00      0.00      0.00
+07:00:00 AM   docker0   4867.00   4921.00   1119.07   1944.63      0.00      0.00      0.00      0.00
+07:00:00 AM veth927c207   4867.00   4921.00   1185.61   1944.63      0.00      0.00      0.00      0.16
+
+07:00:00 AM     CPU     %user     %nice   %system   %iowait    %steal     %idle
+07:00:01 AM     all     22.42      0.00     15.46      0.26      0.00     61.86
+
+07:00:00 AM kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+07:00:01 AM   3024328   5737332   1786144     22.52     85344   2799048   5440612     68.59   1896848   2668696       464
+
+07:00:00 AM     IFACE   rxpck/s   txpck/s    rxkB/s    txkB/s   rxcmp/s   txcmp/s  rxmcst/s   %ifutil
+07:00:01 AM        lo   9988.00   9988.00   3139.11   3139.11      0.00      0.00      0.00      0.00
+07:00:01 AM      eth0    996.00   1991.00   1589.01   1093.19      0.00      0.00      0.00      0.00
+07:00:01 AM   docker0   4937.00   4984.00   1134.21   1971.98      0.00      0.00      0.00      0.00
+07:00:01 AM veth927c207   4937.00   4984.00   1201.71   1971.98      0.00      0.00      0.00      0.16
+
+07:00:01 AM     CPU     %user     %nice   %system   %iowait    %steal     %idle
+07:00:02 AM     all      3.27      0.00      2.26      0.00      0.00     94.47
+
+07:00:01 AM kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+07:00:02 AM   3023880   5736936   1786488     22.52     85344   2799092   5440612     68.59   1896916   2668748       620
+
+07:00:01 AM     IFACE   rxpck/s   txpck/s    rxkB/s    txkB/s   rxcmp/s   txcmp/s  rxmcst/s   %ifutil
+07:00:02 AM        lo   1377.00   1377.00    433.10    433.10      0.00      0.00      0.00      0.00
+07:00:02 AM      eth0    165.00    275.00    221.20    150.97      0.00      0.00      0.00      0.00
+07:00:02 AM   docker0    683.00    687.00    156.70    272.26      0.00      0.00      0.00      0.00
+07:00:02 AM veth927c207    683.00    687.00    166.04    272.26      0.00      0.00      0.00      0.02
+
+07:00:02 AM     CPU     %user     %nice   %system   %iowait    %steal     %idle
+07:00:03 AM     all      0.00      0.00      0.25      0.00      0.00     99.75
+
+07:00:02 AM kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+07:00:03 AM   3023880   5736960   1786488     22.52     85344   2799092   5440612     68.59   1896916   2668772       608
+
+07:00:02 AM     IFACE   rxpck/s   txpck/s    rxkB/s    txkB/s   rxcmp/s   txcmp/s  rxmcst/s   %ifutil
+07:00:03 AM        lo      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+07:00:03 AM      eth0      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+07:00:03 AM   docker0      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+07:00:03 AM veth927c207      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+
+07:00:03 AM     CPU     %user     %nice   %system   %iowait    %steal     %idle
+07:00:04 AM     all      0.50      0.00      0.50      0.00      0.00     99.00
+
+07:00:03 AM kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+07:00:04 AM   3021864   5734992   1788460     22.55     85344   2799100   5440612     68.59   1896920   2668820       748
+
+07:00:03 AM     IFACE   rxpck/s   txpck/s    rxkB/s    txkB/s   rxcmp/s   txcmp/s  rxmcst/s   %ifutil
+07:00:04 AM        lo      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+07:00:04 AM      eth0      1.00      1.00      0.06      0.12      0.00      0.00      0.00      0.00
+07:00:04 AM   docker0      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+07:00:04 AM veth927c207      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+
+07:00:04 AM     CPU     %user     %nice   %system   %iowait    %steal     %idle
+07:00:05 AM     all      0.00      0.00      0.00      0.00      0.00    100.00
+
+07:00:04 AM kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+07:00:05 AM   3021864   5734992   1788460     22.55     85344   2799100   5440612     68.59   1896920   2668820       748
+
+07:00:04 AM     IFACE   rxpck/s   txpck/s    rxkB/s    txkB/s   rxcmp/s   txcmp/s  rxmcst/s   %ifutil
+07:00:05 AM        lo      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+07:00:05 AM      eth0      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+07:00:05 AM   docker0      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+07:00:05 AM veth927c207      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+
+07:00:05 AM     CPU     %user     %nice   %system   %iowait    %steal     %idle
+07:00:06 AM     all      0.25      0.00      0.00      0.25      0.00     99.50
+
+07:00:05 AM kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+07:00:06 AM   3021612   5734832   1788584     22.55     85344   2799228   5440612     68.59   1897040   2668820       764
+
+07:00:05 AM     IFACE   rxpck/s   txpck/s    rxkB/s    txkB/s   rxcmp/s   txcmp/s  rxmcst/s   %ifutil
+07:00:06 AM        lo      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+07:00:06 AM      eth0      1.00      1.00      0.06      0.12      0.00      0.00      0.00      0.00
+07:00:06 AM   docker0      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+07:00:06 AM veth927c207      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+
+07:00:06 AM     CPU     %user     %nice   %system   %iowait    %steal     %idle
+07:00:07 AM     all      9.02      0.00      6.19      0.00      0.00     84.79
+
+07:00:06 AM kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+07:00:07 AM   3021612   5734832   1788556     22.55     85344   2799252   5440612     68.59   1897040   2668820       788
+
+07:00:06 AM     IFACE   rxpck/s   txpck/s    rxkB/s    txkB/s   rxcmp/s   txcmp/s  rxmcst/s   %ifutil
+07:00:07 AM        lo   1771.00   1771.00    551.91    551.91      0.00      0.00      0.00      0.00
+07:00:07 AM      eth0    347.00    348.00    289.82    191.67      0.00      0.00      0.00      0.00
+07:00:07 AM   docker0    869.00    870.00    199.10    345.62      0.00      0.00      0.00      0.00
+07:00:07 AM veth927c207    870.00    870.00    211.04    345.62      0.00      0.00      0.00      0.03
+
+07:00:07 AM     CPU     %user     %nice   %system   %iowait    %steal     %idle
+07:00:08 AM     all      9.51      0.00      8.23      0.00      0.00     82.26
+
+07:00:07 AM kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+07:00:08 AM   3021360   5734644   1788768     22.55     85344   2799288   5440612     68.59   1897080   2668848       828
+
+07:00:07 AM     IFACE   rxpck/s   txpck/s    rxkB/s    txkB/s   rxcmp/s   txcmp/s  rxmcst/s   %ifutil
+07:00:08 AM        lo   2013.00   2013.00    631.83    631.83      0.00      0.00      0.00      0.00
+07:00:08 AM      eth0    399.00    399.00    333.14    219.28      0.00      0.00      0.00      0.00
+07:00:08 AM   docker0    998.00    998.00    227.92    397.14      0.00      0.00      0.00      0.00
+07:00:08 AM veth927c207    997.00    998.00    241.50    397.14      0.00      0.00      0.00      0.03
+
+07:00:08 AM     CPU     %user     %nice   %system   %iowait    %steal     %idle
+07:00:09 AM     all      9.92      0.00      9.16      0.00      0.00     80.92
+
+07:00:08 AM kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+07:00:09 AM   3021360   5734656   1788736     22.55     85344   2799316   5440612     68.59   1897096   2668860       856
+
+07:00:08 AM     IFACE   rxpck/s   txpck/s    rxkB/s    txkB/s   rxcmp/s   txcmp/s  rxmcst/s   %ifutil
+07:00:09 AM        lo   2010.00   2010.00    633.36    633.36      0.00      0.00      0.00      0.00
+07:00:09 AM      eth0    401.00    401.00    333.27    221.35      0.00      0.00      0.00      0.00
+07:00:09 AM   docker0   1003.00   1003.00    229.94    397.46      0.00      0.00      0.00      0.00
+07:00:09 AM veth927c207   1003.00   1003.00    243.65    397.46      0.00      0.00      0.00      0.03
+
+07:00:09 AM     CPU     %user     %nice   %system   %iowait    %steal     %idle
+07:00:10 AM     all     10.65      0.00      9.09      0.00      0.00     80.26
+
+07:00:09 AM kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+07:00:10 AM   3020568   5733896   1789500     22.56     85344   2799344   5440364     68.59   1896980   2668892       936
+
+07:00:09 AM     IFACE   rxpck/s   txpck/s    rxkB/s    txkB/s   rxcmp/s   txcmp/s  rxmcst/s   %ifutil
+07:00:10 AM        lo   2005.00   2005.00    631.56    631.56      0.00      0.00      0.00      0.00
+07:00:10 AM      eth0    412.00    408.00    335.13    221.30      0.00      0.00      0.00      0.00
+07:00:10 AM   docker0    999.00    999.00    228.86    397.20      0.00      0.00      0.00      0.00
+07:00:10 AM veth927c207    999.00    999.00    242.51    397.20      0.00      0.00      0.00      0.03
+
+07:00:10 AM     CPU     %user     %nice   %system   %iowait    %steal     %idle
+07:00:11 AM     all      9.41      0.00      7.38      0.00      0.00     83.21
+
+07:00:10 AM kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+07:00:11 AM   3020568   5733956   1789448     22.56     85344   2799384   5440608     68.59   1897108   2668952      1012
+
+07:00:10 AM     IFACE   rxpck/s   txpck/s    rxkB/s    txkB/s   rxcmp/s   txcmp/s  rxmcst/s   %ifutil
+07:00:11 AM        lo   2038.00   2038.00    635.06    635.06      0.00      0.00      0.00      0.00
+07:00:11 AM      eth0    403.00    403.00    333.78    221.53      0.00      0.00      0.00      0.00
+07:00:11 AM   docker0   1001.00   1001.00    228.96    397.33      0.00      0.00      0.00      0.00
+07:00:11 AM veth927c207   1001.00   1001.00    242.64    397.33      0.00      0.00      0.00      0.03
+
+07:00:11 AM     CPU     %user     %nice   %system   %iowait    %steal     %idle
+07:00:12 AM     all     10.20      0.00      8.42      0.00      0.00     81.38
+
+07:00:11 AM kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+07:00:12 AM   3020064   5733468   1789916     22.57     85344   2799416   5440608     68.59   1897168   2668968      1000
+
+07:00:11 AM     IFACE   rxpck/s   txpck/s    rxkB/s    txkB/s   rxcmp/s   txcmp/s  rxmcst/s   %ifutil
+07:00:12 AM        lo   2018.00   2018.00    633.26    633.26      0.00      0.00      0.00      0.00
+07:00:12 AM      eth0    400.00    400.00    333.20    220.31      0.00      0.00      0.00      0.00
+07:00:12 AM   docker0    999.00   1001.00    228.86    397.33      0.00      0.00      0.00      0.00
+07:00:12 AM veth927c207    999.00   1001.00    242.51    397.33      0.00      0.00      0.00      0.03
+
+07:00:12 AM     CPU     %user     %nice   %system   %iowait    %steal     %idle
+07:00:13 AM     all     10.00      0.00      8.21      0.00      0.00     81.79
+
+07:00:12 AM kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+07:00:13 AM   3020064   5733520   1789888     22.57     85344   2799440   5440608     68.59   1897236   2669020      1044
+
+07:00:12 AM     IFACE   rxpck/s   txpck/s    rxkB/s    txkB/s   rxcmp/s   txcmp/s  rxmcst/s   %ifutil
+07:00:13 AM        lo   2019.00   2019.00    633.19    633.19      0.00      0.00      0.00      0.00
+07:00:13 AM      eth0    400.00    399.00    333.20    219.28      0.00      0.00      0.00      0.00
+07:00:13 AM   docker0    999.00    999.00    228.86    397.20      0.00      0.00      0.00      0.00
+07:00:13 AM veth927c207    999.00    999.00    242.51    397.20      0.00      0.00      0.00      0.03
+
+07:00:13 AM     CPU     %user     %nice   %system   %iowait    %steal     %idle
+07:00:14 AM     all     10.80      0.00      7.97      0.00      0.00     81.23
+
+07:00:13 AM kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+07:00:14 AM   3020064   5733532   1789848     22.57     85344   2799476   5440608     68.59   1897288   2669032      1072
+
+07:00:13 AM     IFACE   rxpck/s   txpck/s    rxkB/s    txkB/s   rxcmp/s   txcmp/s  rxmcst/s   %ifutil
+07:00:14 AM        lo   2028.00   2028.00    633.69    633.69      0.00      0.00      0.00      0.00
+07:00:14 AM      eth0    399.00    401.00    333.14    221.35      0.00      0.00      0.00      0.00
+07:00:14 AM   docker0   1001.00   1001.00    228.96    397.33      0.00      0.00      0.00      0.00
+07:00:14 AM veth927c207   1001.00   1001.00    242.64    397.33      0.00      0.00      0.00      0.03
+
+07:00:14 AM     CPU     %user     %nice   %system   %iowait    %steal     %idle
+07:00:15 AM     all     10.54      0.00      7.46      0.00      0.00     82.01
+
+07:00:14 AM kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+07:00:15 AM   3020064   5733564   1789812     22.57     85344   2799508   5440608     68.59   1897320   2669064      1104
+
+07:00:14 AM     IFACE   rxpck/s   txpck/s    rxkB/s    txkB/s   rxcmp/s   txcmp/s  rxmcst/s   %ifutil
+07:00:15 AM        lo   1989.11   1989.11    625.29    625.29      0.00      0.00      0.00      0.00
+07:00:15 AM      eth0    397.03    396.04    329.97    217.22      0.00      0.00      0.00      0.00
+07:00:15 AM   docker0    986.14    987.13    225.56    391.50      0.00      0.00      0.00      0.00
+07:00:15 AM veth927c207    986.14    987.13    239.05    391.50      0.00      0.00      0.00      0.03
+
+07:00:15 AM     CPU     %user     %nice   %system   %iowait    %steal     %idle
+07:00:16 AM     all     10.46      0.00      9.69      0.00      0.00     79.85
+
+07:00:15 AM kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+07:00:16 AM   3020064   5733576   1789780     22.57     85344   2799540   5440608     68.59   1897368   2669076      1188
+
+07:00:15 AM     IFACE   rxpck/s   txpck/s    rxkB/s    txkB/s   rxcmp/s   txcmp/s  rxmcst/s   %ifutil
+07:00:16 AM        lo   2015.00   2015.00    632.81    632.81      0.00      0.00      0.00      0.00
+07:00:16 AM      eth0    400.00    400.00    333.20    220.31      0.00      0.00      0.00      0.00
+07:00:16 AM   docker0   1001.00   1001.00    228.96    398.99      0.00      0.00      0.00      0.00
+07:00:16 AM veth927c207   1001.00   1001.00    242.64    398.99      0.00      0.00      0.00      0.03
+
+07:00:16 AM     CPU     %user     %nice   %system   %iowait    %steal     %idle
+07:00:17 AM     all      9.16      0.00      6.87      0.00      0.00     83.97
+
+07:00:16 AM kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+07:00:17 AM   3020064   5733616   1789744     22.56     85344   2799572   5440608     68.59   1897408   2669116      1236
+
+07:00:16 AM     IFACE   rxpck/s   txpck/s    rxkB/s    txkB/s   rxcmp/s   txcmp/s  rxmcst/s   %ifutil
+07:00:17 AM        lo   2021.00   2021.00    632.49    632.49      0.00      0.00      0.00      0.00
+07:00:17 AM      eth0    401.00    400.00    333.26    219.33      0.00      0.00      0.00      0.00
+07:00:17 AM   docker0    997.00    998.00    227.87    397.14      0.00      0.00      0.00      0.00
+07:00:17 AM veth927c207    997.00    998.00    241.50    397.14      0.00      0.00      0.00      0.03
+
+07:00:17 AM     CPU     %user     %nice   %system   %iowait    %steal     %idle
+07:00:18 AM     all     10.26      0.00      7.18      0.00      0.00     82.56
+
+07:00:17 AM kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+07:00:18 AM   3020064   5733660   1789708     22.56     85344   2799604   5440608     68.59   1897444   2669160      1264
+
+07:00:17 AM     IFACE   rxpck/s   txpck/s    rxkB/s    txkB/s   rxcmp/s   txcmp/s  rxmcst/s   %ifutil
+07:00:18 AM        lo   2037.00   2037.00    635.18    635.18      0.00      0.00      0.00      0.00
+07:00:18 AM      eth0    400.00    401.00    333.20    221.35      0.00      0.00      0.00      0.00
+07:00:18 AM   docker0   1003.00   1002.00    229.94    397.39      0.00      0.00      0.00      0.00
+07:00:18 AM veth927c207   1003.00   1002.00    243.65    397.39      0.00      0.00      0.00      0.03
+
+07:00:18 AM     CPU     %user     %nice   %system   %iowait    %steal     %idle
+07:00:19 AM     all      8.97      0.00      7.18      0.00      0.00     83.85
+
+07:00:18 AM kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+07:00:19 AM   3020064   5733660   1789660     22.56     85344   2799640   5440608     68.59   1897444   2669160      1312
+
+07:00:18 AM     IFACE   rxpck/s   txpck/s    rxkB/s    txkB/s   rxcmp/s   txcmp/s  rxmcst/s   %ifutil
+07:00:19 AM        lo   2036.00   2036.00    632.70    632.70      0.00      0.00      0.00      0.00
+07:00:19 AM      eth0    403.00    401.00    333.40    220.42      0.00      0.00      0.00      0.00
+07:00:19 AM   docker0    998.00    997.00    228.80    395.41      0.00      0.00      0.00      0.00
+07:00:19 AM veth927c207    998.00    997.00    242.44    395.41      0.00      0.00      0.00      0.03
+
+07:00:19 AM     CPU     %user     %nice   %system   %iowait    %steal     %idle
+07:00:20 AM     all     10.03      0.00      7.97      0.00      0.00     82.01
+
+07:00:19 AM kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+07:00:20 AM   3020064   5733684   1789628     22.56     85344   2799672   5440608     68.59   1897468   2669184      1352
+
+07:00:19 AM     IFACE   rxpck/s   txpck/s    rxkB/s    txkB/s   rxcmp/s   txcmp/s  rxmcst/s   %ifutil
+07:00:20 AM        lo   2034.00   2034.00    636.51    636.51      0.00      0.00      0.00      0.00
+07:00:20 AM      eth0    400.00    402.00    333.20    221.41      0.00      0.00      0.00      0.00
+07:00:20 AM   docker0   1005.00   1005.00    230.05    399.25      0.00      0.00      0.00      0.00
+07:00:20 AM veth927c207   1005.00   1005.00    243.79    399.25      0.00      0.00      0.00      0.03
+
+07:00:20 AM     CPU     %user     %nice   %system   %iowait    %steal     %idle
+07:00:21 AM     all      9.69      0.00      7.65      0.00      0.00     82.65
+
+07:00:20 AM kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+07:00:21 AM   3020064   5733728   1789596     22.56     85344   2799704   5440608     68.59   1897476   2669228      1376
+
+07:00:20 AM     IFACE   rxpck/s   txpck/s    rxkB/s    txkB/s   rxcmp/s   txcmp/s  rxmcst/s   %ifutil
+07:00:21 AM        lo   2031.00   2031.00    633.92    633.92      0.00      0.00      0.00      0.00
+07:00:21 AM      eth0    401.00    401.00    333.27    220.43      0.00      0.00      0.00      0.00
+07:00:21 AM   docker0   1000.00   1000.00    228.91    397.27      0.00      0.00      0.00      0.00
+07:00:21 AM veth927c207   1000.00   1000.00    242.58    397.27      0.00      0.00      0.00      0.03
+
+07:00:21 AM     CPU     %user     %nice   %system   %iowait    %steal     %idle
+07:00:22 AM     all     10.20      0.00      8.16      0.00      0.00     81.63
+
+07:00:21 AM kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+07:00:22 AM   3020064   5733764   1789552     22.56     85344   2799740   5440608     68.59   1897496   2669264      1372
+
+07:00:21 AM     IFACE   rxpck/s   txpck/s    rxkB/s    txkB/s   rxcmp/s   txcmp/s  rxmcst/s   %ifutil
+07:00:22 AM        lo   2034.00   2034.00    633.91    633.91      0.00      0.00      0.00      0.00
+07:00:22 AM      eth0    400.00    402.00    333.20    220.44      0.00      0.00      0.00      0.00
+07:00:22 AM   docker0   1000.00   1000.00    228.91    397.27      0.00      0.00      0.00      0.00
+07:00:22 AM veth927c207   1000.00   1000.00    242.58    397.27      0.00      0.00      0.00      0.03
+
+07:00:22 AM     CPU     %user     %nice   %system   %iowait    %steal     %idle
+07:00:23 AM     all     10.85      0.00      7.24      0.00      0.00     81.91
+
+07:00:22 AM kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+07:00:23 AM   3020064   5733816   1789524     22.56     85344   2799764   5440608     68.59   1897504   2669316      1416
+
+07:00:22 AM     IFACE   rxpck/s   txpck/s    rxkB/s    txkB/s   rxcmp/s   txcmp/s  rxmcst/s   %ifutil
+07:00:23 AM        lo   2012.00   2012.00    632.72    632.72      0.00      0.00      0.00      0.00
+07:00:23 AM      eth0    401.00    401.00    333.27    220.43      0.00      0.00      0.00      0.00
+07:00:23 AM   docker0   1000.00   1000.00    228.91    397.27      0.00      0.00      0.00      0.00
+07:00:23 AM veth927c207   1000.00   1000.00    242.58    397.27      0.00      0.00      0.00      0.03
+
+07:00:23 AM     CPU     %user     %nice   %system   %iowait    %steal     %idle
+07:00:24 AM     all      9.25      0.00      7.97      0.00      0.00     82.78
+
+07:00:23 AM kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+07:00:24 AM   3020064   5733860   1789492     22.56     85344   2799796   5440608     68.59   1897516   2669360       584
+
+07:00:23 AM     IFACE   rxpck/s   txpck/s    rxkB/s    txkB/s   rxcmp/s   txcmp/s  rxmcst/s   %ifutil
+07:00:24 AM        lo   2046.00   2046.00    634.80    634.80      0.00      0.00      0.00      0.00
+07:00:24 AM      eth0    400.00    400.00    333.20    220.31      0.00      0.00      0.00      0.00
+07:00:24 AM   docker0   1000.00   1000.00    228.91    397.27      0.00      0.00      0.00      0.00
+07:00:24 AM veth927c207   1000.00   1000.00    242.58    397.27      0.00      0.00      0.00      0.03
+
+07:00:24 AM     CPU     %user     %nice   %system   %iowait    %steal     %idle
+07:00:25 AM     all     10.51      0.00      7.69      0.00      0.00     81.79
+
+07:00:24 AM kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+07:00:25 AM   3020064   5733904   1789452     22.56     85344   2799832   5440608     68.59   1897528   2669404       496
+
+07:00:24 AM     IFACE   rxpck/s   txpck/s    rxkB/s    txkB/s   rxcmp/s   txcmp/s  rxmcst/s   %ifutil
+07:00:25 AM        lo   2027.00   2027.00    633.62    633.62      0.00      0.00      0.00      0.00
+07:00:25 AM      eth0    400.00    400.00    333.20    220.31      0.00      0.00      0.00      0.00
+07:00:25 AM   docker0   1000.00   1000.00    228.91    397.27      0.00      0.00      0.00      0.00
+07:00:25 AM veth927c207   1000.00   1000.00    242.58    397.27      0.00      0.00      0.00      0.03
+
+07:00:25 AM     CPU     %user     %nice   %system   %iowait    %steal     %idle
+07:00:26 AM     all      9.23      0.00      7.69      0.00      0.00     83.08
+
+07:00:25 AM kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+07:00:26 AM   3020064   5733904   1789424     22.56     85344   2799860   5440608     68.59   1897528   2669404       588
+
+07:00:25 AM     IFACE   rxpck/s   txpck/s    rxkB/s    txkB/s   rxcmp/s   txcmp/s  rxmcst/s   %ifutil
+07:00:26 AM        lo   2028.00   2028.00    633.71    633.71      0.00      0.00      0.00      0.00
+07:00:26 AM      eth0    400.00    400.00    333.20    220.31      0.00      0.00      0.00      0.00
+07:00:26 AM   docker0   1000.00   1000.00    228.91    397.27      0.00      0.00      0.00      0.00
+07:00:26 AM veth927c207   1000.00   1000.00    242.58    397.27      0.00      0.00      0.00      0.03
+
+07:00:26 AM     CPU     %user     %nice   %system   %iowait    %steal     %idle
+07:00:27 AM     all     10.26      0.00      7.69      0.00      0.00     82.05
+
+07:00:26 AM kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+07:00:27 AM   3020064   5733952   1789384     22.56     85344   2799900   5440608     68.59   1897572   2669452       620
+
+07:00:26 AM     IFACE   rxpck/s   txpck/s    rxkB/s    txkB/s   rxcmp/s   txcmp/s  rxmcst/s   %ifutil
+07:00:27 AM        lo   2022.00   2022.00    633.30    633.30      0.00      0.00      0.00      0.00
+07:00:27 AM      eth0    400.00    400.00    333.20    220.31      0.00      0.00      0.00      0.00
+07:00:27 AM   docker0   1000.00   1000.00    228.91    397.27      0.00      0.00      0.00      0.00
+07:00:27 AM veth927c207   1000.00   1000.00    242.58    397.27      0.00      0.00      0.00      0.03
+
+07:00:27 AM     CPU     %user     %nice   %system   %iowait    %steal     %idle
+07:00:28 AM     all      9.18      0.00      8.16      0.00      0.00     82.65
+
+07:00:27 AM kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+07:00:28 AM   3019244   5733180   1790180     22.57     85344   2799924   5440612     68.59   1897580   2669500       724
+
+07:00:27 AM     IFACE   rxpck/s   txpck/s    rxkB/s    txkB/s   rxcmp/s   txcmp/s  rxmcst/s   %ifutil
+07:00:28 AM        lo   2030.00   2030.00    633.87    633.87      0.00      0.00      0.00      0.00
+07:00:28 AM      eth0    415.00    411.00    335.73    222.51      0.00      0.00      0.00      0.00
+07:00:28 AM   docker0   1000.00   1000.00    228.91    397.27      0.00      0.00      0.00      0.00
+07:00:28 AM veth927c207   1000.00   1000.00    242.58    397.27      0.00      0.00      0.00      0.03
+
+07:00:28 AM     CPU     %user     %nice   %system   %iowait    %steal     %idle
+07:00:29 AM     all     10.62      0.00      7.25      0.00      0.00     82.12
+
+07:00:28 AM kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+07:00:29 AM   3019244   5733196   1790140     22.57     85344   2799964   5440612     68.59   1897668   2669516       760
+
+07:00:28 AM     IFACE   rxpck/s   txpck/s    rxkB/s    txkB/s   rxcmp/s   txcmp/s  rxmcst/s   %ifutil
+07:00:29 AM        lo   2004.00   2004.00    631.49    631.49      0.00      0.00      0.00      0.00
+07:00:29 AM      eth0    400.00    399.00    333.20    219.28      0.00      0.00      0.00      0.00
+07:00:29 AM   docker0    997.00    998.00    227.87    397.14      0.00      0.00      0.00      0.00
+07:00:29 AM veth927c207    997.00    998.00    241.50    397.14      0.00      0.00      0.00      0.03
+
+07:00:29 AM     CPU     %user     %nice   %system   %iowait    %steal     %idle
+07:00:30 AM     all     10.80      0.00      7.97      0.00      0.00     81.23
+
+07:00:29 AM kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+07:00:30 AM   3018992   5732980   1790392     22.57     85344   2799996   5440612     68.59   1897704   2669552       812
+
+07:00:29 AM     IFACE   rxpck/s   txpck/s    rxkB/s    txkB/s   rxcmp/s   txcmp/s  rxmcst/s   %ifutil
+07:00:30 AM        lo   2016.00   2016.00    632.94    632.94      0.00      0.00      0.00      0.00
+07:00:30 AM      eth0    400.00    401.00    333.20    220.43      0.00      0.00      0.00      0.00
+07:00:30 AM   docker0   1000.00   1000.00    228.91    397.27      0.00      0.00      0.00      0.00
+07:00:30 AM veth927c207   1000.00   1000.00    242.58    397.27      0.00      0.00      0.00      0.03
+
+07:00:30 AM     CPU     %user     %nice   %system   %iowait    %steal     %idle
+07:00:31 AM     all     11.51      0.00      8.70      0.00      0.00     79.80
+
+07:00:30 AM kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+07:00:31 AM   3018740   5732760   1790612     22.58     85344   2800024   5440612     68.59   1897756   2669580       844
+
+07:00:30 AM     IFACE   rxpck/s   txpck/s    rxkB/s    txkB/s   rxcmp/s   txcmp/s  rxmcst/s   %ifutil
+07:00:31 AM        lo   2019.00   2019.00    634.02    634.02      0.00      0.00      0.00      0.00
+07:00:31 AM      eth0    401.00    401.00    333.27    221.35      0.00      0.00      0.00      0.00
+07:00:31 AM   docker0   1002.00   1004.00    229.89    397.52      0.00      0.00      0.00      0.00
+07:00:31 AM veth927c207   1002.00   1004.00    243.59    397.52      0.00      0.00      0.00      0.03
+
+07:00:31 AM     CPU     %user     %nice   %system   %iowait    %steal     %idle
+07:00:32 AM     all      9.79      0.00      6.19      0.00      0.00     84.02
+
+07:00:31 AM kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+07:00:32 AM   3018236   5732292   1791108     22.58     85344   2800056   5440612     68.59   1897352   2669612       844
+
+07:00:31 AM     IFACE   rxpck/s   txpck/s    rxkB/s    txkB/s   rxcmp/s   txcmp/s  rxmcst/s   %ifutil
+07:00:32 AM        lo   2042.00   2042.00    633.65    633.65      0.00      0.00      0.00      0.00
+07:00:32 AM      eth0    400.00    400.00    333.20    219.39      0.00      0.00      0.00      0.00
+07:00:32 AM   docker0    997.00    998.00    227.87    397.14      0.00      0.00      0.00      0.00
+07:00:32 AM veth927c207    997.00    998.00    241.50    397.14      0.00      0.00      0.00      0.03
+
+07:00:32 AM     CPU     %user     %nice   %system   %iowait    %steal     %idle
+07:00:33 AM     all     10.34      0.00      8.01      0.00      0.00     81.65
+
+07:00:32 AM kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+07:00:33 AM   3018236   5732336   1791104     22.58     85344   2800092   5440612     68.59   1897440   2669656       320
+
+07:00:32 AM     IFACE   rxpck/s   txpck/s    rxkB/s    txkB/s   rxcmp/s   txcmp/s  rxmcst/s   %ifutil
+07:00:33 AM        lo   2020.00   2020.00    633.26    633.26      0.00      0.00      0.00      0.00
+07:00:33 AM      eth0    401.00    400.00    333.27    220.31      0.00      0.00      0.00      0.00
+07:00:33 AM   docker0   1000.00   1001.00    228.91    397.33      0.00      0.00      0.00      0.00
+07:00:33 AM veth927c207   1000.00   1001.00    242.58    397.33      0.00      0.00      0.00      0.03
+
+07:00:33 AM     CPU     %user     %nice   %system   %iowait    %steal     %idle
+07:00:34 AM     all      9.85      0.00      7.83      0.00      0.00     82.32
+
+07:00:33 AM kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+07:00:34 AM   3018236   5732356   1791080     22.58     85344   2800116   5440612     68.59   1897480   2669676       476
+
+07:00:33 AM     IFACE   rxpck/s   txpck/s    rxkB/s    txkB/s   rxcmp/s   txcmp/s  rxmcst/s   %ifutil
+07:00:34 AM        lo   2025.00   2025.00    634.42    634.42      0.00      0.00      0.00      0.00
+07:00:34 AM      eth0    401.00    402.00    333.27    221.46      0.00      0.00      0.00      0.00
+07:00:34 AM   docker0   1003.00   1002.00    229.94    397.39      0.00      0.00      0.00      0.00
+07:00:34 AM veth927c207   1003.00   1002.00    243.65    397.39      0.00      0.00      0.00      0.03
+
+07:00:34 AM     CPU     %user     %nice   %system   %iowait    %steal     %idle
+07:00:35 AM     all      9.02      0.00      7.47      0.00      0.00     83.51
+
+07:00:34 AM kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+07:00:35 AM   3018236   5732408   1791044     22.58     85344   2800152   5440612     68.59   1897556   2669728       496
+
+07:00:34 AM     IFACE   rxpck/s   txpck/s    rxkB/s    txkB/s   rxcmp/s   txcmp/s  rxmcst/s   %ifutil
+07:00:35 AM        lo   2014.00   2014.00    631.98    631.98      0.00      0.00      0.00      0.00
+07:00:35 AM      eth0    400.00    399.00    333.20    219.28      0.00      0.00      0.00      0.00
+07:00:35 AM   docker0    997.00    998.00    227.87    397.14      0.00      0.00      0.00      0.00
+07:00:35 AM veth927c207    997.00    998.00    241.50    397.14      0.00      0.00      0.00      0.03
+
+07:00:35 AM     CPU     %user     %nice   %system   %iowait    %steal     %idle
+07:00:36 AM     all      9.49      0.00      8.21      0.00      0.00     82.31
+
+07:00:35 AM kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+07:00:36 AM   3018236   5732412   1791008     22.58     85344   2800184   5440612     68.59   1897612   2669732       596
+
+07:00:35 AM     IFACE   rxpck/s   txpck/s    rxkB/s    txkB/s   rxcmp/s   txcmp/s  rxmcst/s   %ifutil
+07:00:36 AM        lo   2019.00   2019.00    634.05    634.05      0.00      0.00      0.00      0.00
+07:00:36 AM      eth0    404.00    403.00    334.98    221.52      0.00      0.00      0.00      0.00
+07:00:36 AM   docker0   1003.00   1002.00    229.94    397.39      0.00      0.00      0.00      0.00
+07:00:36 AM veth927c207   1003.00   1002.00    243.65    397.39      0.00      0.00      0.00      0.03
+
+07:00:36 AM     CPU     %user     %nice   %system   %iowait    %steal     %idle
+07:00:37 AM     all      9.49      0.00      7.44      0.00      0.00     83.08
+
+07:00:36 AM kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+07:00:37 AM   3018236   5732468   1790984     22.58     85344   2800208   5440612     68.59   1897628   2669788       620
+
+07:00:36 AM     IFACE   rxpck/s   txpck/s    rxkB/s    txkB/s   rxcmp/s   txcmp/s  rxmcst/s   %ifutil
+07:00:37 AM        lo   2023.00   2023.00    632.41    632.41      0.00      0.00      0.00      0.00
+07:00:37 AM      eth0    399.00    399.00    331.60    219.28      0.00      0.00      0.00      0.00
+07:00:37 AM   docker0    997.00    998.00    227.87    397.14      0.00      0.00      0.00      0.00
+07:00:37 AM veth927c207    997.00    998.00    241.50    397.14      0.00      0.00      0.00      0.03
+
+07:00:37 AM     CPU     %user     %nice   %system   %iowait    %steal     %idle
+07:00:38 AM     all     10.31      0.00      9.02      0.00      0.00     80.67
+
+07:00:37 AM kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+07:00:38 AM   3017912   5732196   1791264     22.58     85344   2800252   5440136     68.59   1897212   2669840       716
+
+07:00:37 AM     IFACE   rxpck/s   txpck/s    rxkB/s    txkB/s   rxcmp/s   txcmp/s  rxmcst/s   %ifutil
+07:00:38 AM        lo   2028.00   2028.00    634.63    634.63      0.00      0.00      0.00      0.00
+07:00:38 AM      eth0    406.00    407.00    334.57    222.93      0.00      0.00      0.00      0.00
+07:00:38 AM   docker0   1003.00   1002.00    229.94    397.39      0.00      0.00      0.00      0.00
+07:00:38 AM veth927c207   1003.00   1002.00    243.65    397.39      0.00      0.00      0.00      0.03
+
+07:00:38 AM     CPU     %user     %nice   %system   %iowait    %steal     %idle
+07:00:39 AM     all     10.18      0.00      7.63      0.00      0.00     82.19
+
+07:00:38 AM kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+07:00:39 AM   3017660   5731960   1791488     22.59     85344   2800284   5440608     68.59   1897756   2669856       792
+
+07:00:38 AM     IFACE   rxpck/s   txpck/s    rxkB/s    txkB/s   rxcmp/s   txcmp/s  rxmcst/s   %ifutil
+07:00:39 AM        lo   2035.00   2035.00    634.10    634.10      0.00      0.00      0.00      0.00
+07:00:39 AM      eth0    409.00    405.00    334.34    220.93      0.00      0.00      0.00      0.00
+07:00:39 AM   docker0   1000.00   1000.00    228.91    397.27      0.00      0.00      0.00      0.00
+07:00:39 AM veth927c207   1000.00   1000.00    242.58    397.27      0.00      0.00      0.00      0.03
+
+07:00:39 AM     CPU     %user     %nice   %system   %iowait    %steal     %idle
+07:00:40 AM     all     10.05      0.00      7.99      0.00      0.00     81.96
+
+07:00:39 AM kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+07:00:40 AM   3017660   5731964   1791464     22.59     85344   2800308   5440608     68.59   1897756   2669860       356
+
+07:00:39 AM     IFACE   rxpck/s   txpck/s    rxkB/s    txkB/s   rxcmp/s   txcmp/s  rxmcst/s   %ifutil
+07:00:40 AM        lo   2012.00   2012.00    632.78    632.78      0.00      0.00      0.00      0.00
+07:00:40 AM      eth0    400.00    400.00    333.20    220.31      0.00      0.00      0.00      0.00
+07:00:40 AM   docker0   1000.00   1000.00    228.91    397.27      0.00      0.00      0.00      0.00
+07:00:40 AM veth927c207   1000.00   1000.00    242.58    397.27      0.00      0.00      0.00      0.03
+
+07:00:40 AM     CPU     %user     %nice   %system   %iowait    %steal     %idle
+07:00:41 AM     all     10.43      0.00      7.89      0.25      0.00     81.42
+
+07:00:40 AM kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+07:00:41 AM   3017660   5732020   1791424     22.59     85344   2800348   5440608     68.59   1897864   2669916       344
+
+07:00:40 AM     IFACE   rxpck/s   txpck/s    rxkB/s    txkB/s   rxcmp/s   txcmp/s  rxmcst/s   %ifutil
+07:00:41 AM        lo   2018.00   2018.00    633.10    633.10      0.00      0.00      0.00      0.00
+07:00:41 AM      eth0    401.00    401.00    333.27    220.43      0.00      0.00      0.00      0.00
+07:00:41 AM   docker0   1000.00   1000.00    228.91    397.27      0.00      0.00      0.00      0.00
+07:00:41 AM veth927c207   1000.00   1000.00    242.58    397.27      0.00      0.00      0.00      0.03
+
+07:00:41 AM     CPU     %user     %nice   %system   %iowait    %steal     %idle
+07:00:42 AM     all      9.02      0.00      6.70      0.00      0.00     84.28
+
+07:00:41 AM kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+07:00:42 AM   3017660   5732020   1791404     22.59     85344   2800368   5440608     68.59   1897864   2669916       364
+
+07:00:41 AM     IFACE   rxpck/s   txpck/s    rxkB/s    txkB/s   rxcmp/s   txcmp/s  rxmcst/s   %ifutil
+07:00:42 AM        lo   2054.00   2054.00    636.89    636.89      0.00      0.00      0.00      0.00
+07:00:42 AM      eth0    401.00    401.00    334.80    220.38      0.00      0.00      0.00      0.00
+07:00:42 AM   docker0   1002.00   1003.00    229.02    399.12      0.00      0.00      0.00      0.00
+07:00:42 AM veth927c207   1002.00   1003.00    242.71    399.12      0.00      0.00      0.00      0.03
+
+07:00:42 AM     CPU     %user     %nice   %system   %iowait    %steal     %idle
+07:00:43 AM     all     10.28      0.00      7.46      0.00      0.00     82.26
+
+07:00:42 AM kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+07:00:43 AM   3017660   5732036   1791360     22.59     85344   2800412   5440608     68.59   1897864   2669932       424
+
+07:00:42 AM     IFACE   rxpck/s   txpck/s    rxkB/s    txkB/s   rxcmp/s   txcmp/s  rxmcst/s   %ifutil
+07:00:43 AM        lo   2038.00   2038.00    634.27    634.27      0.00      0.00      0.00      0.00
+07:00:43 AM      eth0    408.00    408.00    333.86    220.90      0.00      0.00      0.00      0.00
+07:00:43 AM   docker0   1005.00   1004.00    229.17    396.00      0.00      0.00      0.00      0.00
+07:00:43 AM veth927c207   1005.00   1004.00    242.91    396.00      0.00      0.00      0.00      0.03
+
+07:00:43 AM     CPU     %user     %nice   %system   %iowait    %steal     %idle
+07:00:44 AM     all     10.54      0.00      7.71      0.00      0.00     81.75
+
+07:00:43 AM kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+07:00:44 AM   3017660   5732068   1791448     22.59     85344   2800436   5440608     68.59   1897572   2669964       448
+
+07:00:43 AM     IFACE   rxpck/s   txpck/s    rxkB/s    txkB/s   rxcmp/s   txcmp/s  rxmcst/s   %ifutil
+07:00:44 AM        lo   2028.00   2028.00    632.11    632.11      0.00      0.00      0.00      0.00
+07:00:44 AM      eth0    399.00    399.00    331.60    220.25      0.00      0.00      0.00      0.00
+07:00:44 AM   docker0   1000.00   1000.00    228.91    397.27      0.00      0.00      0.00      0.00
+07:00:44 AM veth927c207   1000.00   1000.00    242.58    397.27      0.00      0.00      0.00      0.03
+
+07:00:44 AM     CPU     %user     %nice   %system   %iowait    %steal     %idle
+07:00:45 AM     all      8.70      0.00      7.67      0.00      0.00     83.63
+
+07:00:44 AM kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+07:00:45 AM   3017660   5732124   1791416     22.59     85344   2800468   5440608     68.59   1897588   2670020       480
+
+07:00:44 AM     IFACE   rxpck/s   txpck/s    rxkB/s    txkB/s   rxcmp/s   txcmp/s  rxmcst/s   %ifutil
+07:00:45 AM        lo   2044.00   2044.00    636.29    636.29      0.00      0.00      0.00      0.00
+07:00:45 AM      eth0    402.00    402.00    334.87    220.49      0.00      0.00      0.00      0.00
+07:00:45 AM   docker0   1002.00   1003.00    229.02    399.12      0.00      0.00      0.00      0.00
+07:00:45 AM veth927c207   1002.00   1003.00    242.71    399.12      0.00      0.00      0.00      0.03
+
+07:00:45 AM     CPU     %user     %nice   %system   %iowait    %steal     %idle
+07:00:46 AM     all      9.79      0.00      7.47      0.00      0.00     82.73
+
+07:00:45 AM kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+07:00:46 AM   3017660   5732124   1791392     22.59     85344   2800496   5440608     68.59   1897588   2670020       512
+
+07:00:45 AM     IFACE   rxpck/s   txpck/s    rxkB/s    txkB/s   rxcmp/s   txcmp/s  rxmcst/s   %ifutil
+07:00:46 AM        lo   2025.00   2025.00    631.94    631.94      0.00      0.00      0.00      0.00
+07:00:46 AM      eth0    399.00    399.00    331.60    220.25      0.00      0.00      0.00      0.00
+07:00:46 AM   docker0    998.00    997.00    228.80    395.41      0.00      0.00      0.00      0.00
+07:00:46 AM veth927c207    998.00    997.00    242.44    395.41      0.00      0.00      0.00      0.03
+
+07:00:46 AM     CPU     %user     %nice   %system   %iowait    %steal     %idle
+07:00:47 AM     all      1.76      0.00      1.01      0.00      0.00     97.23
+
+07:00:46 AM kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+07:00:47 AM   3017660   5732172   1791380     22.59     85344   2800516   5440608     68.59   1897588   2670068       600
+
+07:00:46 AM     IFACE   rxpck/s   txpck/s    rxkB/s    txkB/s   rxcmp/s   txcmp/s  rxmcst/s   %ifutil
+07:00:47 AM        lo    263.00    263.00     82.34     82.34      0.00      0.00      0.00      0.00
+07:00:47 AM      eth0     54.00     53.00     43.45     28.76      0.00      0.00      0.00      0.00
+07:00:47 AM   docker0    130.00    130.00     29.76     51.64      0.00      0.00      0.00      0.00
+07:00:47 AM veth927c207    130.00    130.00     31.54     51.64      0.00      0.00      0.00      0.00
+
+07:00:47 AM     CPU     %user     %nice   %system   %iowait    %steal     %idle
+07:00:48 AM     all      0.00      0.00      0.00      0.00      0.00    100.00
+
+07:00:47 AM kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+07:00:48 AM   3017660   5732188   1791376     22.59     85344   2800520   5440608     68.59   1897588   2670084       592
+
+07:00:47 AM     IFACE   rxpck/s   txpck/s    rxkB/s    txkB/s   rxcmp/s   txcmp/s  rxmcst/s   %ifutil
+07:00:48 AM        lo      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+07:00:48 AM      eth0      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+07:00:48 AM   docker0      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+07:00:48 AM veth927c207      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+
+07:00:48 AM     CPU     %user     %nice   %system   %iowait    %steal     %idle
+07:00:49 AM     all      0.25      0.00      0.00      0.00      0.00     99.75
+
+07:00:48 AM kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+07:00:49 AM   3017660   5732188   1791376     22.59     85344   2800520   5440608     68.59   1897588   2670084       592
+
+07:00:48 AM     IFACE   rxpck/s   txpck/s    rxkB/s    txkB/s   rxcmp/s   txcmp/s  rxmcst/s   %ifutil
+07:00:49 AM        lo      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+07:00:49 AM      eth0      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+07:00:49 AM   docker0      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+07:00:49 AM veth927c207      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+
+07:00:49 AM     CPU     %user     %nice   %system   %iowait    %steal     %idle
+07:00:50 AM     all      0.00      0.00      0.00      0.00      0.00    100.00
+
+07:00:49 AM kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+07:00:50 AM   3017660   5732196   1791376     22.59     85344   2800520   5440608     68.59   1897588   2670092       596
+
+07:00:49 AM     IFACE   rxpck/s   txpck/s    rxkB/s    txkB/s   rxcmp/s   txcmp/s  rxmcst/s   %ifutil
+07:00:50 AM        lo      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+07:00:50 AM      eth0      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+07:00:50 AM   docker0      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+07:00:50 AM veth927c207      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+
+07:00:50 AM     CPU     %user     %nice   %system   %iowait    %steal     %idle
+07:00:51 AM     all      0.50      0.00      1.00      0.25      0.00     98.26
+
+07:00:50 AM kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+07:00:51 AM   3017660   5732196   1791376     22.59     85344   2800520   5440364     68.59   1897296   2670092       632
+
+07:00:50 AM     IFACE   rxpck/s   txpck/s    rxkB/s    txkB/s   rxcmp/s   txcmp/s  rxmcst/s   %ifutil
+07:00:51 AM        lo      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+07:00:51 AM      eth0     13.00     10.00      1.98      2.07      0.00      0.00      0.00      0.00
+07:00:51 AM   docker0      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+07:00:51 AM veth927c207      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+
+07:00:51 AM     CPU     %user     %nice   %system   %iowait    %steal     %idle
+07:00:52 AM     all      0.00      0.00      0.00      0.00      0.00    100.00
+
+07:00:51 AM kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+07:00:52 AM   3017660   5732216   1791368     22.59     85344   2800524   5440608     68.59   1897548   2670112       616
+
+07:00:51 AM     IFACE   rxpck/s   txpck/s    rxkB/s    txkB/s   rxcmp/s   txcmp/s  rxmcst/s   %ifutil
+07:00:52 AM        lo      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+07:00:52 AM      eth0      3.00      2.00      0.59      0.18      0.00      0.00      0.00      0.00
+07:00:52 AM   docker0      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+07:00:52 AM veth927c207      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+
+Average:        CPU     %user     %nice   %system   %iowait    %steal     %idle
+Average:        all     13.75      0.00     10.02      0.01      0.00     76.21
+
+Average:    kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+Average:      3037331   5746746   1782943     22.48     85344   2795425   5438295     68.56   1895057   2665066       808
+
+Average:        IFACE   rxpck/s   txpck/s    rxkB/s    txkB/s   rxcmp/s   txcmp/s  rxmcst/s   %ifutil
+Average:           lo   3527.06   3527.06   1102.15   1102.15      0.00      0.00      0.00      0.00
+Average:         eth0    398.78    699.03    560.55    383.58      0.00      0.00      0.00      0.00
+Average:      docker0   1737.95   1740.93    398.05    691.04      0.00      0.00      0.00      0.00
+Average:    veth927c207   1737.95   1740.93    421.81    691.04      0.00      0.00      0.00      0.06

@@ -39,6 +39,7 @@ const reqCounter          = new Counter('total_requests');
 const refreshCounter      = new Counter('token_refresh_count');
 
 export const options = {
+    summaryTrendStats: ['avg', 'min', 'med', 'max', 'p(90)', 'p(95)', 'p(99)'],
     scenarios: {
         // Phase 1: steady baseline — spans >1 TTL cycle (TTL=30s), establishes refresh rhythm
         steady: {
@@ -108,9 +109,16 @@ function getValidToken() {
         refreshLatency.add(res.timings.duration);
         refreshCounter.add(1);
 
-        const body = JSON.parse(res.body);
-        cachedToken    = body.access_token;
-        tokenExpiresAt = now + (body.expires_in * 1000);
+        try {
+            const body = JSON.parse(res.body);
+            cachedToken    = body.access_token;
+            tokenExpiresAt = now + (body.expires_in * 1000);
+        } catch (_) {
+            console.log('Failed to parse token response');
+            // Keycloak is down — IdP returned non-JSON (HTML error page).
+            // Keep the existing cached token; Service B will reject it and
+            // the failure surfaces as a check failure, not an unhandled exception.
+        }
     }
     return cachedToken;
 }

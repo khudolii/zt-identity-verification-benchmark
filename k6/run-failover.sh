@@ -1,13 +1,14 @@
 #!/bin/bash
-# Failover test: measures behavior when Keycloak goes down mid-test.
+# Failover test: runs all three scenarios concurrently for 180s.
+# Stop Keycloak at the ~90s mark to observe three distinct failure modes:
+#   introspection → fails immediately (every request hits Keycloak)
+#   jwt           → fails ~30s after Keycloak stops (when token expires and can't refresh)
+#   vc            → never fails (fully local, no IdP dependency)
 #
 # Usage:
-#   bash k6/run-failover.sh                  # all three scenarios
-#   bash k6/run-failover.sh introspection    # introspection only
-#   bash k6/run-failover.sh jwt              # jwt only
-#   bash k6/run-failover.sh vc              # vc only
+#   bash k6/run-failover.sh
 #
-# In a second terminal, stop Keycloak after ~60s:
+# In a second terminal, stop Keycloak after ~90s:
 #   ssh root@<HETZNER_VM1_IP> "docker stop keycloak"
 
 set -e
@@ -24,49 +25,24 @@ if [ ! -f vp.json ]; then
   exit 1
 fi
 
-SCENARIO=${1:-""}
-
-# Validate scenario argument
-if [ -n "$SCENARIO" ] && [[ ! "$SCENARIO" =~ ^(introspection|jwt|vc)$ ]]; then
-  echo "ERROR: Unknown scenario '$SCENARIO'. Use: introspection, jwt, or vc"
-  exit 1
-fi
-
-# Pre-fetch a token for the introspection scenario (long-lived, sent on every request).
-# The JWT scenario refreshes per-VU inside k6 using KEYCLOAK_IP + CLIENT_SECRET.
-echo "Fetching token for introspection scenario..."
-TOKEN=$(curl -sf -X POST \
-  "http://${KEYCLOAK_IP}/realms/${KC_REALM}/protocol/openid-connect/token" \
-  -d "grant_type=client_credentials&client_id=${KC_CLIENT_ID}&client_secret=${KC_CLIENT_SECRET}" \
-  | python3 -c "import sys,json; print(json.load(sys.stdin)['access_token'])")
-
-[ -z "$TOKEN" ] && echo "ERROR: Failed to fetch token." && exit 1
-echo "Token acquired."
-echo ""
-
-TS=$(date +%Y%m%d_%H%M%S)
-
-if [ -n "$SCENARIO" ]; then
-  echo "Starting failover test — scenario: $SCENARIO"
-  SCENARIO_FLAG="--scenario $SCENARIO"
-  SUMMARY="results/failover-${SCENARIO}_summary_${TS}.json"
-else
-  echo "Starting failover test — all scenarios"
-  SCENARIO_FLAG=""
-  SUMMARY="results/failover_summary_${TS}.json"
-fi
-
+echo "Starting failover test — all three scenarios running concurrently for 180s."
 echo "Stop Keycloak on Hetzner VM 1 after ~90s to observe SPOF behavior."
 echo ""
 
 mkdir -p results
-k6 run $SCENARIO_FLAG \
+TS=$(date +%Y%m%d_%H%M%S)
+RAW="results/failover_raw_${TS}.json"
+SUMMARY="results/failover_summary_${TS}.json"
+
+k6 run \
+  --out json=${RAW} \
   --summary-export ${SUMMARY} \
   -e SERVICE_B_IP="${SERVICE_B_IP}" \
   -e KEYCLOAK_IP="${KEYCLOAK_IP}" \
-  -e TOKEN="${TOKEN}" \
   -e CLIENT_SECRET="${KC_CLIENT_SECRET}" \
   k6/failover-test.js
 
 echo ""
-echo "Results saved to: ${SUMMARY}"
+echo "Results saved to:"
+echo "  ${RAW}      (raw metrics — for failover timeline plot)"
+echo "  ${SUMMARY}  (summary stats)"

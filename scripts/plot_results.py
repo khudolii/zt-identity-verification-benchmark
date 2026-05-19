@@ -2,82 +2,141 @@
 """
 plot_results.py — Visualize k6 benchmark results for the paper.
 
-Reads k6 JSON output files and generates:
-  1. Latency comparison (p50/p95/p99 bar chart)
-  2. Throughput comparison
-  3. Failover test timeline (error rate over time)
+Reads k6 --summary-export JSON files for scenario comparisons, and
+k6 --out json (raw NDJSON) for the failover timeline chart.
+
+Produces:
+  fig1_latency.png   — p50/p90/p95 latency bar chart (scenarios 1-3)
+  fig2_errors.png    — error rate bar chart (scenarios 1-3)
+  fig3_failover.png  — error rate timeline during Keycloak outage
 
 Usage:
-  pip install pandas matplotlib seaborn
-  python3 scripts/plot_results.py \
-    --introspection results/introspection.json \
-    --jwt results/jwt.json \
-    --vc results/vc.json \
-    --failover results/failover.json
+  pip install matplotlib numpy
+  python3 scripts/plot_results.py \\
+    --introspection results/introspection_summary_<ts>.json \\
+    --jwt           results/jwt_summary_<ts>.json \\
+    --vc            results/vc_summary_<ts>.json \\
+    --failover      results/failover_raw_<ts>.json   # optional, NDJSON
+    --keycloak-stop 90                               # seconds, default 90
+    --output-dir    results/
 """
 
 import json
 import argparse
+import os
+from datetime import datetime, timezone
+
 import numpy as np
 import matplotlib.pyplot as plt
 import matplotlib.ticker as ticker
 
+# ── Style ─────────────────────────────────────────────────────────────────────
+
 COLORS = {
     'Token Introspection': '#e74c3c',
     'Short-lived JWT':     '#3498db',
-    'DID/VC':              '#2ecc71',
+    'DID/VC (Ed25519)':    '#2ecc71',
 }
 
-FONT_SIZE = 10
 plt.rcParams.update({
-    'font.family': 'serif',
-    'font.size': FONT_SIZE,
-    'axes.titlesize': FONT_SIZE + 1,
-    'axes.labelsize': FONT_SIZE,
+    'font.family':    'serif',
+    'font.size':      10,
+    'axes.titlesize': 11,
+    'axes.labelsize': 10,
 })
 
 
-def load_k6_json(path):
-    """Extract http_req_duration metrics from k6 JSON output."""
-    latencies = []
+# ── Loaders ───────────────────────────────────────────────────────────────────
+
+def load_summary(path: str) -> dict:
+    """Load a k6 --summary-export JSON file and return the metrics dict."""
+    with open(path) as f:
+        data = json.load(f)
+    return data.get('metrics', {})
+
+
+def load_failover_ndjson(path: str) -> dict:
+    """
+    Parse k6 raw NDJSON (--out json) for the failover test.
+    Returns:
+      data['errors'][scenario]  — list of (elapsed_s, 0|1) per request
+      data['latency'][scenario] — list of (elapsed_s, ms) per request
+    """
+    scenarios = ['introspection', 'jwt', 'vc']
+    data = {
+        'errors':  {s: [] for s in scenarios},
+        'latency': {s: [] for s in scenarios},
+    }
+    t0 = None
+
     with open(path) as f:
         for line in f:
+            line = line.strip()
+            if not line:
+                continue
             try:
                 obj = json.loads(line)
-                if (obj.get('type') == 'Point'
-                        and obj.get('metric') == 'verification_latency'):
-                    latencies.append(obj['data']['value'])
             except json.JSONDecodeError:
                 continue
-    return np.array(latencies)
+
+            if obj.get('type') != 'Point':
+                continue
+
+            metric = obj.get('metric', '')
+            ts_str = obj['data'].get('time', '')
+            val    = obj['data'].get('value', 0)
+
+            try:
+                ts = datetime.fromisoformat(ts_str.replace('Z', '+00:00'))
+            except (ValueError, AttributeError):
+                continue
+
+            if t0 is None:
+                t0 = ts
+            elapsed = (ts - t0).total_seconds()
+
+            for s in scenarios:
+                if metric == f'error_rate_{s}':
+                    data['errors'][s].append((elapsed, val))
+                elif metric == f'latency_{s}':
+                    data['latency'][s].append((elapsed, val))
+
+    return data
 
 
-def plot_latency_bars(data: dict, output_path='results/fig1_latency.png'):
-    """Bar chart: p50, p95, p99 per scenario — Fig. 1 in paper."""
-    scenarios = list(data.keys())
-    percentiles = [50, 95, 99]
-    x = np.arange(len(percentiles))
-    width = 0.25
+# ── Plots ─────────────────────────────────────────────────────────────────────
+
+def plot_latency_bars(metrics: dict, output_path: str):
+    """
+    Fig 1 — Latency comparison: p50 / p90 / p95 per scenario.
+    Reads pre-computed percentiles from summary JSON.
+    """
+    scenarios = list(metrics.keys())
+    labels    = ['p50 (med)', 'p90', 'p95', 'p99']
+    pct_keys  = ['med', 'p(90)', 'p(95)', 'p(99)']
+    x         = np.arange(len(labels))
+    width     = 0.25
 
     fig, ax = plt.subplots(figsize=(7, 4))
 
-    for i, (scenario, values) in enumerate(data.items()):
-        pcts = [np.percentile(values, p) for p in percentiles]
-        bars = ax.bar(x + i * width, pcts, width,
+    for i, (scenario, m) in enumerate(metrics.items()):
+        vl = m.get('verification_latency', {})
+        vals = [vl.get(k, 0) for k in pct_keys]
+        bars = ax.bar(x + i * width, vals, width,
                       label=scenario,
                       color=COLORS[scenario],
                       alpha=0.85,
                       edgecolor='white')
-        for bar, val in zip(bars, pcts):
+        for bar, v in zip(bars, vals):
             ax.text(bar.get_x() + bar.get_width() / 2,
-                    bar.get_height() + 0.5,
-                    f'{val:.1f}',
+                    bar.get_height() + 0.3,
+                    f'{v:.1f}',
                     ha='center', va='bottom', fontsize=8)
 
     ax.set_xticks(x + width)
-    ax.set_xticklabels([f'p{p}' for p in percentiles])
+    ax.set_xticklabels(labels)
     ax.set_ylabel('Latency (ms)')
-    ax.set_title('Verification Latency — p50 / p95 / p99')
+    ax.set_title('Verification Latency — p50 / p90 / p95')
     ax.legend(fontsize=8)
     ax.yaxis.set_minor_locator(ticker.AutoMinorLocator())
     ax.grid(axis='y', alpha=0.3)
@@ -89,55 +148,28 @@ def plot_latency_bars(data: dict, output_path='results/fig1_latency.png'):
     plt.close()
 
 
-def plot_failover(failover_path, output_path='results/fig2_failover.png'):
+def plot_error_bars(metrics: dict, output_path: str):
     """
-    Timeline of error rates during failover test — Fig. 2 in paper.
-    Keycloak stop event marked with vertical dashed line.
+    Fig 2 — Error rate per scenario (bar chart).
     """
-    # Bin error events by 5-second windows
-    events = {'introspection': [], 'jwt': [], 'vc': []}
+    scenarios = list(metrics.keys())
+    colors    = [COLORS[s] for s in scenarios]
+    values    = [metrics[s].get('error_rate', {}).get('value', 0) * 100
+                 for s in scenarios]
 
-    with open(failover_path) as f:
-        for line in f:
-            try:
-                obj = json.loads(line)
-                if obj.get('type') != 'Point':
-                    continue
-                metric = obj.get('metric', '')
-                ts = obj['data']['time']
-                val = obj['data']['value']
-                for scenario in events:
-                    if f'error_rate_{scenario}' in metric:
-                        events[scenario].append((ts, val))
-            except (json.JSONDecodeError, KeyError):
-                continue
+    fig, ax = plt.subplots(figsize=(5, 4))
+    bars = ax.bar(scenarios, values, color=colors, alpha=0.85, edgecolor='white')
 
-    fig, ax = plt.subplots(figsize=(7, 3.5))
+    for bar, v in zip(bars, values):
+        ax.text(bar.get_x() + bar.get_width() / 2,
+                bar.get_height() + 0.5,
+                f'{v:.1f}%',
+                ha='center', va='bottom', fontsize=9)
 
-    scenario_labels = {
-        'introspection': ('Token Introspection', '#e74c3c'),
-        'jwt':           ('Short-lived JWT',     '#3498db'),
-        'vc':            ('DID/VC',              '#2ecc71'),
-    }
-
-    for scenario, (label, color) in scenario_labels.items():
-        if not events[scenario]:
-            continue
-        times  = [e[0] for e in events[scenario]]
-        errors = [e[1] for e in events[scenario]]
-        ax.plot(times, errors, label=label, color=color, linewidth=1.5)
-
-    # Mark Keycloak stop (annotate manually or set via env)
-    ax.axvline(x=60, color='gray', linestyle='--', linewidth=1,
-               label='Keycloak stopped')
-    ax.text(61, 0.5, 'Keycloak\nstopped', fontsize=8, color='gray')
-
-    ax.set_xlabel('Time (s)')
-    ax.set_ylabel('Error Rate')
-    ax.set_ylim(-0.05, 1.15)
-    ax.set_title('Failover Test — Error Rate During Keycloak Outage')
-    ax.legend(fontsize=8)
-    ax.grid(alpha=0.3)
+    ax.set_ylabel('Error Rate (%)')
+    ax.set_title('Error Rate Under Ramp Load')
+    ax.set_ylim(0, max(values) * 1.25 + 5)
+    ax.grid(axis='y', alpha=0.3)
 
     plt.tight_layout()
     plt.savefig(output_path, dpi=300, bbox_inches='tight')
@@ -145,42 +177,128 @@ def plot_failover(failover_path, output_path='results/fig2_failover.png'):
     plt.close()
 
 
-def print_summary(data: dict):
-    """Print summary table for paper."""
+def _bin(pts: list, window: float = 5.0):
+    """Bin (elapsed, value) points into fixed-width windows. Returns (centers, means)."""
+    if not pts:
+        return np.array([]), np.array([])
+    max_t  = max(t for t, _ in pts)
+    bins   = np.arange(0, max_t + window, window)
+    sums   = np.zeros(len(bins) - 1)
+    counts = np.zeros(len(bins) - 1)
+    for t, v in pts:
+        idx = min(int(t / window), len(sums) - 1)
+        sums[idx]   += v
+        counts[idx] += 1
+    centers = (bins[:-1] + bins[1:]) / 2
+    means   = np.where(counts > 0, sums / counts, np.nan)
+    return centers, means
+
+
+def plot_failover_timeline(data: dict, keycloak_stop: float, output_path: str):
+    """
+    Fig 3 — Two-panel failover chart:
+      Top:    error rate over time (binned into 5s windows)
+      Bottom: p50 latency over time (binned into 5s windows)
+    Keycloak-stop event marked with a vertical dashed line on both panels.
+    """
+    scenario_meta = {
+        'introspection': ('Token Introspection', '#e74c3c'),
+        'jwt':           ('Short-lived JWT',     '#3498db'),
+        'vc':            ('DID/VC (Ed25519)',     '#2ecc71'),
+    }
+
+    fig, (ax_err, ax_lat) = plt.subplots(
+        2, 1, figsize=(7, 6), sharex=True,
+        gridspec_kw={'hspace': 0.08}
+    )
+
+    for scenario, (label, color) in scenario_meta.items():
+        # ── Error rate panel ──────────────────────────────────────────────
+        err_pts = data['errors'].get(scenario, [])
+        cx, means = _bin(err_pts)
+        if len(cx):
+            ax_err.plot(cx, means, label=label, color=color, linewidth=1.8)
+
+        # ── Latency panel ─────────────────────────────────────────────────
+        lat_pts = data['latency'].get(scenario, [])
+        cx, means = _bin(lat_pts)
+        if len(cx):
+            ax_lat.plot(cx, means, label=label, color=color, linewidth=1.8)
+
+    for ax in (ax_err, ax_lat):
+        ax.axvline(x=keycloak_stop, color='gray', linestyle='--', linewidth=1.2)
+        ax.grid(alpha=0.3)
+
+    ax_err.text(keycloak_stop + 1, 0.6,
+                'Keycloak\nstopped', fontsize=8, color='gray')
+    ax_err.set_ylabel('Error Rate')
+    ax_err.set_ylim(-0.05, 1.15)
+    ax_err.legend(fontsize=8)
+    ax_err.set_title('Failover Test — Error Rate & Latency Timeline')
+
+    ax_lat.set_xlabel('Time (s)')
+    ax_lat.set_ylabel('Latency p50 (ms)')
+    ax_lat.legend(fontsize=8)
+
+    plt.tight_layout()
+    plt.savefig(output_path, dpi=300, bbox_inches='tight')
+    print(f'Saved: {output_path}')
+    plt.close()
+
+
+def print_summary_table(metrics: dict):
     print()
-    print(f"{'Scenario':<25} {'Mean':>8} {'p50':>8} {'p95':>8} {'p99':>8} {'Std':>8}")
-    print("-" * 65)
-    for scenario, values in data.items():
+    print(f"{'Scenario':<25} {'Avg':>8} {'p50':>8} {'p90':>8} {'p95':>8} {'p99':>8} {'Error%':>8}")
+    print('-' * 76)
+    for scenario, m in metrics.items():
+        vl  = m.get('verification_latency', {})
+        err = m.get('error_rate', {}).get('value', 0) * 100
         print(f"{scenario:<25} "
-              f"{np.mean(values):>8.2f} "
-              f"{np.percentile(values, 50):>8.2f} "
-              f"{np.percentile(values, 95):>8.2f} "
-              f"{np.percentile(values, 99):>8.2f} "
-              f"{np.std(values):>8.2f}")
+              f"{vl.get('avg', 0):>8.2f} "
+              f"{vl.get('med', 0):>8.2f} "
+              f"{vl.get('p(90)', 0):>8.2f} "
+              f"{vl.get('p(95)', 0):>8.2f} "
+              f"{vl.get('p(99)', 0):>8.2f} "
+              f"{err:>7.1f}%")
     print()
 
+
+# ── Main ──────────────────────────────────────────────────────────────────────
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
-    parser.add_argument('--introspection', required=True)
-    parser.add_argument('--jwt',           required=True)
-    parser.add_argument('--vc',            required=True)
-    parser.add_argument('--failover',      default=None)
+    parser.add_argument('--introspection', required=True,
+                        help='Summary JSON for scenario 1')
+    parser.add_argument('--jwt',           required=True,
+                        help='Summary JSON for scenario 2')
+    parser.add_argument('--vc',            required=True,
+                        help='Summary JSON for scenario 3')
+    parser.add_argument('--failover',      default=None,
+                        help='Raw NDJSON from run-failover.sh (--out json)')
+    parser.add_argument('--keycloak-stop', type=float, default=90,
+                        help='Seconds into failover test when Keycloak was stopped (default: 90)')
+    parser.add_argument('--output-dir',    default='results',
+                        help='Directory to save figures (default: results/)')
     args = parser.parse_args()
 
-    import os
-    os.makedirs('results', exist_ok=True)
+    os.makedirs(args.output_dir, exist_ok=True)
 
-    data = {
-        'Token Introspection': load_k6_json(args.introspection),
-        'Short-lived JWT':     load_k6_json(args.jwt),
-        'DID/VC':              load_k6_json(args.vc),
+    metrics = {
+        'Token Introspection': load_summary(args.introspection),
+        'Short-lived JWT':     load_summary(args.jwt),
+        'DID/VC (Ed25519)':    load_summary(args.vc),
     }
 
-    print_summary(data)
-    plot_latency_bars(data)
+    print_summary_table(metrics)
+
+    plot_latency_bars(metrics,
+                      os.path.join(args.output_dir, 'fig1_latency.png'))
+    plot_error_bars(metrics,
+                    os.path.join(args.output_dir, 'fig2_errors.png'))
 
     if args.failover:
-        plot_failover(args.failover)
+        events = load_failover_ndjson(args.failover)
+        plot_failover_timeline(events, args.keycloak_stop,
+                               os.path.join(args.output_dir, 'fig3_failover.png'))
 
-    print("Done. Figures saved to results/")
+    print('Done. Figures saved to', args.output_dir)
