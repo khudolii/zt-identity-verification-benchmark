@@ -1,5 +1,7 @@
 # ZT Benchmark — Zero Trust Identity Verification
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
 Experimental comparison of three cross-domain identity verification mechanisms
 in a multi-cloud Zero Trust environment.
 
