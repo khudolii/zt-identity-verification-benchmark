@@ -246,10 +246,8 @@ All experiments were run on a real multi-cloud topology:
 - Cross-cloud RTT (k6 → Service B): ~100 ms
 
 Three independent runs were performed on 18 May 2026 (morning, noonday, evening).
-Results below are from the **noonday** run — the most stressed, with Service B reaching
-99.5 % peak CPU on Token Introspection. The other two runs are consistent within ±3 ms.
 
-### Verification Latency — Load Test (18 May 2026, noonday)
+### Verification Latency — Load Test (18 May 2026)
 
 Load: 200 req/s steady → ramp to 1 000 req/s → 200 req/s cooldown (160 s total).
 
@@ -267,7 +265,7 @@ Load: 200 req/s steady → ramp to 1 000 req/s → 200 req/s cooldown (160 s tot
 
 ![Latency comparison](experiment_results/figures/fig1_latency.png)
 
-### Resource Utilization — Load Test (18 May 2026, noonday)
+### Resource Utilization — Load Test (18 May 2026)
 
 CPU and RAM collected via `sar -u -r 1` on both VMs for the full test duration.
 
